@@ -1,14 +1,21 @@
 [
     {
-        "title": "小球飞鱼",
-        "website": "https://mantyke.icu/",
-        "image": "mantyke.png",
-     "description": "我们会一起遇见鲸鱼吗？"
+        "title": "毒鸡汤",
+        "website": "https://pcsoup.caihongtu.asia/",
+        "image": "pcsoup.png",
+        "description": "一些毒鸡汤..."
     },
 	{
-        "title": "友情链接2",
+        "title": "暂时就这些",
         "website": "",
         "image": "",
-     "description": ""
+        "description": "That's all for now"
+    },
+    {
+        "title": "谢谢大家",
+        "website": "",
+        "image": "",
+        "description": "Thanks for visiting"
+
     }
 ]

@@ -28,8 +28,8 @@
 {{ end }}
 
 {{ define "left-sidebar" }}
-    <!-- {{ if (.Scratch.Get "hasTOC") }}
-        <div id="article-toolbar">
+    {{ if (.Scratch.Get "hasTOC") }}
+        <div id="article-toolbar" style="display: flex;position: sticky;top: 5px;z-index: 1000;">
             <a href="{{ .Site.BaseURL }}" class="back-home">
                 {{ (resources.Get "icons/back.svg").Content | safeHTML }}
                 <span>{{ T "article.back" }}</span>
@@ -37,18 +37,14 @@
         </div>
     {{ else }}
         {{ partial "sidebar/left.html" . }}
-    {{ end }} -->
-<div id="article-toolbar">
-    <a href="{{ .Site.BaseURL }}" class="back-home">
-        {{ (resources.Get "icons/back.svg").Content | safeHTML }}
-        <span>{{ T "article.back" }}</span>
-    </a>
-</div>
-    {{ partial "sidebar/left.html" . }}
+    {{ end }}
+
+    <!-- {{ partial "sidebar/left.html" . }} -->
+
 {{ end }}
 
 {{ define "right-sidebar" }}
-    <!-- {{ if (.Scratch.Get "hasTOC") }}
+    {{ if (.Scratch.Get "hasTOC") }}
         <aside class="sidebar right-sidebar sticky">
             <section class="widget archives">
                 <div class="widget-icon">
@@ -63,6 +59,7 @@
         </aside>
     {{ else }}
         {{ partial "sidebar/right.html" . }}
-    {{ end }} -->
-    {{ partial "sidebar/right.html" . }}
+    {{ end }}
+
+    <!-- {{ partial "sidebar/right.html" . }} -->
 {{ end }}

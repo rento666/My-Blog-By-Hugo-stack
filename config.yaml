@@ -1,8 +1,26 @@
-baseurl: https://example.com
-languageCode: en-us
+baseurl: https://caihongtu.asia
+languageCode: zh-cn
 theme: stack
-paginate: 5
-title: Example Site
+title: 彩虹兔の博客
+
+pagination:
+  pagerSize: 5
+
+languages:
+    zh-cn:
+        languageName: 简体中文
+        languageCode: zh-cn
+        title: 彩虹兔の博客
+        params:
+            subtitle: 人生没有那么多观众.
+        weight: 1
+    en:
+        languageName: English
+        languageCode: en
+        title: Cai Hong Tu's Blog
+        params:
+            subtitle: There are not so many audiences in life.
+        weight: 2
 
 # Change it to your Disqus shortname before using
 disqusShortname: stack
@@ -12,7 +30,7 @@ googleAnalytics:
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk
-DefaultContentLanguage: en
+DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
@@ -30,7 +48,7 @@ params:
     favicon:
 
     footer:
-        since: 2020
+        since: 2024
         customText:
 
     dateFormat:
@@ -39,7 +57,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: 人生没有那么多观众.
         avatar:
             enabled: true
             local: true
@@ -55,7 +73,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: waline
 
         disqusjs:
             shortname:
@@ -84,12 +102,16 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/client.html
         waline:
-            serverURL:
-            lang:
-            visitor:
+            serverURL: https://waline.caihongtu.asia
+            lang: zh-CN
+            visitor: true
             avatar:
             emoji:
                 - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis/qq
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus
             requiredMeta:
                 - name
                 - email
@@ -179,7 +201,7 @@ params:
 menu:
     main:
         - identifier: home
-          name: Home
+          name: 首页
           url: /
           weight: -100
           params:
