@@ -31,15 +31,52 @@
                 </time>
             </div>
         {{ end }}
-
+    
         {{ if .Site.Params.article.readingTime }}
             <div>
                 {{ partial "helper/icon" "clock" }}
                 <time class="article-words">
-                    {{ .WordCount }}字
+                    {{ $fixedWordCount := add .WordCount 224}}
+                    约{{ div $fixedWordCount 225 }}分钟，共{{ .WordCount }}字
                 </time>
             </div>
         {{ end }}
+    
+        <div>
+            {{ partial "helper/icon" "view" }}
+            <time class="article-pageview">
+                <span class="waline-pageview-count" data-path="{{.RelPermalink}}">0</span> 次浏览
+            </time>
+        </div>
+    
+        <div>
+            {{ partial "helper/icon" "comment" }}
+            <time class="article-comment">
+                <span class="waline-comment-count" data-path="{{.RelPermalink}}">0</span> 条评论
+            </time>
+        </div>
+
+        <div>
+            {{ if hugo.IsMultilingual }}
+            {{ $siteLanguages := .Site.Languages}}
+            {{ $pageLang := .Page.Lang}}
+            {{ range .Page.AllTranslations }}
+                {{ $translation := .}}
+                {{ range $siteLanguages }}
+                    {{ if eq $translation.Lang .Lang }}
+                        {{ $selected := false }}
+                        {{ if eq $pageLang .Lang}}
+                        {{ else }}
+                            <time class="article-comment">
+                                <li id="selected">{{ partial "helper/icon" "trans" }}<a href="{{ $translation.RelPermalink }}"><span>{{ .LanguageName }}</span></a></li>
+                            </time>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            {{ end }}
+        </div>
     </footer>
+    
     {{ end }}
 </div>

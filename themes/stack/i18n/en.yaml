@@ -41,6 +41,10 @@ notFound:
         other: This page does not exist
 
 widget:
+    categories:
+        title:
+            other: Categories
+
     archives:
         title:
             other: Archives

@@ -41,6 +41,12 @@ notFound:
         other: Esta página no existe
 
 widget:
+    categories:
+        title:
+            other: Categorías
+
+        more:
+            other: Más
     archives:
         title:
             other: Archivo

@@ -1,0 +1,14 @@
+zh-cn:
+    languageName: 简体中文
+    languageCode: zh-cn
+    title: 彩虹兔の博客
+    params:
+        subtitle: 人生没有那么多观众.
+    weight: 1
+en:
+    languageName: English
+    languageCode: en
+    title: Cai Hong Tu's Blog
+    params:
+        subtitle: There are not so many audiences in life.
+    weight: 2

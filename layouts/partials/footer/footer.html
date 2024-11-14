@@ -24,7 +24,7 @@
             {{ .Site.Params.footer.since }} - 
         {{ end }}
         {{ now.Format "2006" }} <a href="https://stack-theme-mod.vercel.app/">彩虹兔的博客</a>·<i class="fas fa-bell"></i> 网站已平稳运行<a id="days">0</a>天<a id="hours">0</a>小时<a id="minutes">0</a>分<a id="seconds">0</a>秒<br>
-      {{$var :=  $scratch.Get "total"}}{{ if and (ne $var nil) (gt $var 0) }}{{$var = div $var 100.0}}{{ else }}{{$var = 0}}{{ end }}{{$var = math.Ceil $var}}{{$var = div $var 10.0}}共书写了{{$var}}k字·共 {{ len (where .Site.RegularPages "Section" "post") }}篇文章</br><span><p>
+      {{$var :=  $scratch.Get "total"}}{{ if and (ne $var nil) (gt $var 0) }}{{$var = div $var 100.0}}{{ else }}{{$var = 0}}{{ end }}{{$var = math.Ceil $var}}{{$var = div $var 10.0}}共书写了{{$var}}k字·共 {{ len (where .Site.RegularPages "Section" "post") }}篇文章·共 <span class="waline-pageview-count" data-path="/">0</span> 次浏览</br><span><p>
     </section>
     
     <section class="powerby">
@@ -45,7 +45,7 @@
 
 <script>
   function updateTime() {
-    var s1 = '2024-11-13'; // 设置为建站时间
+    var s1 = '2024-11-13 14:12:42'; // 设置为建站时间
     s1 = new Date(s1.replace(/-/g, "/")); // 转换为Date对象
 
     var s2 = new Date(); // 获取当前时间
@@ -77,5 +77,13 @@ setInterval(updateTime, 1000);
 // document.getElementById('days').innerHTML = number_of_days;
 </script>
     
+<script type="module">
+  import { pageviewCount } from 'https://unpkg.com/@waline/client@v3/dist/pageview.js';
+
+  pageviewCount({
+    serverURL: "{{.Site.Params.comments.waline.serverURL}}"
+  });
+</script>
+
 </footer>
 

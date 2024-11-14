@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>建站 on 彩虹兔の博客</title>
+    <link>http://localhost:1313/tags/%E5%BB%BA%E7%AB%99/</link>
+    <description>Recent content in 建站 on 彩虹兔の博客</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 14 Nov 2024 15:13:23 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>写博客必读内容</title>
+      <link>http://localhost:1313/2024/must-read-content-for-blogging/</link>
+      <pubDate>Thu, 14 Nov 2024 15:13:23 +0800</pubDate>
+      <guid>http://localhost:1313/2024/must-read-content-for-blogging/</guid>
+      <description>&lt;h2 id=&#34;附录&#34;&gt;附录&lt;/h2&gt;&#xA;&lt;h3 id=&#34;参考文献&#34;&gt;参考文献&lt;/h3&gt;&#xA;&lt;h3 id=&#34;版权信息&#34;&gt;版权信息&lt;/h3&gt;&#xA;&lt;p&gt;本文原载于 &lt;a class=&#34;link&#34; href=&#34;https://caihongtu.asia&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;caihongtu.asia&lt;/a&gt;，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

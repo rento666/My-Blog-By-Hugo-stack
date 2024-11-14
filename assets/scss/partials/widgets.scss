@@ -93,3 +93,59 @@
         }
     }
 }
+
+/* Recent Comment widget */
+.widget.recentComment {
+    .recent-comment-list {
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        background-color: var(--card-background);
+    }
+
+    .recent-comment-list-item {
+        display: flex;
+        padding: 0 1.25em;
+        align-items: center;
+
+        &:not(:last-of-type) {
+            border-bottom: 1.4px solid var(--card-separator-color);
+        }
+    }
+
+    .recent-comment-card {
+        flex: 1;
+        width: 0;
+        padding: 20px 10px !important;
+
+        p {
+            font-size: .8em;
+            margin-top: 3px;
+            margin-bottom: 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: var(--card-text-color-secondary);
+        }
+    }
+
+    .recent-comment-avatar {
+        width: 3rem;
+        border-radius: 50%;
+    }
+
+    .recent-comment-nick {
+        font-size: .875em;
+        color: var(--card-text-color-main);
+    }
+
+    .recent-comment-time {
+        font-size: .75em;
+        color: var(--card-text-color-tertiary);
+    }
+
+    .vemoji,
+    .wl-emoji {
+        height: 1.25em;
+        margin: -0.2em .1em;
+    }
+}

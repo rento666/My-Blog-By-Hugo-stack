@@ -5,7 +5,7 @@
 
 <link rel='canonical' href='http://localhost:1313/2019/math-typesetting/'>
 
-<link rel="stylesheet" href="/scss/style.min.3420363b2bc5c1eefdd63a805d29460691bd1a83251e3ef570eca7178152cabc.css"><meta property="og:title" content="Math Typesetting" />
+<link rel="stylesheet" href="/scss/style.min.57a6351e0ec412e95d749733cde09757eed4604a53492cf51d77dcba0483f1ad.css"><meta property="og:title" content="Math Typesetting" />
 <meta property="og:description" content="A brief guide to setup KaTeX" />
 <meta property="og:url" content="http://localhost:1313/2019/math-typesetting/" />
 <meta property="og:site_name" content="彩虹兔の博客" />
@@ -131,7 +131,7 @@
 
 
                 <time class="article-words">
-                    114字
+                    117字
                 </time>
             </div>
         
@@ -152,11 +152,19 @@
     >Auto-render Extension</a> or host these scripts locally.</li>
 <li>Include the partial in your templates like so:</li>
 </ul>
-<pre><code class="language-bash">{{ if or .Params.math .Site.Params.math }}
-{{ partial &quot;math.html&quot; . }}
-{{ end }}
-</code></pre>
-<ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">{{</span> <span class="k">if</span> or .Params.math .Site.Params.math <span class="o">}}</span>
+</span></span><span class="line"><span class="cl"><span class="o">{{</span> partial <span class="s2">&#34;math.html&#34;</span> . <span class="o">}}</span>
+</span></span><span class="line"><span class="cl"><span class="o">{{</span> end <span class="o">}}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
 <li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files</li>
 </ul>
@@ -238,7 +246,7 @@ $$</p>
     }
 </style><script>
     
-    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],"lang":"zh-CN","locale":{"admin":"Admin"},"requiredMeta":["name","email","url"],"serverURL":"https://waline.caihongtu.asia","visitor":true});
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://npm.elemecdn.com/@waline/emojis@1.2.0/qq","https://npm.elemecdn.com/@waline/emojis@1.2.0/tieba","https://npm.elemecdn.com/@waline/emojis@1.2.0/weibo","https://npm.elemecdn.com/@waline/emojis@1.2.0/bilibili","https://npm.elemecdn.com/@waline/emojis@1.2.0/alus"],"lang":"zh-CN","locale":{"admin":"屑博主","sofa":"还没有人评论哦！快来抢沙发吧~"},"placeholder":"欢迎留下宝贵的评论！","requiredMeta":["name","email","url"],"serverURL":"https://waline.caihongtu.asia","visitor":true});
 </script>
 
     

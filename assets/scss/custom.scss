@@ -305,6 +305,7 @@ main.main {
         box-shadow: var(--shadow-l1);
         border-bottom-left-radius: var(--mainradius);
         border-bottom-right-radius: var(--mainradius);
+        margin-top: 20px;
     }
     .highlight:before {
         content: "";
@@ -320,7 +321,7 @@ main.main {
         border-top-right-radius: 15px;
     }
     .chroma {
-        color: #e0def4;
+        // color: #e0def4;
         background-color: var(--chroma-bg);
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -328,4 +329,11 @@ main.main {
         overflow: auto;
     }
   }
-  
+  .menu {
+    margin-top: 0px;
+  }
+  @media (min-width: 1280px) {
+    .menu li:not(:last-of-type) {
+        margin-bottom: 15px;
+    }
+}

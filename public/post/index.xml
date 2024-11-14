@@ -6,49 +6,21 @@
     <description>Recent content in Posts on 彩虹兔の博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 13 Feb 2022 03:02:52 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 14 Nov 2024 22:49:27 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo | Hugo-stack-theme主题魔改版</title>
-      <link>http://localhost:1313/2022/stack-theme-mod/</link>
-      <pubDate>Sun, 13 Feb 2022 03:02:52 +0800</pubDate>
-      <guid>http://localhost:1313/2022/stack-theme-mod/</guid>
-      <description>&lt;p&gt;Github仓库地址：&lt;a class=&#34;link&#34; href=&#34;https://github.com/Mantyke&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Mantyke&lt;/a&gt;/&lt;a class=&#34;link&#34; href=&#34;https://github.com/Mantyke/Hugo-stack-theme-mod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;stack-theme-mod&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;本主题由&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;CaiJimmy&lt;/a&gt;制作并&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;发布&lt;/a&gt;，这个仓库是由&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Mantyke&lt;/a&gt;修改的魔改版本&lt;/p&gt;&#xA;&lt;p&gt;预览：&lt;a class=&#34;link&#34; href=&#34;https://stack-theme-mod.vercel.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Demo站&lt;/a&gt;&lt;/p&gt;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;使用方式&#34;&gt;使用方式&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;从零建立博客&lt;/strong&gt;：Fork仓库到自己账号下，用Github 注册 Vercel，依次点击Overview → New Project → import刚刚Fork的仓库，设置&lt;code&gt;FRAMEWORK PRESET&lt;/code&gt;为Hugo → 点击&lt;code&gt;Environment Variables&lt;/code&gt;，设置&lt;code&gt;NAME&lt;/code&gt;为&lt;code&gt;HUGO_VERSION&lt;/code&gt;，&lt;code&gt;Value&lt;/code&gt;为&lt;code&gt;Hugo版本号（如0.89.0）&lt;/code&gt; → 点击Add → 点击Deploy，稍等十来秒即可部署完成。下载仓库到本地后使用Github Desktop更新文章。（注，本地预览需安装Hugo，具体请参照&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/2021/hugo-build-blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Hugo | 一起动手搭建个人博客吧&lt;/a&gt;相关内容）&lt;/p&gt;</description>
+      <title>Github Profile</title>
+      <link>http://localhost:1313/2024/github-profile/</link>
+      <pubDate>Thu, 14 Nov 2024 22:49:27 +0800</pubDate>
+      <guid>http://localhost:1313/2024/github-profile/</guid>
+      <description>&lt;h2 id=&#34;附录&#34;&gt;附录&lt;/h2&gt;&#xA;&lt;h3 id=&#34;参考文献&#34;&gt;参考文献&lt;/h3&gt;&#xA;&lt;h3 id=&#34;版权信息&#34;&gt;版权信息&lt;/h3&gt;&#xA;&lt;p&gt;本文原载于 &lt;a class=&#34;link&#34; href=&#34;https://caihongtu.asia&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;彩虹兔の博客&lt;/a&gt;，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Chinese Test</title>
-      <link>http://localhost:1313/2020/test-chinese/</link>
-      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/2020/test-chinese/</guid>
-      <description>&lt;h2 id=&#34;短代码测试&#34;&gt;短代码测试&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;blockquote class=&#34;quote&#34;&gt;&#xD;&#xA;        &lt;p&gt;三月，因久旱不雨，苏轼赴郿，祈雨于太白山之上清宫。数日后，虽有微雨，父老以为不足，于是，再陪宋太守亲往祭祷，回程路上，便见道中有云气自山中来，如群马奔突而至车座左右，苏轼一时好奇心起，开笼收云归家，作《攓云篇》。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>http://localhost:1313/2019/markdown-syntax-guide/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/2019/markdown-syntax-guide/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Placeholder Text</title>
-      <link>http://localhost:1313/2019/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/2019/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Math Typesetting</title>
-      <link>http://localhost:1313/2019/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/2019/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Emoji Support</title>
-      <link>http://localhost:1313/2019/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/2019/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+      <title>写博客之必读内容</title>
+      <link>http://localhost:1313/2024/must-read-content-for-blogging/</link>
+      <pubDate>Thu, 14 Nov 2024 15:13:23 +0800</pubDate>
+      <guid>http://localhost:1313/2024/must-read-content-for-blogging/</guid>
+      <description>&lt;h2 id=&#34;引言20241114更新&#34;&gt;引言（2024.11.14更新）&lt;/h2&gt;&#xA;&lt;p&gt;最近想重新拾起写博客的习惯，但是发现之前的&lt;a class=&#34;link&#34; href=&#34;https://rento666.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Hexo博客 | (Github-Pages)&lt;/a&gt;有点花里胡哨的，找了半天，发现这个&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Hugo | (Github)&lt;/a&gt;的&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Stack主题 | (Github)&lt;/a&gt;挺符合我审美的，就决定用Hugo来写博客。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

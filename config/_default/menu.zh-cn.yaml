@@ -1,0 +1,38 @@
+main:
+    - identifier: home
+      name: 首页
+      url: /
+      weight: -100
+      params:
+          ### For demonstration purpose, the home link will be open in a new tab
+          newTab: flase
+          icon: home
+
+social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/CaiJimmy/hugo-theme-stack
+      weight: 1
+      params:
+          icon: brand-github
+
+    - identifier: bilibili
+      name: Bilibili
+      url: https://space.bilibili.com/646079922
+      weight: 2
+      params:
+          icon: brand-bilibili
+
+    - identifier: email
+      name: Email
+      url: mailto:admin_reply@caihongtu.asia
+      weight: 3
+      params:
+          icon: brand-email
+              
+    - identifier: rss
+      name: Rss
+      url: /index.html
+      weight: 4
+      params:
+          icon: rss

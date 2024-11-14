@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on 彩虹兔の博客</title>
+    <link>http://localhost:1313/categories/github/</link>
+    <description>Recent content in Github on 彩虹兔の博客</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/categories/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub 个人主页 README 美化 &amp; Star 趋势图</title>
+      <link>http://localhost:1313/2024/github-profile/</link>
+      <pubDate>Thu, 14 Nov 2024 22:49:27 +0800</pubDate>
+      <guid>http://localhost:1313/2024/github-profile/</guid>
+      <description>&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;&#xA;&lt;p&gt;每次看到有大佬的Github主页很炫酷，自己总是羡慕不已，那些大佬真是厉害，不仅技术强，就连Github个人主页都酷的一批。&lt;br&gt;&#xA;于是我便查阅资料，最终决定美化一下自己的Github主页 &lt;del&gt;（虽然我是个小菜鸡，什么开源好项目都没写出来&amp;hellip;）&lt;/del&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

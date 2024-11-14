@@ -1,0 +1,167 @@
+mainSections:
+    - post
+featuredImageField: image
+rssFullContent: true
+favicon:
+
+footer:
+    since: 2024
+    customText:
+
+dateFormat:
+    published: Jan 02, 2006
+    lastUpdated: Jan 02, 2006 15:04 MST
+
+welcome:
+    emoji: 👋
+    msg1: Welcome
+    msg2: To
+    permanentText: Permanent blog link
+    currentText: Current blog link
+
+shortCode:
+    empty: empty title...
+    hint: (Click to expand and collapse)
+
+sidebar:
+    emoji: 🌝
+    subtitle: Learn and live.
+    avatar:
+        enabled: true
+        local: true
+        src: img/avatar.png
+
+article:
+    math: false
+    toc: true
+    readingTime: true
+    license:
+        enabled: true
+        default: Licensed under CC BY-NC-SA 4.0
+
+comments:
+    enabled: true
+    provider: waline
+
+    disqusjs:
+        shortname:
+        apiUrl:
+        apiKey:
+        admin:
+        adminLabel:
+
+    utterances:
+        repo:
+        issueTerm: pathname
+        label:
+
+    remark42:
+        host:
+        site:
+        locale:
+
+    vssue:
+        platform:
+        owner:
+        repo:
+        clientId:
+        clientSecret:
+        autoCreateIssue: false
+
+    # Waline client configuration see: https://waline.js.org/en/reference/client.html
+    waline:
+        serverURL: https://waline.caihongtu.asia
+        lang: zh-CN
+        visitor: true
+        pageview: true
+        comment: true
+        avatar:
+        emoji:
+            - https://unpkg.com/@waline/emojis@1.2.0/alus
+            - https://unpkg.com/@waline/emojis@1.2.0/soul-emoji
+            - https://unpkg.com/@waline/emojis@1.2.0/tw-emoji
+            - https://unpkg.com/@waline/emojis@1.2.0/bmoji
+        requiredMeta:
+            - name
+            - email
+            - url
+        placeholder: Welcome to leave valuable comments!Please leave a correct email address so that you can receive email reminders when there is a reply. Please do not post any content unrelated to this article.
+        locale:
+            admin: Blogger
+            sofa: No one has commented yet! Come and grab the sofa~
+
+    twikoo:
+        envId:
+        region:
+        path:
+        lang:
+
+    # See https://cactus.chat/docs/reference/web-client/#configuration for description of the various options
+    cactus:
+        defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
+        serverName: "cactus.chat"
+        siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
+
+    giscus:
+        repo:
+        repoID:
+        category:
+        categoryID:
+        mapping:
+        lightTheme:
+        darkTheme:
+        reactionsEnabled: 1
+        emitMetadata: 0
+
+    gitalk:
+        owner:
+        admin:
+        repo:
+        clientID:
+        clientSecret:
+
+    cusdis:
+        host:
+        id:
+widgets:
+    enabled:
+        - search
+        - toc
+        - categories
+        - archives
+        - tag-cloud
+        - recent-comment # 首页的最新评论挂件
+
+
+    archives:
+        limit: 5
+
+    tagCloud:
+        limit: 10
+
+opengraph:
+    twitter:
+        # Your Twitter username
+        site:
+
+        # Available values: summary, summary_large_image
+        card: summary_large_image
+
+defaultImage:
+    opengraph:
+        enabled: false
+        local: false
+        src:
+
+colorScheme:
+    # Display toggle
+    toggle: true
+
+    # Available values: auto, light, dark
+    default: auto
+
+imageProcessing:
+    cover:
+        enabled: true
+    content:
+        enabled: true

@@ -1,0 +1,9 @@
+<details>
+  <summary>
+    <span>
+      {{ with .Get 0}} {{.}} {{else}} {{ .Site.Params.shortCode.empty | default "a empty title" }}  {{ end }}
+      <span style="color: rgb(183, 107, 7); font-weight: bold;">{{ .Site.Params.shortCode.hint | default "(Click to expand and collapse)" }} </span>
+    </span>
+  </summary>
+  {{.Inner}}
+  </details>

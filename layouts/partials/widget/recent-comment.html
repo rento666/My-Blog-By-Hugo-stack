@@ -1,0 +1,35 @@
+{{ if .IsHome }}
+<section class="widget recentComment" hidden>
+    <div class="widget-icon">
+        {{ partial "helper/icon" "comment" }}
+    </div>
+    <h2 class="widget-title section-title">最新评论</h2>
+
+    <div class="recent-comment-list"></div>
+</section>
+
+<script type="module">
+    import { RecentComments } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+    RecentComments({
+        serverURL: "{{.Site.Params.comments.waline.serverURL}}",
+        count: 5,
+    }).then((comments) => {
+        if (comments.comments.data.length) {
+            document.getElementsByClassName('recentComment')[0].removeAttribute("hidden");
+            document.getElementsByClassName('recent-comment-list')[0].innerHTML = comments.comments.data.map((comment) =>
+                `<a class="recent-comment-list-item" href="${comment.url}" target="_blank">
+                    <img class="recent-comment-avatar" src="${comment.avatar}"/>
+                    <div class="recent-comment-card">
+                        <div>
+                            <span class="recent-comment-nick">${comment.nick}</span>
+                            <span class="recent-comment-time">${new Date(comment.time).toISOString().split('T')[0]}</span>
+                        </div>
+                        <p>${comment.comment.replaceAll("<br>", " ").replaceAll("\n", " ").replace(/<\/?a.*?>/g, "")}</p>
+                    </div>
+                </a>`
+            ).join('');
+        }
+    });
+</script>
+{{ end }}

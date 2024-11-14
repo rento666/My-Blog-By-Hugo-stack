@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Cai Hong Tu&#39;s Blog</title>
+    <link>http://localhost:1313/en/tags/hugo/</link>
+    <description>Recent content in Hugo on Cai Hong Tu&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/en/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Must Read Content for Blogging</title>
+      <link>http://localhost:1313/en/2024/must-read-content-for-blogging/</link>
+      <pubDate>Thu, 14 Nov 2024 15:13:30 +0800</pubDate>
+      <guid>http://localhost:1313/en/2024/must-read-content-for-blogging/</guid>
+      <description>&lt;h2 id=&#34;introduction-updated-on-20241114&#34;&gt;Introduction (updated on 2024.11.14)&lt;/h2&gt;&#xA;&lt;p&gt;Recently, I want to pick up the habit of blogging again, but I found that the previous &lt;a class=&#34;link&#34; href=&#34;https://rento666.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Hexo blog | (Github-Pages)&lt;/a&gt; was a bit fancy. After searching for a long time, I found that this &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Hugo | (Github)&lt;/a&gt;&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Stack theme | (Github)&lt;/a&gt; is quite in line with my aesthetics, so I decided to use Hugo to write a blog.&lt;/p&gt;&#xA;&lt;p&gt;There are a few points to note:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

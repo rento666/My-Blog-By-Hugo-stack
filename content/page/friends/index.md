@@ -1,5 +1,5 @@
 ---
-title: "Friends"
+title: "友情链接"
 date: 2019-05-28
 description: 
 slug: "links"
@@ -8,10 +8,10 @@ comments: false
 license: false
 menu: 
     main:
-        name: friends
-        weight: -90
+        name: 友情链接
+        weight: -80
         params:
-            icon: home
+            icon: link
         
 ---
 <style>

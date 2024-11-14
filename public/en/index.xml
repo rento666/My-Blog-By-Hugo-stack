@@ -5,6 +5,228 @@
         <link>http://localhost:1313/en/</link>
         <description>Recent content on Cai Hong Tu&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language><atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+        <language>en</language>
+        <lastBuildDate>Thu, 14 Nov 2024 22:49:20 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Github Profile</title>
+        <link>http://localhost:1313/en/2024/github-profile/</link>
+        <pubDate>Thu, 14 Nov 2024 22:49:20 +0800</pubDate>
+        
+        <guid>http://localhost:1313/en/2024/github-profile/</guid>
+        <description>&lt;img src="http://localhost:1313/cover.png" alt="Featured image of post Github Profile" /&gt;&lt;h2 id=&#34;附录&#34;&gt;附录&lt;/h2&gt;
+&lt;h3 id=&#34;参考文献&#34;&gt;参考文献&lt;/h3&gt;
+&lt;h3 id=&#34;版权信息&#34;&gt;版权信息&lt;/h3&gt;
+&lt;p&gt;本文原载于 &lt;a class=&#34;link&#34; href=&#34;https://caihongtu.asia&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;彩虹兔の博客&lt;/a&gt;，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Must Read Content for Blogging</title>
+        <link>http://localhost:1313/en/2024/must-read-content-for-blogging/</link>
+        <pubDate>Thu, 14 Nov 2024 15:13:30 +0800</pubDate>
+        
+        <guid>http://localhost:1313/en/2024/must-read-content-for-blogging/</guid>
+        <description>&lt;h2 id=&#34;introduction-updated-on-20241114&#34;&gt;Introduction (updated on 2024.11.14)&lt;/h2&gt;
+&lt;p&gt;Recently, I want to pick up the habit of blogging again, but I found that the previous &lt;a class=&#34;link&#34; href=&#34;https://rento666.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hexo blog | (Github-Pages)&lt;/a&gt; was a bit fancy. After searching for a long time, I found that this &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | (Github)&lt;/a&gt;&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Stack theme | (Github)&lt;/a&gt; is quite in line with my aesthetics, so I decided to use Hugo to write a blog.&lt;/p&gt;
+&lt;p&gt;There are a few points to note:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The version I use is &lt;a class=&#34;link&#34; href=&#34;https://github.com/Mantyke/Hugo-stack-theme-mod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo-stack theme-magic modification version | (Github)&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Since this version (as of now) has not been updated for two years (the last update was in 2022), for the latest version of Hugo, executing &lt;code&gt;hugo server&lt;/code&gt; may report an error. &lt;strong&gt;You need to copy the error cause yourself and ask AI&lt;/strong&gt; (such as ChatGPT, etc.) &lt;strong&gt;to solve the error&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;usage-markdown-syntax&#34;&gt;Usage (MarkDown syntax)&lt;/h2&gt;
+&lt;h3 id=&#34;collapsible-code-block&#34;&gt;Collapsible code block&lt;/h3&gt;
+&lt;details&gt;
+  &lt;summary&gt;
+    &lt;span&gt;
+       This is the title 
+      &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(Click to expand and collapse) &lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/summary&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// Remove the \ in front of %
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{\% spoiler %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Content
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{\% /spoiler &amp;#34;This is the title&amp;#34; %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// Remove the \ in front of %
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;  &lt;/details&gt;
+&lt;h2 id=&#34;common-sense-for-me-i-need-to-remember-this&#34;&gt;Common sense (for me, I need to remember this)&lt;/h2&gt;
+&lt;h3 id=&#34;html-character-set---space&#34;&gt;HTML character set - space&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Space: &lt;code&gt;&amp;amp;nbsp;&lt;/code&gt; Press the &lt;code&gt;space&lt;/code&gt; key to display it. The width is affected by the font.&lt;/li&gt;
+&lt;li&gt;Space: &lt;code&gt;&amp;amp;ensp;&lt;/code&gt; has a width of $\frac{1}{2}$ Chinese characters, not affected by fonts.&lt;/li&gt;
+&lt;li&gt;Space: &lt;code&gt;&amp;amp;emsp;&lt;/code&gt; has a width of 1 Chinese character, not affected by fonts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;unresolved-issues-updated-at-any-time&#34;&gt;Unresolved issues (updated at any time)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The following issues are based on &lt;code&gt;hugo v0.138.0&lt;/code&gt; (maybe I don&amp;rsquo;t know how to operate/doge).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details&gt;
+  &lt;summary&gt;
+    &lt;span&gt;
+       How to check hugo version? 
+      &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(Click to expand and collapse) &lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/summary&gt;
+&lt;p&gt;Enter &lt;code&gt;hugo version&lt;/code&gt; in cmd&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Output: hugo v0.138.0-ad82998d54b3f9f8c2741b67356813b55b3134b9+extended+withdeploy windows/amd64 BuildDate=2024-11-06T11:22:34Z VendorInfo=gohugoio
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;  &lt;/details&gt;
+&lt;h3 id=&#34;multi-language-adaptation-of-categories&#34;&gt;Multi-language adaptation of categories&lt;/h3&gt;
+&lt;p&gt;I tried to use &lt;code&gt;_index.md&lt;/code&gt; and &lt;code&gt;_index.en.md&lt;/code&gt; in the &lt;code&gt;test&lt;/code&gt; file in the &lt;code&gt;./content/categories&lt;/code&gt; directory, but the result was not what I expected. In the &lt;strong&gt;homepage category&lt;/strong&gt;, it can only be displayed as &lt;code&gt;test&lt;/code&gt; or &lt;code&gt;test&lt;/code&gt;, and there is no multi-language adaptation.&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/14/wJNV8LWTyKCSsom.png&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/14/wJNV8LWTyKCSsom.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;The right column of the icon is not suitable for multiple languages&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;The right column of the icon is not suitable for multiple languages&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;
+    &lt;span&gt;
+       Initial directory structure 
+      &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(Click to expand and collapse) &lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/summary&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├─content
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ ├─categories
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ _index.en.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ _index.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ └─test
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ _index.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ └─ _index.en.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;  &lt;/details&gt;
+&lt;p&gt;In the end, only the &lt;code&gt;test&lt;/code&gt; and &lt;code&gt;test&lt;/code&gt; directories can be configured separately:&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;
+    &lt;span&gt;
+       Final directory structure 
+      &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(Click to expand and collapse) &lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/summary&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├─content
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ ├─categories
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ │ _index.en.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ │ _index.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ │
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ └─test
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ _index.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ └─ _index.en.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;  &lt;/details&gt;
+&lt;p&gt;In the end, only the &lt;code&gt;test&lt;/code&gt; and &lt;code&gt;test&lt;/code&gt; directories can be configured separately:&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;
+    &lt;span&gt;
+       Final directory structure 
+      &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(Click to expand and collapse) &lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/summary&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├─content
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ ├─categories
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ │ _index.en.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ │ _index.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ │
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ ├─test
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ │ _index.en.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ │
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ └─test
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│ │ _index.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;  &lt;/details&gt;
+&lt;p&gt;As shown in the figure:
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/14/ps4S2Jmn9IbtArC.png&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/14/ps4S2Jmn9IbtArC.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Directory structure&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Directory structure&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;appendix&#34;&gt;Appendix&lt;/h2&gt;
+&lt;h3 id=&#34;copyright-information&#34;&gt;Copyright information&lt;/h3&gt;
+&lt;p&gt;This article was originally published in &lt;a class=&#34;link&#34; href=&#34;https://caihongtu.asia&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CaiHongTu Blog&lt;/a&gt; and follows the CC BY-NC-SA 4.0 agreement. Please keep the original source when copying.&lt;/p&gt;
+</description>
+        </item>
+        
     </channel>
 </rss>

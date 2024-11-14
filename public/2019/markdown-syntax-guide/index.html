@@ -5,7 +5,7 @@
 
 <link rel='canonical' href='http://localhost:1313/2019/markdown-syntax-guide/'>
 
-<link rel="stylesheet" href="/scss/style.min.3420363b2bc5c1eefdd63a805d29460691bd1a83251e3ef570eca7178152cabc.css"><meta property="og:title" content="Markdown Syntax Guide" />
+<link rel="stylesheet" href="/scss/style.min.57a6351e0ec412e95d749733cde09757eed4604a53492cf51d77dcba0483f1ad.css"><meta property="og:title" content="Markdown Syntax Guide" />
 <meta property="og:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements." />
 <meta property="og:url" content="http://localhost:1313/2019/markdown-syntax-guide/" />
 <meta property="og:site_name" content="彩虹兔の博客" />
@@ -156,7 +156,7 @@
 
 
                 <time class="article-words">
-                    552字
+                    567字
                 </time>
             </div>
         
@@ -253,18 +253,33 @@
 </table></div>
 <h2 id="code-blocks">Code Blocks</h2>
 <h4 id="code-block-with-backticks">Code block with backticks</h4>
-<pre><code class="language-html">&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;Test&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<h4 id="code-block-indented-with-four-spaces">Code block indented with four spaces</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="code-block-indented-with-four-spaces">Code block indented with four spaces</h4>
 <pre><code>&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -304,13 +319,23 @@
 </div>
 </div>
 <h4 id="diff-code-block">Diff code block</h4>
-<pre><code class="language-diff">[dependencies.bevy]
-git = &quot;https://github.com/bevyengine/bevy&quot;
-rev = &quot;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&quot;
-- features = [&quot;dynamic&quot;]
-+ features = [&quot;jpeg&quot;, &quot;dynamic&quot;]
-</code></pre>
-<h2 id="list-types">List Types</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">[dependencies.bevy]
+</span></span><span class="line"><span class="cl">git = &#34;https://github.com/bevyengine/bevy&#34;
+</span></span><span class="line"><span class="cl">rev = &#34;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&#34;
+</span></span><span class="line"><span class="cl"><span class="gd">- features = [&#34;dynamic&#34;]
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+ features = [&#34;jpeg&#34;, &#34;dynamic&#34;]
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="list-types">List Types</h2>
 <h4 id="ordered-list">Ordered List</h4>
 <ol>
 <li>First item</li>
@@ -428,7 +453,7 @@ rev = &quot;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&quot;
     }
 </style><script>
     
-    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],"lang":"zh-CN","locale":{"admin":"Admin"},"requiredMeta":["name","email","url"],"serverURL":"https://waline.caihongtu.asia","visitor":true});
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://npm.elemecdn.com/@waline/emojis@1.2.0/qq","https://npm.elemecdn.com/@waline/emojis@1.2.0/tieba","https://npm.elemecdn.com/@waline/emojis@1.2.0/weibo","https://npm.elemecdn.com/@waline/emojis@1.2.0/bilibili","https://npm.elemecdn.com/@waline/emojis@1.2.0/alus"],"lang":"zh-CN","locale":{"admin":"屑博主","sofa":"还没有人评论哦！快来抢沙发吧~"},"placeholder":"欢迎留下宝贵的评论！","requiredMeta":["name","email","url"],"serverURL":"https://waline.caihongtu.asia","visitor":true});
 </script>
 
     

@@ -1,0 +1,183 @@
+mainSections:
+    - post
+featuredImageField: image
+rssFullContent: true
+favicon:
+
+footer:
+    since: 2024
+    customText:
+
+dateFormat:
+    published: 2006年 01月 02日 15:04 MST
+    lastUpdated: 2006年 01月 02日 15:04 MST
+
+welcome:
+    emoji: 👋
+    msg1: 欢迎
+    msg2: 来到
+    permanentText: 永久博客链接
+    currentText: 当前博客链接
+
+shortCode:
+    empty: 空标题
+    hint: (点击展开收缩)
+
+sidebar:
+    emoji: 🌚
+    subtitle: 人生没有那么多观众.
+    avatar:
+        enabled: true
+        local: true
+        src: img/avatar.png
+
+article:
+    math: false
+    toc: true
+    readingTime: true
+    license:
+        enabled: true
+        default: Licensed under CC BY-NC-SA 4.0
+
+comments:
+    enabled: true
+    provider: waline
+
+    disqusjs:
+        shortname:
+        apiUrl:
+        apiKey:
+        admin:
+        adminLabel:
+
+    utterances:
+        repo:
+        issueTerm: pathname
+        label:
+
+    remark42:
+        host:
+        site:
+        locale:
+
+    vssue:
+        platform:
+        owner:
+        repo:
+        clientId:
+        clientSecret:
+        autoCreateIssue: false
+
+    # Waline client configuration see: https://waline.js.org/en/reference/client.html
+    waline:
+        serverURL: https://waline.caihongtu.asia
+        lang: zh-CN
+        visitor: true
+        search: false
+        pageview: true
+        comment: true
+        avatar:
+        emoji:
+            - https://npm.elemecdn.com/@waline/emojis@1.2.0/qq
+            - https://npm.elemecdn.com/@waline/emojis@1.2.0/tieba
+            - https://npm.elemecdn.com/@waline/emojis@1.2.0/weibo
+            - https://npm.elemecdn.com/@waline/emojis@1.2.0/bilibili
+            - https://npm.elemecdn.com/@waline/emojis@1.2.0/alus
+        reaction:
+            - https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_heart_eyes.png
+            - https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_thumbsup.png
+            - https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_zhoumei.png
+            - https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_grievance.png
+            - https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_dizzy_face.png
+            - https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_slap.png
+        requiredMeta:
+            - name
+            # - email
+            # - url
+        placeholder: 欢迎留下宝贵的评论！请留下正确的邮箱以便有回复时进行邮箱提醒，请勿发布任何与本文章无关的内容。
+        locale:
+            admin: 屑博主
+            sofa: 还没有人评论哦！快来抢沙发吧~
+            reactionTitle: 这篇文章对你有帮助吗？
+            reaction0: 非常有用
+            reaction1: 有帮助
+            reaction2: 一般
+            reaction3: 无帮助
+            reaction4: 看不懂
+            reaction5: 有错误
+
+    twikoo:
+        envId:
+        region:
+        path:
+        lang:
+
+    # See https://cactus.chat/docs/reference/web-client/#configuration for description of the various options
+    cactus:
+        defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
+        serverName: "cactus.chat"
+        siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
+
+    giscus:
+        repo:
+        repoID:
+        category:
+        categoryID:
+        mapping:
+        lightTheme:
+        darkTheme:
+        reactionsEnabled: 1
+        emitMetadata: 0
+
+    gitalk:
+        owner:
+        admin:
+        repo:
+        clientID:
+        clientSecret:
+
+    cusdis:
+        host:
+        id:
+widgets:
+    enabled:
+        - search
+        - toc
+        - categories
+        - archives
+        - tag-cloud
+        - recent-comment # 首页的最新评论挂件
+
+
+    archives:
+        limit: 5
+
+    tagCloud:
+        limit: 10
+
+opengraph:
+    twitter:
+        # Your Twitter username
+        site:
+
+        # Available values: summary, summary_large_image
+        card: summary_large_image
+
+defaultImage:
+    opengraph:
+        enabled: false
+        local: false
+        src:
+
+colorScheme:
+    # Display toggle
+    toggle: true
+
+    # Available values: auto, light, dark
+    default: auto
+
+imageProcessing:
+    cover:
+        enabled: true
+    content:
+        enabled: true
