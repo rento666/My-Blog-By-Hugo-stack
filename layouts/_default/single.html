@@ -22,6 +22,10 @@
         {{ partial "comments/include" . }}
     {{ end }}
 
+    {{ if .Site.Params.Reward.enable }}
+        {{ partial "reward.html" . }}
+    {{ end }}
+    
     {{ partialCached "footer/footer" . }}
 
     {{ partialCached "article/components/photoswipe" . }}

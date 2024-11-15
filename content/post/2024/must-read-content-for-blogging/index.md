@@ -4,7 +4,6 @@ title: "写博客之必读内容"
 slug: "Must Read Content for Blogging"
 description: "用Hugo写博客，需要留意的点。"
 date: "2024-11-14T15:13:23+08:00"
-lastmod: "2024-11-14T15:13:23+08:00"
 image: 
 math: true
 license: 
@@ -15,7 +14,7 @@ tags: ["hugo"]
 reaction: true
 
 ---
-## 引言（2024.11.14更新）
+## 引言（2024.11.15更新）
 最近想重新拾起写博客的习惯，但是发现之前的[Hexo博客 | (Github-Pages)](https://rento666.github.io)有点花里胡哨的，找了半天，发现这个[Hugo | (Github)](https://github.com/gohugoio/hugo)的[Stack主题 | (Github)](https://github.com/CaiJimmy/hugo-theme-stack)挺符合我审美的，就决定用Hugo来写博客。
 
 有以下几点需要注意：
@@ -44,6 +43,14 @@ reaction: true
 * 空格：`&nbsp;` 按下`space`键出来的，宽度受字体影响。
 * 空格：`&ensp;` 宽度为$\frac{1}{2}$个中文宽度，不受字体影响。
 * 空格：`&emsp;` 宽度为1个中文宽度，不受字体影响。
+
+### 点击a标签打开新窗口
+
+在a标签中添加`target="_blank"`属性即可。
+
+```
+<a href="你的链接" target="_blank"></a>
+```
 
 ## 未解决问题（随时更新）
 
@@ -97,10 +104,20 @@ reaction: true
 
 ## 附录
 
+### 用到的第三方
+
+* [picsum |随机图片](https://picsum.photos/)
+* [SM.MS | 图床](https://sm.ms/home/)
+
 ### 参考文献
 
-* [Hugo对Markdown支持情况测试 | Github-Pages部署的博客，作者：edward852](https://edward852.github.io/post/markdown支持情况测试/)
+* [Hugo对Markdown支持情况测试 | 博客](https://edward852.github.io/post/markdown支持情况测试/)
+
+* [Stack主题的自定义 | 博客](https://linsnow.cn/posts/bloglab/hugo-stack/modify-hugo/)
 
 ### 版权信息
 
 本文原载于 [彩虹兔の博客](https://cai-hong-tu-blog.pages.dev/)，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。
+
+---
+## 结尾

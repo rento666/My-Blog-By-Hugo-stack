@@ -502,7 +502,7 @@
         <pubDate>Thu, 14 Nov 2024 15:13:23 +0800</pubDate>
         
         <guid>http://localhost:1313/2024/must-read-content-for-blogging/</guid>
-        <description>&lt;h2 id=&#34;引言20241114更新&#34;&gt;引言（2024.11.14更新）&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;引言20241115更新&#34;&gt;引言（2024.11.15更新）&lt;/h2&gt;
 &lt;p&gt;最近想重新拾起写博客的习惯，但是发现之前的&lt;a class=&#34;link&#34; href=&#34;https://rento666.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hexo博客 | (Github-Pages)&lt;/a&gt;有点花里胡哨的，找了半天，发现这个&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo | (Github)&lt;/a&gt;的&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -550,7 +550,17 @@
 &lt;li&gt;空格：&lt;code&gt;&amp;amp;ensp;&lt;/code&gt; 宽度为$\frac{1}{2}$个中文宽度，不受字体影响。&lt;/li&gt;
 &lt;li&gt;空格：&lt;code&gt;&amp;amp;emsp;&lt;/code&gt; 宽度为1个中文宽度，不受字体影响。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;未解决问题随时更新&#34;&gt;未解决问题（随时更新）&lt;/h2&gt;
+&lt;h3 id=&#34;点击a标签打开新窗口&#34;&gt;点击a标签打开新窗口&lt;/h3&gt;
+&lt;p&gt;在a标签中添加&lt;code&gt;target=&amp;quot;_blank&amp;quot;&lt;/code&gt;属性即可。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;a href=&amp;#34;你的链接&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;&amp;lt;/a&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;未解决问题随时更新&#34;&gt;未解决问题（随时更新）&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;以下问题是在&lt;code&gt;hugo v0.138.0&lt;/code&gt;的基础上出现的（可能是我不会操作/doge）。&lt;/li&gt;
 &lt;/ul&gt;
@@ -668,14 +678,29 @@
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&#34;附录&#34;&gt;附录&lt;/h2&gt;
+&lt;h3 id=&#34;用到的第三方&#34;&gt;用到的第三方&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://picsum.photos/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;picsum |随机图片&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://sm.ms/home/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SM.MS | 图床&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;参考文献&#34;&gt;参考文献&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://edward852.github.io/post/markdown%e6%94%af%e6%8c%81%e6%83%85%e5%86%b5%e6%b5%8b%e8%af%95/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo对Markdown支持情况测试 | Github-Pages部署的博客，作者：edward852&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://edward852.github.io/post/markdown%e6%94%af%e6%8c%81%e6%83%85%e5%86%b5%e6%b5%8b%e8%af%95/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo对Markdown支持情况测试 | 博客&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://linsnow.cn/posts/bloglab/hugo-stack/modify-hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Stack主题的自定义 | 博客&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;版权信息&#34;&gt;版权信息&lt;/h3&gt;
 &lt;p&gt;本文原载于 &lt;a class=&#34;link&#34; href=&#34;https://cai-hong-tu-blog.pages.dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;彩虹兔の博客&lt;/a&gt;，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;结尾&#34;&gt;结尾&lt;/h2&gt;
 </description>
         </item>
         

@@ -19,6 +19,12 @@ welcome:
     permanentText: 永久博客链接
     currentText: 当前博客链接
 
+reward:
+    enable: true
+    wechat: https://s2.loli.net/2024/11/15/qfjwTJbRWVCNugE.jpg
+    alipay: https://s2.loli.net/2024/11/15/iSJ3BIE4uXfsMRe.jpg
+    paypal: https://paypal.me/wangruntong?country.x=C2&locale.x=zh_XC
+
 shortCode:
     empty: 空标题
     hint: (点击展开收缩)

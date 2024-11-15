@@ -4,7 +4,6 @@ title: "Must Read Content for Blogging"
 slug: "Must Read Content for Blogging"
 description: "Things you need to pay attention to when writing a blog with Hugo."
 date: "2024-11-14T15:13:30+08:00"
-lastmod: "2024-11-14T15:13:30+08:00"
 image: 
 math: 
 license: 
@@ -115,3 +114,6 @@ As shown in the figure:
 ### Copyright information
 
 This article was originally published in [CaiHongTu Blog](https://caihongtu.asia) and follows the CC BY-NC-SA 4.0 agreement. Please keep the original source when copying.
+
+---
+## END

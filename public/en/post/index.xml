@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Cai Hong Tu&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Nov 2024 23:56:10 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2024 13:20:43 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/en/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Github Personal HomePage(Profile) Beautification</title>
       <link>http://localhost:1313/en/2024/github-profile/</link>
       <pubDate>Thu, 14 Nov 2024 22:49:20 +0800</pubDate>
       <guid>http://localhost:1313/en/2024/github-profile/</guid>
-      <description>&lt;h2 id=&#34;附录&#34;&gt;附录&lt;/h2&gt;&#xA;&lt;h3 id=&#34;参考文献&#34;&gt;参考文献&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/PeterJXL/p/18437094&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;超详细的 GitHub 个人主页美化教程 |  peterjxl博客&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;版权信息&#34;&gt;版权信息&lt;/h3&gt;&#xA;&lt;p&gt;本文原载于 &lt;a class=&#34;link&#34; href=&#34;https://caihongtu.asia&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;彩虹兔の博客&lt;/a&gt;，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Every time I see a big guy&amp;rsquo;s Github homepage is very cool, I always envy him. Those big guys are really amazing. Not only are they technically strong, but even their Github personal homepages are cool.&lt;br&gt;&#xA;So I looked up information and finally decided to beautify my Github homepage&lt;br&gt;&#xA;&lt;del&gt;(although I am a rookie and have not written any good open source projects&amp;hellip;)&lt;/del&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;beautify-your-personal-homepage&#34;&gt;Beautify your personal homepage&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;GitHub supports custom homepages.&lt;br&gt;&#xA;Related documents: &lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/zh/account-and-profile/setting-up-and-managing-your-github-profile&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Setting up and managing GitHub profiles | Github official documents&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Must Read Content for Blogging</title>
