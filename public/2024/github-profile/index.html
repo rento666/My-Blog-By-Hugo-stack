@@ -24,7 +24,7 @@
   content='2024-11-14T22:49:27&#43;08:00'
 /><meta
   property="article:modified_time"
-  content='2024-11-14T23:55:09&#43;08:00'
+  content='2024-11-14T23:56:10&#43;08:00'
 />
 <meta name="twitter:title" content="GitHub 个人主页 README 美化 &amp; Star 趋势图">
 <meta name="twitter:description" content="引言 每次看到有大佬的Github主页很炫酷，自己总是羡慕不已，那些大佬真是厉害，不仅技术强，就连Github个人主页都酷的一批。
@@ -145,7 +145,7 @@
 
                 <time class="article-words">
                     
-                    约5分钟，共1025字
+                    约13分钟，共2888字
                 </time>
             </div>
         
@@ -271,7 +271,360 @@
 	<figcaption>README文件初始内容</figcaption>
 	
 </figure></p>
-<h2 id="未完待续">未完待续&hellip;</h2>
+<h3 id="让我们开始吧">让我们开始吧</h3>
+<p>可以在README中添加的内容可以是自己的介绍、开源项目、个人信息、博客、简历等。</p>
+<p>Markdown扩展性很高、支持HTML、Emoji等，所以可以定制自己独一无二的主页~</p>
+<p>不过人的精力是有限的，所以我们可以将自己认为好的模板Fork到自己仓库，然后修改为自己的风格。</p>
+<p>分享一下优秀合集：</p>
+<p><a class="link" href="https://github.com/abhisheknaiidu/awesome-github-profile-readme"  target="_blank" rel="noopener"
+    >awesome-github-profile-readme | Github</a><br>
+<a class="link" href="https://github.com/EddieHubCommunity/awesome-github-profiles"  target="_blank" rel="noopener"
+    >awesome-github-profiles | Github</a><br>
+<a class="link" href="https://github.com/rzashakeri/beautify-github-profile"  target="_blank" rel="noopener"
+    >beautify-github-profile | Github</a><br>
+<a class="link" href="https://github.com/eryajf/awesome-github-profile-readme-chinese"  target="_blank" rel="noopener"
+    >awesome github profile readme chinese | Github</a><br>
+<a class="link" href="https://github.com/durgeshsamariya/awesome-github-profile-readme-templates"  target="_blank" rel="noopener"
+    >awesome-github-profile-readme-templates | Github</a></p>
+<h4 id="我的主页">我的主页</h4>
+<p>因为我喜欢看双城之战，所以用到了动漫里的图片，主页截图如下(长截图，加载可能较慢)：</p>
+<p><figure 
+	>
+	<a href="https://s2.loli.net/2024/11/15/nhH23GmdZXsBbIw.png" >
+		<img src="https://s2.loli.net/2024/11/15/nhH23GmdZXsBbIw.png"
+			
+			
+			
+			loading="lazy"
+			alt="我的Github主页">
+	</a>
+	
+	<figcaption>我的Github主页</figcaption>
+	
+</figure></p>
+<h4 id="修改">修改</h4>
+<p>在我的主页中，我使用了以下模板，您可以复制到自己的<code>README.md</code>文件中：</p>
+<ul>
+<li>第一步，复制README：</li>
+</ul>
+<details>
+  <summary>
+    <span>
+       README内容如下 
+      <span style="color: rgb(183, 107, 7); font-weight: bold;">(点击展开收缩) </span>
+    </span>
+  </summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">### Hey &lt;img src=&#34;https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif&#34; width=&#34;25px&#34;&gt;，I’m Rento
+</span></span><span class="line"><span class="cl">![Typing SVG](https://readme-typing-svg.demolab.com/?lines=欢迎+来到+我的+Github+主页;很荣幸+能够+帮到你)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;table&gt;
+</span></span><span class="line"><span class="cl">&lt;tr&gt;
+</span></span><span class="line"><span class="cl">&lt;td valign=&#34;center&#34;  width=&#34;30%&#34;&gt;
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">- 🤖 我最喜欢的动漫：双城之战
+</span></span><span class="line"><span class="cl">- 👨‍💻 我了解Golang、Node.js、Java、React、Vue、Uni APP、React Native、Unity(C#)等等...
+</span></span><span class="line"><span class="cl">- ✍️ [欢迎参观我的博客](https://cai-hong-tu-blog.pages.dev/)
+</span></span><span class="line"><span class="cl">- 💬 保持思考
+</span></span><span class="line"><span class="cl">- 📫 联系我: [邮箱联系](mailto:putongruwo@outlook.com)
+</span></span><span class="line"><span class="cl">- 👏 关注我: [![](https://img.shields.io/github/followers/rento666?label=关注我&amp;style=social)](https://github.com/rento666/)
+</span></span><span class="line"><span class="cl">- 🎣 兴趣：读[阮一峰的网络日志](https://www.ruanyifeng.com/blog/)，写[自己的博客](https://cai-hong-tu-blog.pages.dev/)，刷[Youtube](https://www.youtube.com/@caihongtu)  
+</span></span><span class="line"><span class="cl">**「天天开心」** ❤️
+</span></span><span class="line"><span class="cl">&lt;/td&gt;
+</span></span><span class="line"><span class="cl">&lt;td valign=&#34;center&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;img src=&#34;https://github.com/user-attachments/assets/7e018694-352d-494a-9a22-89d7d21f52b6&#34; width=&#34;703&#34; height=&#34;300&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;/td&gt;
+</span></span><span class="line"><span class="cl">&lt;/tr&gt;
+</span></span><span class="line"><span class="cl">&lt;/table&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;hr/&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">🏆 **我的 GitHub 统计信息:**
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">|![](https://github-readme-stats.vercel.app/api?username=rento666)|![我最常用的编程语言](https://github-readme-stats.vercel.app/api/top-langs/?username=rento666&amp;layout=compact&amp;hide_border=true&amp;langs_count=10)|
+</span></span><span class="line"><span class="cl">|-|-|
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;table&gt;
+</span></span><span class="line"><span class="cl">&lt;tr&gt;
+</span></span><span class="line"><span class="cl">&lt;td valign=&#34;center&#34;  width=&#34;50%&#34;&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#### 🐍 贡献
+</span></span><span class="line"><span class="cl">&lt;picture&gt;
+</span></span><span class="line"><span class="cl">  &lt;source media=&#34;(prefers-color-scheme: dark)&#34; srcset=&#34;https://raw.githubusercontent.com/rento666/rento666/output/github-contribution-grid-snake-dark.svg&#34;&gt;
+</span></span><span class="line"><span class="cl">  &lt;source media=&#34;(prefers-color-scheme: light)&#34; srcset=&#34;https://raw.githubusercontent.com/rento666/rento666/output/github-contribution-grid-snake.svg&#34;&gt;
+</span></span><span class="line"><span class="cl">  &lt;img alt=&#34;github contribution grid snake animation&#34; src=&#34;https://raw.githubusercontent.com/rento666/rento666/output/github-contribution-grid-snake.svg&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;/picture&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/td&gt;
+</span></span><span class="line"><span class="cl">&lt;td valign=&#34;center&#34;  width=&#34;50%&#34;&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">📕 &amp;nbsp;[**我的最新博客**](https://cai-hong-tu-blog.pages.dev/)
+</span></span><span class="line"><span class="cl">&lt;!-- BLOG-POST-LIST:START --&gt;
+</span></span><span class="line"><span class="cl">&lt;!-- BLOG-POST-LIST:END --&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/td&gt;
+</span></span><span class="line"><span class="cl">&lt;/tr&gt;
+</span></span><span class="line"><span class="cl">&lt;/table&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div>  </details> 
+<ul>
+<li>
+<p>第二步，复制好之后，按<code>CTRL+F</code>，自行替换姓名、用户名、兴趣爱好、博客链接等信息。</p>
+</li>
+<li>
+<p>第三步，修改好README.md之后呢，在仓库里点击Actions创建workflow（工作流），如下图所示：</p>
+</li>
+</ul>
+<p><figure 
+	>
+	<a href="https://s2.loli.net/2024/11/15/WxnbTOy3mQkp175.png" >
+		<img src="https://s2.loli.net/2024/11/15/WxnbTOy3mQkp175.png"
+			
+			
+			
+			loading="lazy"
+			alt="点击Actions来创建workflow">
+	</a>
+	
+	<figcaption>点击Actions来创建workflow</figcaption>
+	
+</figure></p>
+<p>进去之后，点<code>Simple workflow</code>的<code>Configure</code>, 如下图所示：</p>
+<p><figure 
+	>
+	<a href="https://s2.loli.net/2024/11/15/EmW2fhUDlIRr1wT.png" >
+		<img src="https://s2.loli.net/2024/11/15/EmW2fhUDlIRr1wT.png"
+			
+			
+			
+			loading="lazy"
+			alt="点击Configure">
+	</a>
+	
+	<figcaption>点击Configure</figcaption>
+	
+</figure></p>
+<p>添加如下代码（需要分开，别放到一个文件里）：</p>
+<details>
+  <summary>
+    <span>
+       贪吃蛇workflow 
+      <span style="color: rgb(183, 107, 7); font-weight: bold;">(点击展开收缩) </span>
+    </span>
+  </summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">name: generate animation
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">on:
+</span></span><span class="line"><span class="cl">  # run automatically every 2 hours
+</span></span><span class="line"><span class="cl">  schedule:
+</span></span><span class="line"><span class="cl">    - cron: &#34;0 */2 * * *&#34; 
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  # allows to manually run the job at any time
+</span></span><span class="line"><span class="cl">  workflow_dispatch:
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  # run on every push on the master branch
+</span></span><span class="line"><span class="cl">  push:
+</span></span><span class="line"><span class="cl">    branches:
+</span></span><span class="line"><span class="cl">    - master
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">jobs:
+</span></span><span class="line"><span class="cl">  generate:
+</span></span><span class="line"><span class="cl">    permissions: 
+</span></span><span class="line"><span class="cl">      contents: write
+</span></span><span class="line"><span class="cl">    runs-on: ubuntu-latest
+</span></span><span class="line"><span class="cl">    timeout-minutes: 5
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    steps:
+</span></span><span class="line"><span class="cl">      # generates a snake game from a github user (&lt;github_user_name&gt;) contributions graph, output a svg animation at &lt;svg_out_path&gt;
+</span></span><span class="line"><span class="cl">      - name: generate github-contribution-grid-snake.svg
+</span></span><span class="line"><span class="cl">        uses: Platane/snk/svg-only@v3
+</span></span><span class="line"><span class="cl">        with:
+</span></span><span class="line"><span class="cl">          github_user_name: ${{ github.repository_owner }}
+</span></span><span class="line"><span class="cl">          outputs: |
+</span></span><span class="line"><span class="cl">            dist/github-contribution-grid-snake.svg
+</span></span><span class="line"><span class="cl">            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">      # push the content of &lt;build_dir&gt; to a branch
+</span></span><span class="line"><span class="cl">      # the content will be available at https://raw.githubusercontent.com/&lt;github_user&gt;/&lt;repository&gt;/&lt;target_branch&gt;/&lt;file&gt; , or as github page
+</span></span><span class="line"><span class="cl">      - name: push github-contribution-grid-snake.svg to the output branch
+</span></span><span class="line"><span class="cl">        uses: crazy-max/ghaction-github-pages@v3.1.0
+</span></span><span class="line"><span class="cl">        with:
+</span></span><span class="line"><span class="cl">          target_branch: output
+</span></span><span class="line"><span class="cl">          build_dir: dist
+</span></span><span class="line"><span class="cl">        env:
+</span></span><span class="line"><span class="cl">          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+</span></span></code></pre></td></tr></table>
+</div>
+</div>  </details>
+<p><strong>请注意，下面那个博客workflow，需要将<code>feed_list</code>更换为自己的博客RSS地址。</strong>
+<strong>如果你也是使用的Hugo，并且主题是Stack，那么RSS地址应该为<code>https://你的博客地址/index.xml</code></strong></p>
+<details>
+  <summary>
+    <span>
+       获取最新博客workflow 
+      <span style="color: rgb(183, 107, 7); font-weight: bold;">(点击展开收缩) </span>
+    </span>
+  </summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">name: Latest blog post workflow
+</span></span><span class="line"><span class="cl">on:
+</span></span><span class="line"><span class="cl">  schedule: # Run workflow automatically
+</span></span><span class="line"><span class="cl">    - cron: &#39;0 */2 * * *&#39; # Runs every hour, on the hour
+</span></span><span class="line"><span class="cl">  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the GitHub Actions Workflow page directly
+</span></span><span class="line"><span class="cl">permissions:
+</span></span><span class="line"><span class="cl">  contents: write # To write the generated contents to the readme
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">jobs:
+</span></span><span class="line"><span class="cl">  update-readme-with-blog:
+</span></span><span class="line"><span class="cl">    name: Update this repo&#39;s README with latest blog posts
+</span></span><span class="line"><span class="cl">    runs-on: ubuntu-latest
+</span></span><span class="line"><span class="cl">    steps:
+</span></span><span class="line"><span class="cl">      - name: Checkout
+</span></span><span class="line"><span class="cl">        uses: actions/checkout@v3
+</span></span><span class="line"><span class="cl">      - name: Pull in blog&#39;s posts
+</span></span><span class="line"><span class="cl">        uses: gautamkrishnar/blog-post-workflow@v1
+</span></span><span class="line"><span class="cl">        with:
+</span></span><span class="line"><span class="cl">          feed_list: &#34;https://cai-hong-tu-blog.pages.dev/index.xml&#34;
+</span></span><span class="line"><span class="cl">          template: &#34;&lt;div&gt;&lt;a href=\&#34;$url\&#34;&gt;$title $date&lt;/a&gt;&lt;/div&gt;&#34;
+</span></span><span class="line"><span class="cl">          date_format: &#34;yyyy-mm-dd&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div>  </details>
 <h2 id="star-趋势图">Star 趋势图</h2>
 <p>在自己开源项目根目录下的<code>README.md</code>文件中，添加如下代码即可：</p>
 <ul>
@@ -354,7 +707,7 @@
     >Github开源项目Star趋势图 | Github</a></li>
 </ul>
 <h3 id="版权信息">版权信息</h3>
-<p>本文原载于 <a class="link" href="https://caihongtu.asia"  target="_blank" rel="noopener"
+<p>本文原载于 <a class="link" href="https://cai-hong-tu-blog.pages.dev/"  target="_blank" rel="noopener"
     >彩虹兔の博客</a>，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。</p>
 
 </section>
@@ -391,7 +744,7 @@
 
 
         <span>
-            最后更新于 2024年 11月 14日 23:55 CST
+            最后更新于 2024年 11月 14日 23:56 CST
         </span>
     </section></footer>
 
@@ -461,7 +814,7 @@
         &copy; 
         
         2024 <a href="https://stack-theme-mod.vercel.app/">彩虹兔的博客</a>·<i class="fas fa-bell"></i> 网站已平稳运行<a id="days">0</a>天<a id="hours">0</a>小时<a id="minutes">0</a>分<a id="seconds">0</a>秒<br>
-      共书写了2.1k字·共 2篇文章·共 <span class="waline-pageview-count" data-path="/">0</span> 次浏览</br><span><p>
+      共书写了3.9k字·共 2篇文章·共 <span class="waline-pageview-count" data-path="/">0</span> 次浏览</br><span><p>
     </section>
     
     <section class="powerby">
@@ -620,9 +973,14 @@ setInterval(updateTime, 1000);
       <ol>
         <li><a href="#新建仓库">新建仓库</a></li>
         <li><a href="#编辑-readme">编辑 README</a></li>
+        <li><a href="#让我们开始吧">让我们开始吧</a>
+          <ol>
+            <li><a href="#我的主页">我的主页</a></li>
+            <li><a href="#修改">修改</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
-    <li><a href="#未完待续">未完待续&hellip;</a></li>
     <li><a href="#star-趋势图">Star 趋势图</a></li>
     <li><a href="#附录">附录</a>
       <ol>

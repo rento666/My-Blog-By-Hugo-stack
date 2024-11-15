@@ -32,7 +32,7 @@ social:
               
     - identifier: rss
       name: Rss
-      url: /index.html
+      url: /index.xml
       weight: 4
       params:
           icon: rss
