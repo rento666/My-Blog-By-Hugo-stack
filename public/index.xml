@@ -12,7 +12,7 @@
         <pubDate>Thu, 14 Nov 2024 22:49:27 +0800</pubDate>
         
         <guid>http://localhost:1313/2024/github-profile/</guid>
-        <description>&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
+        <description>&lt;img src="https://picsum.photos/800/600.webp?random=1234" alt="Featured image of post GitHub 个人主页 README 美化 &amp; Star 趋势图" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
 &lt;p&gt;每次看到有大佬的Github主页很炫酷，自己总是羡慕不已，那些大佬真是厉害，不仅技术强，就连Github个人主页都酷的一批。&lt;br&gt;
 于是我便查阅资料，最终决定美化一下自己的Github主页 &lt;del&gt;（虽然我是个小菜鸡，什么开源好项目都没写出来&amp;hellip;）&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id=&#34;个人主页的美化&#34;&gt;个人主页的美化&lt;/h2&gt;
@@ -502,7 +502,7 @@
         <pubDate>Thu, 14 Nov 2024 15:13:23 +0800</pubDate>
         
         <guid>http://localhost:1313/2024/must-read-content-for-blogging/</guid>
-        <description>&lt;h2 id=&#34;引言20241115更新&#34;&gt;引言（2024.11.15更新）&lt;/h2&gt;
+        <description>&lt;img src="https://picsum.photos/800/600.webp?random=2131" alt="Featured image of post 写博客之必读内容" /&gt;&lt;h2 id=&#34;引言20241115更新&#34;&gt;引言（2024.11.15更新）&lt;/h2&gt;
 &lt;p&gt;最近想重新拾起写博客的习惯，但是发现之前的&lt;a class=&#34;link&#34; href=&#34;https://rento666.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hexo博客 | (Github-Pages)&lt;/a&gt;有点花里胡哨的，找了半天，发现这个&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo | (Github)&lt;/a&gt;的&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

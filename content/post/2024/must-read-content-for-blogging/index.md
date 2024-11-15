@@ -4,7 +4,7 @@ title: "写博客之必读内容"
 slug: "Must Read Content for Blogging"
 description: "用Hugo写博客，需要留意的点。"
 date: "2024-11-14T15:13:23+08:00"
-image: 
+image: "https://picsum.photos/800/600.webp?random=2131"
 math: true
 license: 
 hidden: false

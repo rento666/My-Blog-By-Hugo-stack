@@ -31,14 +31,15 @@ Related documents: Setting up and managing GitHub profiles | Github official doc
 /><meta
   property="article:modified_time"
   content='2024-11-15T13:20:43&#43;08:00'
-/>
+/><meta property="og:image" content="https://picsum.photos/800/600.webp?random=3421" />
 <meta name="twitter:title" content="Github Personal HomePage(Profile) Beautification">
 <meta name="twitter:description" content="Introduction Every time I see a big guy&rsquo;s Github homepage is very cool, I always envy him. Those big guys are really amazing. Not only are they technically strong, but even their Github personal homepages are cool.
 So I looked up information and finally decided to beautify my Github homepage
 (although I am a rookie and have not written any good open source projects&hellip;)
 Beautify your personal homepage GitHub supports custom homepages.
 Related documents: Setting up and managing GitHub profiles | Github official documents
-">
+"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://picsum.photos/800/600.webp?random=3421' />
     <link rel="shortcut icon" href="/img/favicon.ico" />
 <style>
     :root {
@@ -107,8 +108,16 @@ Related documents: Setting up and managing GitHub profiles | Github official doc
     
 
 <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/en/2024/github-profile/">
+                
+                    <img src="https://picsum.photos/800/600.webp?random=3421" loading="lazy" alt="Featured image of post Github Personal HomePage(Profile) Beautification" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
     
@@ -735,7 +744,7 @@ Related documents: <a class="link" href="https://docs.github.com/zh/account-and-
     
     
     <label class="qr-code-image" for="reward">
-      <a href="https://paypal.me/wangruntong" alt="paypal"><span>Click this to PayPal</span></a>
+      <a href="https://paypal.me/wangruntong" target="_blank"><span>Click this to PayPal</span></a>
     </label>
     
   </div>
@@ -976,6 +985,27 @@ setInterval(updateTime, 1000);
         document.head.appendChild(customFont);
     }());
 </script>
+
+<script
+    src="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/js/nprogress.min.js"
+    integrity="sha384-bHDlAEUFxsRI7JfULv3DTpL2IXbbgn4JHQJibgo5iiXSK6Iu8muwqHANhun74Cqg"
+    crossorigin="anonymous"
+></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/css/nprogress.css"
+    integrity="sha384-KJyhr2syt5+4M9Pz5dipCvTrtvOmLk/olWVdfhAp858UCa64Ia5GFpTN7+G4BWpE"
+    crossorigin="anonymous"
+/>
+<script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "interactive") NProgress.inc(0.8);
+        if (document.readyState === "complete") NProgress.done();
+    });
+</script>
+
+
 
     </body>
 </html>
