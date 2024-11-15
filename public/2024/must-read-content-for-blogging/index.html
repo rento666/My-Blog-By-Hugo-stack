@@ -8,7 +8,7 @@
      
 <link rel='canonical' href='http://localhost:1313/2024/must-read-content-for-blogging/'>
 
-<link rel="stylesheet" href="/scss/style.min.80ea8e685e37de45b76ae35402918469d1b6ff39b69e1a4541b856c5981d1610.css"><meta property="og:title" content="写博客之必读内容" />
+<link rel="stylesheet" href="/scss/style.min.62bce21936123c352fb29636874c0e5d1ed45126d3eac544fe625622c6662b5e.css"><meta property="og:title" content="写博客之必读内容" />
 <meta property="og:description" content="用Hugo写博客，需要留意的点。" />
 <meta property="og:url" content="http://localhost:1313/2024/must-read-content-for-blogging/" />
 <meta property="og:site_name" content="彩虹兔の博客" />
@@ -154,7 +154,7 @@
 
                 <time class="article-words">
                     
-                    约5分钟，共1046字
+                    约8分钟，共1596字
                 </time>
             </div>
         
@@ -274,6 +274,171 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">{{\% /spoiler &#34;这是标题&#34; %}}
 </span></span><span class="line"><span class="cl">// 去掉 % 前面的 \
+</span></span></code></pre></td></tr></table>
+</div>
+</div>  </details>
+<h3 id="使用i18n文件中的值">使用i18n文件中的值</h3>
+<p>须知：</p>
+<ul>
+<li>我的<code>i18n</code>文件夹在<code>.\themes\stack\i18n</code>目录下。</li>
+</ul>
+<p>下面我将拿主页的欢迎语为例，讲述一下如何适配多语言：</p>
+<p><figure 
+	>
+	<a href="https://s2.loli.net/2024/11/15/27fZVBizK6J9nsh.png" >
+		<img src="https://s2.loli.net/2024/11/15/27fZVBizK6J9nsh.png"
+			
+			
+			
+			loading="lazy"
+			alt="欢迎语">
+	</a>
+	
+	<figcaption>欢迎语</figcaption>
+	
+</figure></p>
+<p>这个欢迎语的<code>html模板</code>在<code>.\layouts\index.html</code>中，位于<code>{{ $pag := .Paginate ($filtered) }}</code>之下。</p>
+<details>
+  <summary>
+    <span>
+       这是html模板 
+      <span style="color: rgb(183, 107, 7); font-weight: bold;">(点击展开收缩) </span>
+    </span>
+  </summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;!-- 首页欢迎字幅板块 --&gt;
+</span></span><span class="line"><span class="cl">&lt;div class=&#34;welcome&#34;&gt;
+</span></span><span class="line"><span class="cl">  &lt;p style=&#34;font-size: 2rem; text-align: center; font-weight: bold&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;span class=&#34;shake&#34;&gt;{{ T &#34;welcome.emoji&#34; }}&lt;/span&gt;
+</span></span><span class="line"><span class="cl">    &lt;span class=&#34;jump-text1&#34;&gt; {{ T &#34;welcome.msg1&#34; }} &lt;/span&gt;
+</span></span><span class="line"><span class="cl">    &lt;span class=&#34;jump-text2&#34;&gt; {{ T &#34;welcome.msg2&#34; }} &lt;/span&gt;
+</span></span><span class="line"><span class="cl">    &lt;span class=&#34;jump-text3&#34; style=&#34;color: #e99312&#34;&gt; {{ .Site.Title }} &lt;/span&gt;
+</span></span><span class="line"><span class="cl">    &lt;!-- &lt;span class=&#34;jump-text3&#34; style=&#34;color:#e99312&#34;&gt;Ca&lt;/span&gt;&lt;span class=&#34;jump-text4&#34; style=&#34;color:#e99312&#34;&gt;i&lt;/span&gt;
+</span></span><span class="line"><span class="cl">        &lt;span class=&#34;jump-text5&#34; style=&#34;color:#e99312&#34;&gt;Ho&lt;/span&gt;&lt;span class=&#34;jump-text6&#34; style=&#34;color:#e99312&#34;&gt;ng&lt;/span&gt;
+</span></span><span class="line"><span class="cl">        &lt;span class=&#34;jump-text7&#34; style=&#34;color:#e99312&#34;&gt;Tu&lt;/span&gt;
+</span></span><span class="line"><span class="cl">        &lt;span class=&#34;jump-text8&#34; style=&#34;color:#e99312&#34;&gt;&#39;s&lt;/span&gt;
+</span></span><span class="line"><span class="cl">        &lt;span class=&#34;jump-text9&#34; style=&#34;color:#e99312&#34;&gt;Blog&lt;/span&gt; --&gt;
+</span></span><span class="line"><span class="cl">  &lt;/p&gt;
+</span></span><span class="line"><span class="cl">  &lt;p style=&#34;font-size: 1.5rem; text-align: center; font-weight: bold&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;span
+</span></span><span class="line"><span class="cl">      &gt;{{ T &#34;welcome.currentText&#34; }}:
+</span></span><span class="line"><span class="cl">      &lt;a href=&#34;{{ .Site.BaseURL }}&#34;
+</span></span><span class="line"><span class="cl">        &gt;{{ .Site.BaseURL | strings.TrimPrefix &#34;http://&#34; | strings.TrimPrefix
+</span></span><span class="line"><span class="cl">        &#34;https://&#34; | strings.TrimSuffix &#34;/&#34; }}&lt;/a
+</span></span><span class="line"><span class="cl">      &gt;&lt;/span
+</span></span><span class="line"><span class="cl">    &gt;&amp;emsp;&amp;emsp;
+</span></span><span class="line"><span class="cl">    &lt;span
+</span></span><span class="line"><span class="cl">      &gt;{{ T &#34;welcome.permanentText&#34; }}:
+</span></span><span class="line"><span class="cl">      &lt;a href=&#34;https://cai-hong-tu-blog.pages.dev&#34;
+</span></span><span class="line"><span class="cl">        &gt;cai-hong-tu-blog.pages.dev&lt;/a
+</span></span><span class="line"><span class="cl">      &gt;&lt;/span
+</span></span><span class="line"><span class="cl">    &gt;
+</span></span><span class="line"><span class="cl">  &lt;/p&gt;
+</span></span><span class="line"><span class="cl">&lt;/div&gt;
+</span></span><span class="line"><span class="cl">&lt;!-- ------首页欢迎字幅板块------ --&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div>  </details>
+<ul>
+<li><code>{{ T &quot;welcome.emoji&quot; }}</code> 都是我在<code>.\themes\stack\i18n</code>文件夹下的<code>xxx.yaml</code>文件中定义的变量（xxx代表多语言）.</li>
+</ul>
+<details>
+  <summary>
+    <span>
+       这是zh-CN.yaml文件中的配置 
+      <span style="color: rgb(183, 107, 7); font-weight: bold;">(点击展开收缩) </span>
+    </span>
+  </summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">welcome:
+</span></span><span class="line"><span class="cl">    emoji: 
+</span></span><span class="line"><span class="cl">        other: 👋
+</span></span><span class="line"><span class="cl">    msg1: 
+</span></span><span class="line"><span class="cl">        other: 欢迎
+</span></span><span class="line"><span class="cl">    msg2: 
+</span></span><span class="line"><span class="cl">        other: 来到
+</span></span><span class="line"><span class="cl">    permanentText: 
+</span></span><span class="line"><span class="cl">        other: 永久博客链接
+</span></span><span class="line"><span class="cl">    currentText: 
+</span></span><span class="line"><span class="cl">        other: 当前博客链接
+</span></span><span class="line"><span class="cl">    top: 
+</span></span><span class="line"><span class="cl">        other: 回到顶部
+</span></span><span class="line"><span class="cl">    
+</span></span></code></pre></td></tr></table>
+</div>
+</div>  </details>
+<ul>
+<li><code>{{.Site.BaseURL }}</code> 是我在<code>.\config\_default\hugo.yaml</code>文件中定义的变量。(我使用了多语言配置config，默认应该是./config.yaml)</li>
+</ul>
+<details>
+  <summary>
+    <span>
+       hugo.yaml前几行的 
+      <span style="color: rgb(183, 107, 7); font-weight: bold;">(点击展开收缩) </span>
+    </span>
+  </summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">baseurl: https://caihongtu.asia/
+</span></span><span class="line"><span class="cl">languageCode: zh-cn
+</span></span><span class="line"><span class="cl">theme: stack
+</span></span><span class="line"><span class="cl">title: 彩虹兔の博客
 </span></span></code></pre></td></tr></table>
 </div>
 </div>  </details>
@@ -590,7 +755,7 @@
         &copy; 
         
         2024 <a href="https://stack-theme-mod.vercel.app/">彩虹兔的博客</a>·<i class="fas fa-bell"></i> 网站已平稳运行<a id="days">0</a>天<a id="hours">0</a>小时<a id="minutes">0</a>分<a id="seconds">0</a>秒<br>
-      共书写了4k字·共 2篇文章·共 <span class="waline-pageview-count" data-path="/">0</span> 次浏览</br><span><p>
+      共书写了4.6k字·共 2篇文章·共 <span class="waline-pageview-count" data-path="/">0</span> 次浏览</br><span><p>
     </section>
     
     <section class="powerby">
@@ -748,6 +913,7 @@ setInterval(updateTime, 1000);
     <li><a href="#使用方式markdown语法">使用方式（MarkDown语法）</a>
       <ol>
         <li><a href="#可收缩代码块">可收缩代码块</a></li>
+        <li><a href="#使用i18n文件中的值">使用i18n文件中的值</a></li>
       </ol>
     </li>
     <li><a href="#常识对我来说需要记在这里">常识（对我来说需要记在这里）</a>
@@ -824,7 +990,7 @@ setInterval(updateTime, 1000);
         window.onscroll = function() {scrollTopButton()};
 
         function scrollTopButton() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             document.getElementById("goTopBtn").style.display = "block";
         } else {
             document.getElementById("goTopBtn").style.display = "none";

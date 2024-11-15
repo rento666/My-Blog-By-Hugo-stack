@@ -36,6 +36,82 @@ reaction: true
 ```
 {{% /spoiler %}}
 
+### 使用i18n文件中的值
+
+须知：
+* 我的`i18n`文件夹在`.\themes\stack\i18n`目录下。
+
+下面我将拿主页的欢迎语为例，讲述一下如何适配多语言：
+
+![欢迎语](https://s2.loli.net/2024/11/15/27fZVBizK6J9nsh.png)
+
+这个欢迎语的`html模板`在`.\layouts\index.html`中，位于`{{ $pag := .Paginate ($filtered) }}`之下。
+
+{{% spoiler "这是html模板" %}}
+```
+<!-- 首页欢迎字幅板块 -->
+<div class="welcome">
+  <p style="font-size: 2rem; text-align: center; font-weight: bold">
+    <span class="shake">{{ T "welcome.emoji" }}</span>
+    <span class="jump-text1"> {{ T "welcome.msg1" }} </span>
+    <span class="jump-text2"> {{ T "welcome.msg2" }} </span>
+    <span class="jump-text3" style="color: #e99312"> {{ .Site.Title }} </span>
+    <!-- <span class="jump-text3" style="color:#e99312">Ca</span><span class="jump-text4" style="color:#e99312">i</span>
+        <span class="jump-text5" style="color:#e99312">Ho</span><span class="jump-text6" style="color:#e99312">ng</span>
+        <span class="jump-text7" style="color:#e99312">Tu</span>
+        <span class="jump-text8" style="color:#e99312">'s</span>
+        <span class="jump-text9" style="color:#e99312">Blog</span> -->
+  </p>
+  <p style="font-size: 1.5rem; text-align: center; font-weight: bold">
+    <span
+      >{{ T "welcome.currentText" }}:
+      <a href="{{ .Site.BaseURL }}"
+        >{{ .Site.BaseURL | strings.TrimPrefix "http://" | strings.TrimPrefix
+        "https://" | strings.TrimSuffix "/" }}</a
+      ></span
+    >&emsp;&emsp;
+    <span
+      >{{ T "welcome.permanentText" }}:
+      <a href="https://cai-hong-tu-blog.pages.dev"
+        >cai-hong-tu-blog.pages.dev</a
+      ></span
+    >
+  </p>
+</div>
+<!-- ------首页欢迎字幅板块------ -->
+```
+{{% /spoiler %}}
+
+- `{{ T "welcome.emoji" }}` 都是我在`.\themes\stack\i18n`文件夹下的`xxx.yaml`文件中定义的变量（xxx代表多语言）.
+{{% spoiler "这是zh-CN.yaml文件中的配置" %}}
+```
+welcome:
+    emoji: 
+        other: 👋
+    msg1: 
+        other: 欢迎
+    msg2: 
+        other: 来到
+    permanentText: 
+        other: 永久博客链接
+    currentText: 
+        other: 当前博客链接
+    top: 
+        other: 回到顶部
+    
+```
+{{% /spoiler %}}
+
+- `{{.Site.BaseURL }}` 是我在`.\config\_default\hugo.yaml`文件中定义的变量。(我使用了多语言配置config，默认应该是./config.yaml)
+{{% spoiler "hugo.yaml前几行的" %}}
+```
+baseurl: https://caihongtu.asia/
+languageCode: zh-cn
+theme: stack
+title: 彩虹兔の博客
+```
+{{% /spoiler %}}
+
 ## 常识（对我来说需要记在这里）
 
 ### HTML字符集——空格
