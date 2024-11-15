@@ -18,12 +18,6 @@ reward:
     alipay: https://s2.loli.net/2024/11/15/iSJ3BIE4uXfsMRe.jpg
     paypal: https://paypal.me/wangruntong
 
-welcome:
-    emoji: 👋
-    msg1: Welcome
-    msg2: To
-    permanentText: Permanent blog link
-    currentText: Current blog link
 
 shortCode:
     empty: empty title...

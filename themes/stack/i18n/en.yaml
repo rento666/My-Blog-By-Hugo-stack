@@ -32,6 +32,8 @@ article:
     readingTime:
         one: "{{ .Count }} minute read"
         other: "{{ .Count }} minute read"
+    top: 
+        other: TOP
 
 notFound:
     title:
@@ -72,3 +74,15 @@ footer:
 
     designedBy:
         other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
+
+welcome:
+    emoji: 
+        other: 👋
+    msg1: 
+        other: Welcome
+    msg2: 
+        other: To
+    permanentText: 
+        other: Permanent blog link
+    currentText: 
+        other: Current blog link

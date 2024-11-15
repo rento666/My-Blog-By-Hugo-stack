@@ -12,12 +12,6 @@ dateFormat:
     published: 2006年 01月 02日 15:04 MST
     lastUpdated: 2006年 01月 02日 15:04 MST
 
-welcome:
-    emoji: 👋
-    msg1: 欢迎
-    msg2: 来到
-    permanentText: 永久博客链接
-    currentText: 当前博客链接
 
 reward:
     enable: true

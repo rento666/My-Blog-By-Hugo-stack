@@ -1,46 +1,50 @@
-{{ define "main" }}
-    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
-    {{ $filtered := ($pages | intersect $notHidden) }}
-    {{ $pag := .Paginate ($filtered) }}
+{{ define "main" }} {{ $pages := where .Site.RegularPages "Type" "in"
+.Site.Params.mainSections }} {{ $notHidden := where .Site.RegularPages
+"Params.hidden" "!=" true }} {{ $filtered := ($pages | intersect $notHidden) }}
+{{ $pag := .Paginate ($filtered) }}
 
-    <!-- 首页欢迎字幅板块 -->
-    <div class="welcome">
-        <p style="font-size: 2rem; text-align: center; font-weight: bold">
-        <span class="shake">{{ .Site.Params.welcome.emoji }}</span>
-        <span class="jump-text1" > {{ .Site.Params.welcome.msg1 }} </span>
-        <span class="jump-text2"> {{ .Site.Params.welcome.msg2 }} </span>
-        <span class="jump-text3" style="color:#e99312"> {{ .Site.Title }} </span>
-        <!-- <span class="jump-text3" style="color:#e99312">Ca</span><span class="jump-text4" style="color:#e99312">i</span>
+<!-- 首页欢迎字幅板块 -->
+<div class="welcome">
+  <p style="font-size: 2rem; text-align: center; font-weight: bold">
+    <span class="shake">{{ T "welcome.emoji" }}</span>
+    <span class="jump-text1"> {{ T "welcome.msg1" }} </span>
+    <span class="jump-text2"> {{ T "welcome.msg2" }} </span>
+    <span class="jump-text3" style="color: #e99312"> {{ .Site.Title }} </span>
+    <!-- <span class="jump-text3" style="color:#e99312">Ca</span><span class="jump-text4" style="color:#e99312">i</span>
         <span class="jump-text5" style="color:#e99312">Ho</span><span class="jump-text6" style="color:#e99312">ng</span>
         <span class="jump-text7" style="color:#e99312">Tu</span>
         <span class="jump-text8" style="color:#e99312">'s</span>
         <span class="jump-text9" style="color:#e99312">Blog</span> -->
-        </p>
-        <p style="font-size: 1.5rem; text-align: center; font-weight: bold">
-            <span>{{ .Site.Params.welcome.currentText }}: <a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL | strings.TrimPrefix "http://" | strings.TrimPrefix "https://" | strings.TrimSuffix "/" }}</a></span>&emsp;&emsp;
-            <span>{{ .Site.Params.welcome.permanentText }}: <a href="https://cai-hong-tu-blog.pages.dev">cai-hong-tu-blog.pages.dev</a></span>
-        </p>
-    </div>
-    <!-- ------首页欢迎字幅板块------ -->
+  </p>
+  <p style="font-size: 1.5rem; text-align: center; font-weight: bold">
+    <span
+      >{{ T "welcome.currentText" }}:
+      <a href="{{ .Site.BaseURL }}"
+        >{{ .Site.BaseURL | strings.TrimPrefix "http://" | strings.TrimPrefix
+        "https://" | strings.TrimSuffix "/" }}</a
+      ></span
+    >&emsp;&emsp;
+    <span
+      >{{ T "welcome.permanentText" }}:
+      <a href="https://cai-hong-tu-blog.pages.dev"
+        >cai-hong-tu-blog.pages.dev</a
+      ></span
+    >
+  </p>
+</div>
+<!-- ------首页欢迎字幅板块------ -->
 
-    <section class="article-list">
-        {{ range $index, $element := $pag.Pages }}
-            {{ partial "article-list/default" . }}
-        {{ end }}
-    </section>
-    <script type="module">
-        import { commentCount } from 'https://unpkg.com/@waline/client@v3/dist/comment.js';
-    
-        commentCount({
-            serverURL: "{{.Site.Params.comments.waline.serverURL}}"
-        });
-    </script>
-    
-    {{- partial "pagination.html" . -}}
-    {{- partial "footer/footer" . -}}
-{{ end }}
+<section class="article-list">
+  {{ range $index, $element := $pag.Pages }} {{ partial "article-list/default" .
+  }} {{ end }}
+</section>
+<script type="module">
+  import { commentCount } from "https://unpkg.com/@waline/client@v3/dist/comment.js";
 
-{{ define "right-sidebar" }}
-    {{ partial "sidebar/right.html" . }}
-{{ end }}
+  commentCount({
+    serverURL: "{{.Site.Params.comments.waline.serverURL}}",
+  });
+</script>
+
+{{- partial "pagination.html" . -}} {{- partial "footer/footer" . -}} {{ end }}
+{{ define "right-sidebar" }} {{ partial "sidebar/right.html" . }} {{ end }}

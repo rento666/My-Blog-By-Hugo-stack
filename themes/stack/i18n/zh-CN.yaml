@@ -19,6 +19,8 @@ article:
 
     readingTime:
         other: "阅读时长: {{ .Count }} 分钟"
+    top: 
+        other: 回到顶部
 
 notFound:
     title:
@@ -51,3 +53,18 @@ search:
 
     resultTitle:
         other: "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
+
+welcome:
+    emoji: 
+        other: 👋
+    msg1: 
+        other: 欢迎
+    msg2: 
+        other: 来到
+    permanentText: 
+        other: 永久博客链接
+    currentText: 
+        other: 当前博客链接
+    top: 
+        other: 回到顶部
+    
