@@ -2,7 +2,7 @@ mainSections:
     - post
 featuredImageField: image
 rssFullContent: true
-favicon:
+favicon: /img/favicon.ico
 
 footer:
     since: 2024
