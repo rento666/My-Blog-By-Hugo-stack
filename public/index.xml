@@ -6,25 +6,263 @@
         <description>Recent content on 彩虹兔の博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 14 Nov 2024 22:49:27 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 15 Nov 2024 22:57:11 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Outlook邮箱的Smtp服务出现Oauth2认证失败错误</title>
+        <link>http://localhost:1313/2024/outlook-smtp-oauth2-error/</link>
+        <pubDate>Fri, 15 Nov 2024 22:57:11 +0800</pubDate>
+        
+        <guid>http://localhost:1313/2024/outlook-smtp-oauth2-error/</guid>
+        <description>&lt;img src="https://picsum.photos/800/600.webp?random=643ac937" alt="Featured image of post Outlook邮箱的Smtp服务出现Oauth2认证失败错误" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
+&lt;p&gt;在本博客的评论系统接入邮箱提醒时，用到了outlook的smtp服务，但是在使用时却发现没有邮件提醒。&lt;/p&gt;
+&lt;h2 id=&#34;查看日志&#34;&gt;查看日志&lt;/h2&gt;
+&lt;p&gt;于是上vercel看了一下日志，如下图：&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/15/wl5o4EAj2GBv3sI.png&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/15/wl5o4EAj2GBv3sI.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;vercel部署的waline项目——发送邮件提醒报错&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;vercel部署的waline项目——发送邮件提醒报错&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;报错堆栈如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Mail&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;send&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fail&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Invalid&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;login&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;535&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;5.7&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;139&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Authentication&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;unsuccessful&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;authentication&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;disabled&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;CH0PR13CA0024&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;namprd13&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prod&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;outlook&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2024&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;T12&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;41&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;27.364&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Z&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;08&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DD02E8CBA00082&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;SMTPConnection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_formatError&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;node_modules&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nodemailer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lib&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;smtp&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;connection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;js&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;807&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;SMTPConnection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_actionAUTHComplete&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;node_modules&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nodemailer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lib&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;smtp&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;connection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;js&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1586&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;34&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;SMTPConnection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;anonymous&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;node_modules&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nodemailer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lib&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;smtp&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;connection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;js&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1540&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;SMTPConnection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_processResponse&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;node_modules&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nodemailer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lib&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;smtp&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;connection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;js&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;991&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;SMTPConnection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_onData&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;node_modules&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nodemailer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lib&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;smtp&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;connection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;js&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;772&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TLSSocket&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SMTPConnection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_onSocketData&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;node_modules&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nodemailer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lib&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;smtp&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;connection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;js&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;195&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;44&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TLSSocket&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;emit&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;node&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;events&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;519&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TLSSocket&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;emit&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;node&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;domain&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;488&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;addChunk&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;node&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;internal&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;streams&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;readable&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;559&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;readableAddChunkPushByteMode&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;node&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;internal&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;streams&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;readable&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;510&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;code&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;EAUTH&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;535 5.7.139 Authentication unsuccessful, basic authentication is disabled. [CH0PR13CA0024.namprd13.prod.outlook.com 2024-11-15T12:41:27.364Z 08DD02E8CBA00082]&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;responseCode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;535&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;AUTH LOGIN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;此文章来源&#34;&gt;此文章来源&lt;/h2&gt;
+&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;https://github.com/orgs/walinejs/discussions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;waline的discussions&lt;/a&gt;貌似没人提出这个问题，可能是只有我在用Outlook吧&amp;hellip;&lt;/p&gt;
+&lt;p&gt;看第一行就行：&lt;code&gt;Mail send fail: Error: Invalid login: 535 5.7.139 Authentication unsuccessful, basic authentication is disabled.&lt;/code&gt;，意思是说outlook的smtp服务不支持basic authentication。&lt;br&gt;
+我搜了一下，发现Outlook在24年9月16日停止了个人用户对基础身份验证的支持，推荐使用OAuth2认证。&lt;a class=&#34;link&#34; href=&#34;https://techcommunity.microsoft.com/blog/outlook/keeping-our-outlook-personal-email-users-safe-reinforcing-our-commitment-to-secu/4164184&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;详见 | Microsoft 官网&lt;/a&gt;&lt;br&gt;
+但是我没在&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/reference/server/env.html#%e9%82%ae%e4%bb%b6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;waline文档&lt;/a&gt;里发现支持OAuth2。&lt;/p&gt;
+&lt;p&gt;自己写插件吗？&lt;/p&gt;
+&lt;p&gt;似乎没有必要为了一个评论系统写，毕竟人的精力是有限的（&lt;del&gt;我才不会说是我菜&lt;/del&gt;）&lt;/p&gt;
+&lt;h2 id=&#34;解决方案&#34;&gt;解决方案&lt;/h2&gt;
+&lt;p&gt;于是就有了今天的主角：&lt;a class=&#34;link&#34; href=&#34;https://sendas.email/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;sendas.email&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我这里就用作者部署好的项目，就不再重新部署了。
+如果你想自己部署，可以先fork一下作者的项目，然后自己部署。
+部署方法如下图：&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/16/Z2ROoCiN78X9bcA.jpg&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/16/Z2ROoCiN78X9bcA.jpg&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;部署方法&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;部署方法&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;开始解决&#34;&gt;开始解决&lt;/h3&gt;
+&lt;p&gt;进入&lt;a class=&#34;link&#34; href=&#34;https://sendas.email/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;sendas.email&lt;/a&gt;，然后滚轮滑倒最下方，点击&lt;code&gt;Sign in with Microsoft&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/16/nvXBIkVYOZ2CSQx.png&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/16/nvXBIkVYOZ2CSQx.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Sign in with Microsoft | sendas.email&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Sign in with Microsoft | sendas.email&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;登录时，Microsoft会提示你是否允许第三方应用访问你的账号，点击&lt;strong&gt;接受&lt;/strong&gt;即可。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/16/5OY3qFZXu2NGvgb.png&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/16/5OY3qFZXu2NGvgb.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;是否授权&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;是否授权&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;授权之后Microsoft账户团队就会发一个邮件提醒：&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/16/SkPVCUp45gBunwI.png&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/16/SkPVCUp45gBunwI.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;邮件提醒&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;邮件提醒&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;此时回到sendas.email,网站自动重定向到了&lt;a class=&#34;link&#34; href=&#34;https://sendas.email/configuration&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;configuration页面&lt;/a&gt;,页面如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/16/XV5Gr8wY1hdtJ4H.png&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/16/XV5Gr8wY1hdtJ4H.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;显示新的用户名&amp;#43;密码&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;显示新的用户名+密码&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;修改环境变量&#34;&gt;修改环境变量&lt;/h3&gt;
+&lt;p&gt;下面回到vercel的部署，将之前的密码换成新的密码即可。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/16/ixrA7yskvpw9H4h.png&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/16/ixrA7yskvpw9H4h.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;对应关系&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;对应关系&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;请注意，如果你之前使用的是&lt;code&gt;SMTP_SERVICE&lt;/code&gt;，那么现在需要删除掉这个，然后新增&lt;code&gt;SMTP_HOST&lt;/code&gt;和&lt;code&gt;SMTP_PORT&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/16/zxqafYFO6iVjIMR.png&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/16/zxqafYFO6iVjIMR.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;使用的是SMTP_SERVICE&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;使用的是SMTP_SERVICE&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;完成vercel的环境变量配置，如下图：&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/16/aHElFG3j1M6XZwC.png&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/16/aHElFG3j1M6XZwC.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;邮箱配置&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;邮箱配置&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;重启项目，然后就可以正常发送邮件了。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/16/vncROktPExoCH8h.png&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/16/vncROktPExoCH8h.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;重启项目&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;重启项目&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;附录&#34;&gt;附录&lt;/h2&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/orgs/walinejs/discussions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;waline discussions | Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://sendas.email/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;sendas.email | 这次的主角(this target)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/jasperchan/gmail-to-outlook-proxy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gmail-to-outlook-proxy | Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://support.google.com/mail/thread/298145809/outlook-smtp-authentication-errors?hl=en&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gmail Help | 谷歌邮箱 Community&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://techcommunity.microsoft.com/blog/outlook/keeping-our-outlook-personal-email-users-safe-reinforcing-our-commitment-to-secu/4164184&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;更新政策 | Microsoft 官网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://support.microsoft.com/en-us/office/pop-imap-and-smtp-settings-for-outlook-com-d088b986-291d-42b8-9564-9c414e2aa040&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;错误的微软凭据 | Microsoft&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;版权信息&#34;&gt;版权信息&lt;/h3&gt;
+&lt;p&gt;本文原载于 &lt;a class=&#34;link&#34; href=&#34;https://cai-hong-tu-blog.pages.dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;彩虹兔の博客&lt;/a&gt;，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>GitHub 个人主页 README 美化 &amp; Star 趋势图</title>
         <link>http://localhost:1313/2024/github-profile/</link>
         <pubDate>Thu, 14 Nov 2024 22:49:27 +0800</pubDate>
         
         <guid>http://localhost:1313/2024/github-profile/</guid>
         <description>&lt;img src="https://picsum.photos/800/600.webp?random=1234" alt="Featured image of post GitHub 个人主页 README 美化 &amp; Star 趋势图" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
-&lt;p&gt;每次看到有大佬的Github主页很炫酷，自己总是羡慕不已，那些大佬真是厉害，不仅技术强，就连Github个人主页都酷的一批。&lt;br&gt;
-于是我便查阅资料，最终决定美化一下自己的Github主页 &lt;del&gt;（虽然我是个小菜鸡，什么开源好项目都没写出来&amp;hellip;）&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;每次看到有大佬的 Github 主页很炫酷，自己总是羡慕不已，那些大佬真是厉害，不仅技术强，就连 Github 个人主页都酷的一批。&lt;br&gt;
+于是我便查阅资料，最终决定美化一下自己的 Github 主页 &lt;del&gt;（虽然我是个小菜鸡，什么开源好项目都没写出来&amp;hellip;）&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id=&#34;个人主页的美化&#34;&gt;个人主页的美化&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;GitHub支持定制主页，相关文档：&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/zh/account-and-profile/setting-up-and-managing-your-github-profile&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;GitHub 支持定制主页，相关文档：&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/zh/account-and-profile/setting-up-and-managing-your-github-profile&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;设置和管理 GitHub 配置文件 | Github 官方文档&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;新建仓库&#34;&gt;新建仓库&lt;/h3&gt;
-&lt;p&gt;在自己的Github主页中新建一个仓库，仓库名必须为&lt;strong&gt;自己GitHub用户名&lt;/strong&gt;，例如下图为&lt;code&gt;rento666&lt;/code&gt;，然后添加一个&lt;code&gt;README.md&lt;/code&gt;文件，我们只需向这个文件添加需要的信息即可。&lt;/p&gt;
+&lt;p&gt;在自己的 Github 主页中新建一个仓库，仓库名必须为&lt;strong&gt;自己 GitHub 用户名&lt;/strong&gt;，例如下图为&lt;code&gt;rento666&lt;/code&gt;，然后添加一个&lt;code&gt;README.md&lt;/code&gt;文件，我们只需向这个文件添加需要的信息即可。&lt;/p&gt;
 &lt;p&gt;如下图所示，图中&lt;strong&gt;没有勾选&lt;/strong&gt;&lt;code&gt;Add  a README file&lt;/code&gt;，推荐勾选上（勾选上就省去自己手动创建了），此时点击创建，即为创建成功。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;rento666/rento666 是一个 ✨特殊 ✨ 存储库，您可以用它来将 README.md 添加到您的 GitHub 个人资料中。确保它是公开的，并使用 README 对其进行初始化以开始使用。&lt;/li&gt;
+&lt;li&gt;rento666/rento666 是一个 ✨ 特殊 ✨ 存储库，您可以用它来将 README.md 添加到您的 GitHub 个人资料中。确保它是公开的，并使用 README 对其进行初始化以开始使用。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;figure 
 	&gt;
@@ -41,7 +279,7 @@
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;编辑-readme&#34;&gt;编辑 README&lt;/h3&gt;
-&lt;p&gt;下面是编辑README.md文件的界面：&lt;/p&gt;
+&lt;p&gt;下面是编辑 README.md 文件的界面：&lt;/p&gt;
 &lt;p&gt;&lt;figure 
 	&gt;
 	&lt;a href=&#34;https://s2.loli.net/2024/11/14/TSXN2cr86Oy3jeI.png&#34; &gt;
@@ -57,9 +295,9 @@
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;让我们开始吧&#34;&gt;让我们开始吧&lt;/h3&gt;
-&lt;p&gt;可以在README中添加的内容可以是自己的介绍、开源项目、个人信息、博客、简历等。&lt;/p&gt;
-&lt;p&gt;Markdown扩展性很高、支持HTML、Emoji等，所以可以定制自己独一无二的主页~&lt;/p&gt;
-&lt;p&gt;不过人的精力是有限的，所以我们可以将自己认为好的模板Fork到自己仓库，然后修改为自己的风格。&lt;/p&gt;
+&lt;p&gt;可以在 README 中添加的内容可以是自己的介绍、开源项目、个人信息、博客、简历等。&lt;/p&gt;
+&lt;p&gt;Markdown 扩展性很高、支持 HTML、Emoji 等，所以可以定制自己独一无二的主页~&lt;/p&gt;
+&lt;p&gt;不过人的精力是有限的，所以我们可以将自己认为好的模板 Fork 到自己仓库，然后修改为自己的风格。&lt;/p&gt;
 &lt;p&gt;分享一下优秀合集：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/abhisheknaiidu/awesome-github-profile-readme&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;awesome-github-profile-readme | Github&lt;/a&gt;&lt;br&gt;
@@ -90,15 +328,16 @@
 &lt;h4 id=&#34;修改&#34;&gt;修改&lt;/h4&gt;
 &lt;p&gt;在我的主页中，我使用了以下模板，您可以复制到自己的&lt;code&gt;README.md&lt;/code&gt;文件中：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;第一步，复制README：&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;第一步，复制 README：
 &lt;details&gt;
-  &lt;summary&gt;
-    &lt;span&gt;
-       README内容如下 
-      &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(点击展开收缩) &lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/summary&gt;
+&lt;summary&gt;
+  &lt;span&gt;
+     README内容如下 
+    &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(点击展开收缩) &lt;/span&gt;
+  &lt;/span&gt;
+&lt;/summary&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -163,14 +402,14 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;table&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;tr&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;td valign=&amp;#34;center&amp;#34;  width=&amp;#34;30%&amp;#34;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 🤖 我最喜欢的动漫：双城之战
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 👨‍💻 我了解Golang、Node.js、Java、React、Vue、Uni APP、React Native、Unity(C#)等等...
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- ✍️ [欢迎参观我的博客](https://cai-hong-tu-blog.pages.dev/)
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 💬 保持思考
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 📫 联系我: [邮箱联系](mailto:putongruwo@outlook.com)
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 👏 关注我: [![](https://img.shields.io/github/followers/rento666?label=关注我&amp;amp;style=social)](https://github.com/rento666/)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 🎣 兴趣：读[阮一峰的网络日志](https://www.ruanyifeng.com/blog/)，写[自己的博客](https://cai-hong-tu-blog.pages.dev/)，刷[Youtube](https://www.youtube.com/@caihongtu)  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 🎣 兴趣：读[阮一峰的网络日志](https://www.ruanyifeng.com/blog/)，写[自己的博客](https://cai-hong-tu-blog.pages.dev/)，刷[Youtube](https://www.youtube.com/@caihongtu)
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**「天天开心」** ❤️
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/td&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;td valign=&amp;#34;center&amp;#34; width=&amp;#34;100%&amp;#34; height=&amp;#34;100%&amp;#34;&amp;gt;
@@ -211,13 +450,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/table&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;  &lt;/details&gt; 
+&lt;/div&gt;  &lt;/details&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;第二步，复制好之后，按&lt;code&gt;CTRL+F&lt;/code&gt;，自行替换姓名、用户名、兴趣爱好、博客链接等信息。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;第三步，修改好README.md之后呢，在仓库里点击Actions创建workflow（工作流），如下图所示：&lt;/p&gt;
+&lt;p&gt;第三步，修改好 README.md 之后呢，在仓库里点击 Actions 创建 workflow（工作流），如下图所示：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;figure 
@@ -310,25 +549,25 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;on:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  # run automatically every 2 hours
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  schedule:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - cron: &amp;#34;0 */2 * * *&amp;#34; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - cron: &amp;#34;0 */2 * * *&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  # allows to manually run the job at any time
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  workflow_dispatch:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  # run on every push on the master branch
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  push:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    branches:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - master
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;jobs:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  generate:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    permissions: 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    permissions:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      contents: write
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    runs-on: ubuntu-latest
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    timeout-minutes: 5
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    steps:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      # generates a snake game from a github user (&amp;lt;github_user_name&amp;gt;) contributions graph, output a svg animation at &amp;lt;svg_out_path&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - name: generate github-contribution-grid-snake.svg
@@ -338,8 +577,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          outputs: |
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            dist/github-contribution-grid-snake.svg
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      # push the content of &amp;lt;build_dir&amp;gt; to a branch
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      # the content will be available at https://raw.githubusercontent.com/&amp;lt;github_user&amp;gt;/&amp;lt;repository&amp;gt;/&amp;lt;target_branch&amp;gt;/&amp;lt;file&amp;gt; , or as github page
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - name: push github-contribution-grid-snake.svg to the output branch
@@ -352,8 +591,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;  &lt;/details&gt;
-&lt;p&gt;&lt;strong&gt;请注意，下面那个博客workflow，需要将&lt;code&gt;feed_list&lt;/code&gt;更换为自己的博客RSS地址。&lt;/strong&gt;
-&lt;strong&gt;如果你也是使用的Hugo，并且主题是Stack，那么RSS地址应该为&lt;code&gt;https://你的博客地址/index.xml&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;请注意，下面那个博客 workflow，需要将&lt;code&gt;feed_list&lt;/code&gt;更换为自己的博客 RSS 地址。&lt;/strong&gt;
+&lt;strong&gt;如果你也是使用的 Hugo，并且主题是 Stack，那么 RSS 地址应该为&lt;code&gt;https://你的博客地址/index.xml&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;details&gt;
   &lt;summary&gt;
     &lt;span&gt;
@@ -413,7 +652,7 @@
 &lt;h2 id=&#34;star-趋势图&#34;&gt;Star 趋势图&lt;/h2&gt;
 &lt;p&gt;在自己开源项目根目录下的&lt;code&gt;README.md&lt;/code&gt;文件中，添加如下代码即可：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;其中，&lt;code&gt;自己GitHub用户名&lt;/code&gt;需要替换为自己的Github用户名，例如下图为&lt;code&gt;rento666&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;其中，&lt;code&gt;自己GitHub用户名&lt;/code&gt;需要替换为自己的 Github 用户名，例如下图为&lt;code&gt;rento666&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;开源项目仓库名&lt;/code&gt;需要替换为自己的开源项目仓库名，下图为&lt;code&gt;My-Blog-By-Hugo-stack&lt;/code&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;details&gt;
@@ -482,14 +721,14 @@
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&#34;附录&#34;&gt;附录&lt;/h2&gt;
-&lt;h3 id=&#34;参考文献&#34;&gt;参考文献&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/PeterJXL/p/18437094&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;超详细的 GitHub 个人主页美化教程 |  peterjxl博客&lt;/a&gt;&lt;/li&gt;
+    &gt;超详细的 GitHub 个人主页美化教程 | peterjxl 博客&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://edward852.github.io/post/markdown%e6%94%af%e6%8c%81%e6%83%85%e5%86%b5%e6%b5%8b%e8%af%95/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo对Markdown支持情况测试 | Github-Pages部署的博客，作者：edward852&lt;/a&gt;&lt;/li&gt;
+    &gt;Hugo 对 Markdown 支持情况测试 | Github-Pages 部署的博客，作者：edward852&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/star-history/star-history/tree/main&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Github开源项目Star趋势图 | Github&lt;/a&gt;&lt;/li&gt;
+    &gt;Github 开源项目 Star 趋势图 | Github&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;版权信息&#34;&gt;版权信息&lt;/h3&gt;
 &lt;p&gt;本文原载于 &lt;a class=&#34;link&#34; href=&#34;https://cai-hong-tu-blog.pages.dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -502,18 +741,18 @@
         <pubDate>Thu, 14 Nov 2024 15:13:23 +0800</pubDate>
         
         <guid>http://localhost:1313/2024/must-read-content-for-blogging/</guid>
-        <description>&lt;img src="https://picsum.photos/800/600.webp?random=2131" alt="Featured image of post 写博客之必读内容" /&gt;&lt;h2 id=&#34;引言20241115更新&#34;&gt;引言（2024.11.15更新）&lt;/h2&gt;
+        <description>&lt;img src="https://picsum.photos/800/600.webp?random=2131" alt="Featured image of post 写博客之必读内容" /&gt;&lt;h2 id=&#34;引言20241115-更新&#34;&gt;引言（2024.11.15 更新）&lt;/h2&gt;
 &lt;p&gt;最近想重新拾起写博客的习惯，但是发现之前的&lt;a class=&#34;link&#34; href=&#34;https://rento666.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hexo博客 | (Github-Pages)&lt;/a&gt;有点花里胡哨的，找了半天，发现这个&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hexo 博客 | (Github-Pages)&lt;/a&gt;有点花里胡哨的，找了半天，发现这个&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo | (Github)&lt;/a&gt;的&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Stack主题 | (Github)&lt;/a&gt;挺符合我审美的，就决定用Hugo来写博客。&lt;/p&gt;
+    &gt;Stack 主题 | (Github)&lt;/a&gt;挺符合我审美的，就决定用 Hugo 来写博客。&lt;/p&gt;
 &lt;p&gt;有以下几点需要注意：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;我使用的版本是&lt;a class=&#34;link&#34; href=&#34;https://github.com/Mantyke/Hugo-stack-theme-mod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo-stack主题-魔改版 | (Github)&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;由于这个版本(截至目前为止)已经两年没有更新了(上次更新时间为2022年)，所以对于最新版本的Hugo，执行&lt;code&gt;hugo server&lt;/code&gt;可能会报错，&lt;strong&gt;需要自己复制出错原因，询问AI&lt;/strong&gt;（如ChatGPT等）&lt;strong&gt;去解决报错&lt;/strong&gt;。&lt;/li&gt;
+    &gt;Hugo-stack 主题-魔改版 | (Github)&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;由于这个版本(截至目前为止)已经两年没有更新了(上次更新时间为 2022 年)，所以对于最新版本的 Hugo，执行&lt;code&gt;hugo server&lt;/code&gt;可能会报错，&lt;strong&gt;需要自己复制出错原因，询问 AI&lt;/strong&gt;（如 ChatGPT 等）&lt;strong&gt;去解决报错&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;使用方式markdown语法&#34;&gt;使用方式（MarkDown语法）&lt;/h2&gt;
+&lt;h2 id=&#34;使用方式markdown-语法&#34;&gt;使用方式（MarkDown 语法）&lt;/h2&gt;
 &lt;h3 id=&#34;可收缩代码块&#34;&gt;可收缩代码块&lt;/h3&gt;
 &lt;details&gt;
   &lt;summary&gt;
@@ -543,7 +782,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;  &lt;/details&gt;
-&lt;h3 id=&#34;使用i18n文件中的值&#34;&gt;使用i18n文件中的值&lt;/h3&gt;
+&lt;h3 id=&#34;使用-i18n-文件中的值&#34;&gt;使用 i18n 文件中的值&lt;/h3&gt;
 &lt;p&gt;须知：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;我的&lt;code&gt;i18n&lt;/code&gt;文件夹在&lt;code&gt;.\themes\stack\i18n&lt;/code&gt;目录下。&lt;/li&gt;
@@ -639,15 +878,16 @@
 &lt;/div&gt;
 &lt;/div&gt;  &lt;/details&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;{{ T &amp;quot;welcome.emoji&amp;quot; }}&lt;/code&gt; 都是我在&lt;code&gt;.\themes\stack\i18n&lt;/code&gt;文件夹下的&lt;code&gt;xxx.yaml&lt;/code&gt;文件中定义的变量（xxx代表多语言）.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;code&gt;{{ T &amp;quot;welcome.emoji&amp;quot; }}&lt;/code&gt; 都是我在&lt;code&gt;.\themes\stack\i18n&lt;/code&gt;文件夹下的&lt;code&gt;xxx.yaml&lt;/code&gt;文件中定义的变量（xxx 代表多语言）.
 &lt;details&gt;
-  &lt;summary&gt;
-    &lt;span&gt;
-       这是zh-CN.yaml文件中的配置 
-      &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(点击展开收缩) &lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/summary&gt;
+&lt;summary&gt;
+  &lt;span&gt;
+     这是zh-CN.yaml文件中的配置 
+    &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(点击展开收缩) &lt;/span&gt;
+  &lt;/span&gt;
+&lt;/summary&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -663,36 +903,35 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;welcome:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    emoji: 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    emoji:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        other: 👋
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    msg1: 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    msg1:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        other: 欢迎
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    msg2: 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    msg2:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        other: 来到
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    permanentText: 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    permanentText:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        other: 永久博客链接
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    currentText: 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    currentText:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        other: 当前博客链接
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    top: 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    top:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        other: 回到顶部
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;  &lt;/details&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;{{.Site.BaseURL }}&lt;/code&gt; 是我在&lt;code&gt;.\config\_default\hugo.yaml&lt;/code&gt;文件中定义的变量。(我使用了多语言配置config，默认应该是./config.yaml)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;code&gt;{{.Site.BaseURL }}&lt;/code&gt; 是我在&lt;code&gt;.\config\_default\hugo.yaml&lt;/code&gt;文件中定义的变量。(我使用了多语言配置 config，默认应该是./config.yaml)
 &lt;details&gt;
-  &lt;summary&gt;
-    &lt;span&gt;
-       hugo.yaml前几行的 
-      &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(点击展开收缩) &lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/summary&gt;
+&lt;summary&gt;
+  &lt;span&gt;
+     hugo.yaml前几行的 
+    &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(点击展开收缩) &lt;/span&gt;
+  &lt;/span&gt;
+&lt;/summary&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -709,14 +948,14 @@
 &lt;/div&gt;
 &lt;/div&gt;  &lt;/details&gt;
 &lt;h2 id=&#34;常识对我来说需要记在这里&#34;&gt;常识（对我来说需要记在这里）&lt;/h2&gt;
-&lt;h3 id=&#34;html字符集空格&#34;&gt;HTML字符集——空格&lt;/h3&gt;
+&lt;h3 id=&#34;html-字符集空格&#34;&gt;HTML 字符集——空格&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;空格：&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt; 按下&lt;code&gt;space&lt;/code&gt;键出来的，宽度受字体影响。&lt;/li&gt;
 &lt;li&gt;空格：&lt;code&gt;&amp;amp;ensp;&lt;/code&gt; 宽度为$\frac{1}{2}$个中文宽度，不受字体影响。&lt;/li&gt;
-&lt;li&gt;空格：&lt;code&gt;&amp;amp;emsp;&lt;/code&gt; 宽度为1个中文宽度，不受字体影响。&lt;/li&gt;
+&lt;li&gt;空格：&lt;code&gt;&amp;amp;emsp;&lt;/code&gt; 宽度为 1 个中文宽度，不受字体影响。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;点击a标签打开新窗口&#34;&gt;点击a标签打开新窗口&lt;/h3&gt;
-&lt;p&gt;在a标签中添加&lt;code&gt;target=&amp;quot;_blank&amp;quot;&lt;/code&gt;属性即可。&lt;/p&gt;
+&lt;h3 id=&#34;点击-a-标签打开新窗口&#34;&gt;点击 a 标签打开新窗口&lt;/h3&gt;
+&lt;p&gt;在 a 标签中添加&lt;code&gt;target=&amp;quot;_blank&amp;quot;&lt;/code&gt;属性即可。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -736,7 +975,7 @@
       &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(点击展开收缩) &lt;/span&gt;
     &lt;/span&gt;
   &lt;/summary&gt;
-&lt;p&gt;在cmd中输入&lt;code&gt;hugo version&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在 cmd 中输入&lt;code&gt;hugo version&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -746,7 +985,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;  &lt;/details&gt;
-&lt;h3 id=&#34;categories的多语言适配&#34;&gt;categories的多语言适配&lt;/h3&gt;
+&lt;h3 id=&#34;categories-的多语言适配&#34;&gt;categories 的多语言适配&lt;/h3&gt;
 &lt;p&gt;我尝试了在&lt;code&gt;./content/categories&lt;/code&gt;目录下的&lt;code&gt;test&lt;/code&gt;文件中，使用&lt;code&gt;_index.md&lt;/code&gt;和&lt;code&gt;_index.en.md&lt;/code&gt;，结果并不是我预想的那样，在&lt;strong&gt;首页分类&lt;/strong&gt;处，只能显示为&lt;code&gt;test&lt;/code&gt;或者&lt;code&gt;测试&lt;/code&gt;，并没有多语言适配。&lt;/p&gt;
 &lt;p&gt;&lt;figure 
 	&gt;
@@ -785,7 +1024,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│  ├─categories
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│  │  _index.en.md
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│  │  _index.md
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│  │  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│  │
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│  └─test
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│     │    _index.md
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│     └─   _index.en.md
@@ -850,15 +1089,15 @@
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://sm.ms/home/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;SM.MS | 图床&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;参考文献&#34;&gt;参考文献&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://edward852.github.io/post/markdown%e6%94%af%e6%8c%81%e6%83%85%e5%86%b5%e6%b5%8b%e8%af%95/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo对Markdown支持情况测试 | 博客&lt;/a&gt;&lt;/p&gt;
+    &gt;Hugo 对 Markdown 支持情况测试 | 博客&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://linsnow.cn/posts/bloglab/hugo-stack/modify-hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Stack主题的自定义 | 博客&lt;/a&gt;&lt;/p&gt;
+    &gt;Stack 主题的自定义 | 博客&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;版权信息&#34;&gt;版权信息&lt;/h3&gt;

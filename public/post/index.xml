@@ -6,21 +6,28 @@
     <description>Recent content in Posts on 彩虹兔の博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 15 Nov 2024 15:20:38 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 Nov 2024 11:50:34 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Outlook Smtp Oauth2 Error</title>
+      <link>http://localhost:1313/2024/outlook%E9%82%AE%E7%AE%B1%E7%9A%84smtp%E6%9C%8D%E5%8A%A1%E5%87%BA%E7%8E%B0oauth2%E8%AE%A4%E8%AF%81%E5%A4%B1%E8%B4%A5%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Fri, 15 Nov 2024 22:57:11 +0800</pubDate>
+      <guid>http://localhost:1313/2024/outlook%E9%82%AE%E7%AE%B1%E7%9A%84smtp%E6%9C%8D%E5%8A%A1%E5%87%BA%E7%8E%B0oauth2%E8%AE%A4%E8%AF%81%E5%A4%B1%E8%B4%A5%E9%94%99%E8%AF%AF/</guid>
+      <description>&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;&#xA;&lt;p&gt;在本博客的评论系统接入邮箱提醒时，用到了outlook的smtp服务，但是在使用时却发现没有邮件提醒。&lt;/p&gt;&#xA;&lt;h2 id=&#34;查看日志&#34;&gt;查看日志&lt;/h2&gt;&#xA;&lt;p&gt;于是上vercel看了一下日志，如下图：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>GitHub 个人主页 README 美化 &amp; Star 趋势图</title>
       <link>http://localhost:1313/2024/github-profile/</link>
       <pubDate>Thu, 14 Nov 2024 22:49:27 +0800</pubDate>
       <guid>http://localhost:1313/2024/github-profile/</guid>
-      <description>&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;&#xA;&lt;p&gt;每次看到有大佬的Github主页很炫酷，自己总是羡慕不已，那些大佬真是厉害，不仅技术强，就连Github个人主页都酷的一批。&lt;br&gt;&#xA;于是我便查阅资料，最终决定美化一下自己的Github主页 &lt;del&gt;（虽然我是个小菜鸡，什么开源好项目都没写出来&amp;hellip;）&lt;/del&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;&#xA;&lt;p&gt;每次看到有大佬的 Github 主页很炫酷，自己总是羡慕不已，那些大佬真是厉害，不仅技术强，就连 Github 个人主页都酷的一批。&lt;br&gt;&#xA;于是我便查阅资料，最终决定美化一下自己的 Github 主页 &lt;del&gt;（虽然我是个小菜鸡，什么开源好项目都没写出来&amp;hellip;）&lt;/del&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>写博客之必读内容</title>
       <link>http://localhost:1313/2024/must-read-content-for-blogging/</link>
       <pubDate>Thu, 14 Nov 2024 15:13:23 +0800</pubDate>
       <guid>http://localhost:1313/2024/must-read-content-for-blogging/</guid>
-      <description>&lt;h2 id=&#34;引言20241115更新&#34;&gt;引言（2024.11.15更新）&lt;/h2&gt;&#xA;&lt;p&gt;最近想重新拾起写博客的习惯，但是发现之前的&lt;a class=&#34;link&#34; href=&#34;https://rento666.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Hexo博客 | (Github-Pages)&lt;/a&gt;有点花里胡哨的，找了半天，发现这个&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Hugo | (Github)&lt;/a&gt;的&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Stack主题 | (Github)&lt;/a&gt;挺符合我审美的，就决定用Hugo来写博客。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;引言20241115-更新&#34;&gt;引言（2024.11.15 更新）&lt;/h2&gt;&#xA;&lt;p&gt;最近想重新拾起写博客的习惯，但是发现之前的&lt;a class=&#34;link&#34; href=&#34;https://rento666.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Hexo 博客 | (Github-Pages)&lt;/a&gt;有点花里胡哨的，找了半天，发现这个&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Hugo | (Github)&lt;/a&gt;的&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Stack 主题 | (Github)&lt;/a&gt;挺符合我审美的，就决定用 Hugo 来写博客。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

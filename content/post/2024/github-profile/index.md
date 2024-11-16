@@ -1,53 +1,51 @@
 ---
-
 title: "GitHub 个人主页 README 美化 & Star 趋势图"
 slug: "Github Profile"
 description: "提供了如何美化自己的Github主页的方法以及开源项目的Star趋势图。"
 date: "2024-11-14T22:49:27+08:00"
 lastmod: "2024-11-14T22:49:27+08:00"
 image: "https://picsum.photos/800/600.webp?random=1234"
-math: 
-license: 
+math:
+license:
 hidden: false
-draft: false 
+draft: false
 categories: ["Github"]
 tags: ["Github"]
 reaction: true
-
 ---
 
 ## 引言
 
-每次看到有大佬的Github主页很炫酷，自己总是羡慕不已，那些大佬真是厉害，不仅技术强，就连Github个人主页都酷的一批。  
-于是我便查阅资料，最终决定美化一下自己的Github主页 ~~（虽然我是个小菜鸡，什么开源好项目都没写出来...）~~
+每次看到有大佬的 Github 主页很炫酷，自己总是羡慕不已，那些大佬真是厉害，不仅技术强，就连 Github 个人主页都酷的一批。  
+于是我便查阅资料，最终决定美化一下自己的 Github 主页 ~~（虽然我是个小菜鸡，什么开源好项目都没写出来...）~~
 
 ## 个人主页的美化
 
-> GitHub支持定制主页，相关文档：[设置和管理 GitHub 配置文件 | Github 官方文档](https://docs.github.com/zh/account-and-profile/setting-up-and-managing-your-github-profile)
+> GitHub 支持定制主页，相关文档：[设置和管理 GitHub 配置文件 | Github 官方文档](https://docs.github.com/zh/account-and-profile/setting-up-and-managing-your-github-profile)
 
 ### 新建仓库
 
-在自己的Github主页中新建一个仓库，仓库名必须为**自己GitHub用户名**，例如下图为`rento666`，然后添加一个`README.md`文件，我们只需向这个文件添加需要的信息即可。
+在自己的 Github 主页中新建一个仓库，仓库名必须为**自己 GitHub 用户名**，例如下图为`rento666`，然后添加一个`README.md`文件，我们只需向这个文件添加需要的信息即可。
 
 如下图所示，图中**没有勾选**`Add  a README file`，推荐勾选上（勾选上就省去自己手动创建了），此时点击创建，即为创建成功。
 
-* rento666/rento666 是一个 ✨特殊 ✨ 存储库，您可以用它来将 README.md 添加到您的 GitHub 个人资料中。确保它是公开的，并使用 README 对其进行初始化以开始使用。
+- rento666/rento666 是一个 ✨ 特殊 ✨ 存储库，您可以用它来将 README.md 添加到您的 GitHub 个人资料中。确保它是公开的，并使用 README 对其进行初始化以开始使用。
 
 ![创建仓库时的信息](https://s2.loli.net/2024/11/14/yMGe8SKFQrwNCjc.png)
 
 ### 编辑 README
 
-下面是编辑README.md文件的界面：
+下面是编辑 README.md 文件的界面：
 
 ![README文件初始内容](https://s2.loli.net/2024/11/14/TSXN2cr86Oy3jeI.png)
 
 ### 让我们开始吧
 
-可以在README中添加的内容可以是自己的介绍、开源项目、个人信息、博客、简历等。
+可以在 README 中添加的内容可以是自己的介绍、开源项目、个人信息、博客、简历等。
 
-Markdown扩展性很高、支持HTML、Emoji等，所以可以定制自己独一无二的主页~
+Markdown 扩展性很高、支持 HTML、Emoji 等，所以可以定制自己独一无二的主页~
 
-不过人的精力是有限的，所以我们可以将自己认为好的模板Fork到自己仓库，然后修改为自己的风格。
+不过人的精力是有限的，所以我们可以将自己认为好的模板 Fork 到自己仓库，然后修改为自己的风格。
 
 分享一下优秀合集：
 
@@ -64,10 +62,12 @@ Markdown扩展性很高、支持HTML、Emoji等，所以可以定制自己独一
 ![我的Github主页](https://s2.loli.net/2024/11/15/nhH23GmdZXsBbIw.png)
 
 #### 修改
+
 在我的主页中，我使用了以下模板，您可以复制到自己的`README.md`文件中：
 
-- 第一步，复制README：
-{{% spoiler "README内容如下" %}}
+- 第一步，复制 README：
+  {{% spoiler "README内容如下" %}}
+
 ```
 ### Hey <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">，I’m Rento
 ![Typing SVG](https://readme-typing-svg.demolab.com/?lines=欢迎+来到+我的+Github+主页;很荣幸+能够+帮到你)
@@ -76,14 +76,14 @@ Markdown扩展性很高、支持HTML、Emoji等，所以可以定制自己独一
 <table>
 <tr>
 <td valign="center"  width="30%">
-  
+
 - 🤖 我最喜欢的动漫：双城之战
 - 👨‍💻 我了解Golang、Node.js、Java、React、Vue、Uni APP、React Native、Unity(C#)等等...
 - ✍️ [欢迎参观我的博客](https://cai-hong-tu-blog.pages.dev/)
 - 💬 保持思考
 - 📫 联系我: [邮箱联系](mailto:putongruwo@outlook.com)
 - 👏 关注我: [![](https://img.shields.io/github/followers/rento666?label=关注我&style=social)](https://github.com/rento666/)
-- 🎣 兴趣：读[阮一峰的网络日志](https://www.ruanyifeng.com/blog/)，写[自己的博客](https://cai-hong-tu-blog.pages.dev/)，刷[Youtube](https://www.youtube.com/@caihongtu)  
+- 🎣 兴趣：读[阮一峰的网络日志](https://www.ruanyifeng.com/blog/)，写[自己的博客](https://cai-hong-tu-blog.pages.dev/)，刷[Youtube](https://www.youtube.com/@caihongtu)
 **「天天开心」** ❤️
 </td>
 <td valign="center" width="100%" height="100%">
@@ -124,11 +124,12 @@ Markdown扩展性很高、支持HTML、Emoji等，所以可以定制自己独一
 </table>
 
 ```
-{{% /spoiler %}} 
+
+{{% /spoiler %}}
 
 - 第二步，复制好之后，按`CTRL+F`，自行替换姓名、用户名、兴趣爱好、博客链接等信息。
 
-- 第三步，修改好README.md之后呢，在仓库里点击Actions创建workflow（工作流），如下图所示：
+- 第三步，修改好 README.md 之后呢，在仓库里点击 Actions 创建 workflow（工作流），如下图所示：
 
 ![点击Actions来创建workflow](https://s2.loli.net/2024/11/15/WxnbTOy3mQkp175.png)
 
@@ -138,31 +139,32 @@ Markdown扩展性很高、支持HTML、Emoji等，所以可以定制自己独一
 
 添加如下代码（需要分开，别放到一个文件里）：
 {{% spoiler "贪吃蛇workflow" %}}
+
 ```
 name: generate animation
 
 on:
   # run automatically every 2 hours
   schedule:
-    - cron: "0 */2 * * *" 
-  
+    - cron: "0 */2 * * *"
+
   # allows to manually run the job at any time
   workflow_dispatch:
-  
+
   # run on every push on the master branch
   push:
     branches:
     - master
-  
-  
+
+
 
 jobs:
   generate:
-    permissions: 
+    permissions:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
-  
+
     steps:
       # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
       - name: generate github-contribution-grid-snake.svg
@@ -172,8 +174,8 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-  
-  
+
+
       # push the content of <build_dir> to a branch
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
       - name: push github-contribution-grid-snake.svg to the output branch
@@ -184,11 +186,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
+
 {{% /spoiler %}}
 
-**请注意，下面那个博客workflow，需要将`feed_list`更换为自己的博客RSS地址。**
-**如果你也是使用的Hugo，并且主题是Stack，那么RSS地址应该为`https://你的博客地址/index.xml`**
+**请注意，下面那个博客 workflow，需要将`feed_list`更换为自己的博客 RSS 地址。**
+**如果你也是使用的 Hugo，并且主题是 Stack，那么 RSS 地址应该为`https://你的博客地址/index.xml`**
 {{% spoiler "获取最新博客workflow" %}}
+
 ```
 name: Latest blog post workflow
 on:
@@ -212,16 +216,18 @@ jobs:
           template: "<div><a href=\"$url\">$title $date</a></div>"
           date_format: "yyyy-mm-dd"
 ```
-{{% /spoiler %}}
 
+{{% /spoiler %}}
 
 ## Star 趋势图
 
-在自己开源项目根目录下的`README.md`文件中，添加如下代码即可：  
-* 其中，`自己GitHub用户名`需要替换为自己的Github用户名，例如下图为`rento666`.  
-* `开源项目仓库名`需要替换为自己的开源项目仓库名，下图为`My-Blog-By-Hugo-stack`。
+在自己开源项目根目录下的`README.md`文件中，添加如下代码即可：
+
+- 其中，`自己GitHub用户名`需要替换为自己的 Github 用户名，例如下图为`rento666`.
+- `开源项目仓库名`需要替换为自己的开源项目仓库名，下图为`My-Blog-By-Hugo-stack`。
 
 {{% spoiler "Star趋势图代码" %}}
+
 ```
 <picture>
   <source
@@ -242,6 +248,7 @@ jobs:
   />
 </picture>
 ```
+
 {{% /spoiler %}}
 
 不确定两个名称的，可参考如下图所示寻找：
@@ -250,11 +257,11 @@ jobs:
 
 ## 附录
 
-### 参考文献
+### 参考
 
-* [超详细的 GitHub 个人主页美化教程 |  peterjxl博客](https://www.cnblogs.com/PeterJXL/p/18437094)
-* [Hugo对Markdown支持情况测试 | Github-Pages部署的博客，作者：edward852](https://edward852.github.io/post/markdown支持情况测试/)
-* [Github开源项目Star趋势图 | Github](https://github.com/star-history/star-history/tree/main)
+- [超详细的 GitHub 个人主页美化教程 | peterjxl 博客](https://www.cnblogs.com/PeterJXL/p/18437094)
+- [Hugo 对 Markdown 支持情况测试 | Github-Pages 部署的博客，作者：edward852](https://edward852.github.io/post/markdown支持情况测试/)
+- [Github 开源项目 Star 趋势图 | Github](https://github.com/star-history/star-history/tree/main)
 
 ### 版权信息
 

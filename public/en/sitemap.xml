@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/en/</loc>
-    <lastmod>2024-11-15T15:20:38+08:00</lastmod>
+    <lastmod>2024-11-16T11:51:40+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -13,6 +13,58 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/categories/email/</loc>
+    <lastmod>2024-11-16T11:51:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/categories/email/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/email/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/2024/outlook-smtp-oauth2-error/</loc>
+    <lastmod>2024-11-16T11:51:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/2024/outlook%E9%82%AE%E7%AE%B1%E7%9A%84smtp%E6%9C%8D%E5%8A%A1%E5%87%BA%E7%8E%B0oauth2%E8%AE%A4%E8%AF%81%E5%A4%B1%E8%B4%A5%E9%94%99%E8%AF%AF/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/2024/outlook-smtp-oauth2-error/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/post/</loc>
+    <lastmod>2024-11-16T11:51:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/post/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/</loc>
+    <lastmod>2024-11-16T11:54:34+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/2024/github-profile/</loc>
@@ -26,19 +78,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/2024/github-profile/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/post/</loc>
-    <lastmod>2024-11-15T15:20:38+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/post/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/about/</loc>
@@ -78,19 +117,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/2024/must-read-content-for-blogging/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
-    <lastmod>2024-11-15T15:20:38+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/archives/</loc>
@@ -174,6 +200,19 @@
                 href="http://localhost:1313/en/tags/hugo/"
                 />
   </url><url>
+    <loc>http://localhost:1313/en/tags/outlook/</loc>
+    <lastmod>2024-11-16T11:54:34+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/tags/outlook/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/outlook/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/search/</loc>
     <lastmod>2024-11-14T23:56:10+08:00</lastmod>
     <xhtml:link
@@ -185,6 +224,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/search/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/smtp/</loc>
+    <lastmod>2024-11-16T11:54:07+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/tags/smtp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/smtp/"
                 />
   </url>
 </urlset>
