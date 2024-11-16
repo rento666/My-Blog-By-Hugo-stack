@@ -37,6 +37,12 @@
                 "description": "Lorem Picsum | 通过url获取随机图片"
             },
             {
+                "title": "UApi | 公益API平台",
+                "website": "https://uapis.cn/",
+                "image": "",
+                "description": "一个集合了常用类型Public API接口的公益开放平台"
+            },
+            {
                 "title": "SM.MS图床",
                 "website": "https://smms.app/",
                 "image": "",
