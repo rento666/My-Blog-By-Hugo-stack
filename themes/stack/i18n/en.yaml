@@ -43,6 +43,9 @@ notFound:
         other: This page does not exist
 
 widget:
+    comments: 
+        title:
+            other: Recent Comments
     categories:
         title:
             other: Categories

@@ -3,6 +3,9 @@ title: 关于我
 slug: about
 description: Hugo, the world's fastest framework for building websites
 date: '2024-11-14T18:12:23+08:00'
+comments: false
+reaction: false
+reward: false
 aliases:
   - about-us
   - about-hugo

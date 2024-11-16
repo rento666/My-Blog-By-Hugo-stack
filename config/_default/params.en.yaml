@@ -126,11 +126,11 @@ comments:
 widgets:
     enabled:
         - search
+        - recent-comment # 首页的最新评论挂件
         - toc
         - categories
         - archives
         - tag-cloud
-        - recent-comment # 首页的最新评论挂件
 
 
     archives:

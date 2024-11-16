@@ -29,6 +29,10 @@ notFound:
         other: 页面不存在
 
 widget:
+    comments:
+        title:
+            other: 最新评论
+
     categories:
         title:
             other: 分类
