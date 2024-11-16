@@ -3,7 +3,7 @@
 title: "Outlook"
 slug: "Outlook"
 description: 
-image: 
+image: "https://picsum.photos/seed/outlook11/800/600"
 style:
  background: "#2c2d8f"
  color: "#fff"

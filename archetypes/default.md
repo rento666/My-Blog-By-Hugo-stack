@@ -5,7 +5,7 @@ slug: "{{ replace .Name "-" " " | title }}"
 description: 
 date: "{{ .Date }}"
 lastmod: "{{ .Date }}"
-image: https://picsum.photos/800/600.webp?random={{ substr (md5 (.Date)) 4 8 }}
+image: "https://picsum.photos/seed/{{ replace .Name "-" " " | title }}11/800/600"
 math: 
 license: 
 hidden: false

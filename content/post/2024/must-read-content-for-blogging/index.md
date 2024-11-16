@@ -3,7 +3,7 @@ title: "写博客之必读内容"
 slug: "Must Read Content for Blogging"
 description: "用Hugo写博客，需要留意的点。"
 date: "2024-11-14T15:13:23+08:00"
-image: "https://picsum.photos/800/600.webp?random=2131"
+image: "https://picsum.photos/seed/645brg/800/600"
 math: true
 license:
 hidden: false
@@ -34,7 +34,7 @@ reaction: true
 
 内容
 
-{{\% /spoiler "这是标题" %}}
+{{\% /spoiler %}}
 // 去掉 % 前面的 \
 ```
 
@@ -90,7 +90,8 @@ reaction: true
 {{% /spoiler %}}
 
 - `{{ T "welcome.emoji" }}` 都是我在`.\themes\stack\i18n`文件夹下的`xxx.yaml`文件中定义的变量（xxx 代表多语言）.
-  {{% spoiler "这是zh-CN.yaml文件中的配置" %}}
+
+{{% spoiler "这是zh-CN.yaml文件中的配置" %}}
 
 ```
 welcome:
@@ -112,7 +113,8 @@ welcome:
 {{% /spoiler %}}
 
 - `{{.Site.BaseURL }}` 是我在`.\config\_default\hugo.yaml`文件中定义的变量。(我使用了多语言配置 config，默认应该是./config.yaml)
-  {{% spoiler "hugo.yaml前几行的" %}}
+
+{{% spoiler "hugo.yaml前几行的" %}}
 
 ```
 baseurl: https://caihongtu.asia/
@@ -120,8 +122,29 @@ languageCode: zh-cn
 theme: stack
 title: 彩虹兔の博客
 ```
-
 {{% /spoiler %}}
+
+### Markdown文档中插入空格
+
+在 Markdown 文档中，可以直接采用 HTML 标记插入空格（blank space），而且无需任何其他前缀或分隔符。具体如下所示：
+
+- 插入一个空格 (**non-breaking space**)  
+
+  `&nbsp;`    或    `&#160;`     或      `&#xA0;`
+
+- 插入两个空格 (**en space**)  
+
+  `&ensp;`     或    `&#8194;`   或      `&#x2002;`
+
+- 插入四个空格 (**em space**)  
+
+  `&emsp;`    或    `&#8195;`   或      `&#x2003;`
+
+- 插入细空格 (**thin space**)  
+
+  `&thinsp;`  或     `&#8201;`  或      `&#x2009;`
+
+  <font style="background: yellow">**注意：不要漏掉分号。**</font>
 
 ## 常识（对我来说需要记在这里）
 
@@ -137,6 +160,7 @@ title: 彩虹兔の博客
 
 ```
 <a href="你的链接" target="_blank"></a>
+
 ```
 
 ## 未解决问题（随时更新）

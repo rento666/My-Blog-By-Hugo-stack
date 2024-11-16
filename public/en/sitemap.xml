@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/en/</loc>
-    <lastmod>2024-11-16T12:01:49+08:00</lastmod>
+    <lastmod>2024-11-16T13:52:50+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -15,17 +15,30 @@
                 href="http://localhost:1313/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/email/</loc>
-    <lastmod>2024-11-16T12:01:49+08:00</lastmod>
+    <loc>http://localhost:1313/en/2024/friends-links-become-navigate-website/</loc>
+    <lastmod>2024-11-16T13:52:50+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/categories/email/"
+                href="http://localhost:1313/2024/friends-links-become-navigate-website/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/email/"
+                href="http://localhost:1313/en/2024/friends-links-become-navigate-website/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/post/</loc>
+    <lastmod>2024-11-16T13:52:50+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/post/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/2024/outlook-smtp-oauth2-error/</loc>
@@ -39,19 +52,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/2024/outlook-smtp-oauth2-error/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/post/</loc>
-    <lastmod>2024-11-16T12:01:49+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/post/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/tags/</loc>
@@ -160,6 +160,9 @@
                 hreflang="en"
                 href="http://localhost:1313/en/categories/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/en/categories/email/</loc>
+    <lastmod>2024-11-16T13:55:33+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/en/categories/github/</loc>
     <lastmod>2024-11-14T23:56:10+08:00</lastmod>

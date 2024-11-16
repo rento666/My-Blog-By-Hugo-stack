@@ -12,7 +12,7 @@
         <pubDate>Fri, 15 Nov 2024 22:57:15 +0800</pubDate>
         
         <guid>http://localhost:1313/en/2024/outlook-smtp-oauth2-error/</guid>
-        <description>&lt;img src="https://picsum.photos/800/600.webp?random=c24f44b5" alt="Featured image of post Outlook Smtp Oauth2 Error" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+        <description>&lt;img src="https://picsum.photos/seed/34535s/800/600" alt="Featured image of post Outlook Smtp Oauth2 Error" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When the comment system of this blog was connected to the email reminder, the SMTP service of Outlook was used, but when using it, it was found that there was no email reminder.&lt;/p&gt;
 &lt;h2 id=&#34;view-the-log&#34;&gt;View the log&lt;/h2&gt;
 &lt;p&gt;So I went to Vercel to check the log, as shown below:&lt;/p&gt;
@@ -228,7 +228,7 @@ The deployment method is as shown below:&lt;/p&gt;
         <pubDate>Thu, 14 Nov 2024 22:49:20 +0800</pubDate>
         
         <guid>http://localhost:1313/en/2024/github-profile/</guid>
-        <description>&lt;img src="https://picsum.photos/800/600.webp?random=3421" alt="Featured image of post Github Personal HomePage(Profile) Beautification" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+        <description>&lt;img src="https://picsum.photos/seed/231s2/800/600" alt="Featured image of post Github Personal HomePage(Profile) Beautification" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Every time I see a big guy&amp;rsquo;s Github homepage is very cool, I always envy him. Those big guys are really amazing. Not only are they technically strong, but even their Github personal homepages are cool.&lt;br&gt;
 So I looked up information and finally decided to beautify my Github homepage&lt;br&gt;
 &lt;del&gt;(although I am a rookie and have not written any good open source projects&amp;hellip;)&lt;/del&gt;&lt;/p&gt;
@@ -648,7 +648,7 @@ Related documents: &lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/
         <pubDate>Thu, 14 Nov 2024 15:13:30 +0800</pubDate>
         
         <guid>http://localhost:1313/en/2024/must-read-content-for-blogging/</guid>
-        <description>&lt;img src="https://picsum.photos/800/600.webp?random=6666" alt="Featured image of post Must Read Content for Blogging" /&gt;&lt;h2 id=&#34;introduction-updated-on-20241114&#34;&gt;Introduction (updated on 2024.11.14)&lt;/h2&gt;
+        <description>&lt;img src="https://picsum.photos/seed/645brg/800/600" alt="Featured image of post Must Read Content for Blogging" /&gt;&lt;h2 id=&#34;introduction-updated-on-20241114&#34;&gt;Introduction (updated on 2024.11.14)&lt;/h2&gt;
 &lt;p&gt;Recently, I want to pick up the habit of blogging again, but I found that the previous &lt;a class=&#34;link&#34; href=&#34;https://rento666.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hexo blog | (Github-Pages)&lt;/a&gt; was a bit fancy. After searching for a long time, I found that this &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo | (Github)&lt;/a&gt;&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

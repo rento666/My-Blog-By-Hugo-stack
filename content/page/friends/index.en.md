@@ -1,15 +1,14 @@
 ---
-title: "Friendly links"
+title: "Cai Hong Tu Navigation links"
 date: 2019-05-28
 description: 
 slug: "links"
 layout: links
-comments: false
 license: false
 menu: 
     main:
-        name: Friendly links
-        weight: -80
+        name: Navi links
+        weight: -95
         params:
             icon: link
         
@@ -24,4 +23,16 @@ menu:
 
 </style>
 
-Below are some friendly links, you can take a look if you are bored.
+If you would like to add some links🔗 below, please add them according to the format below.
+
+> {  
+>  &emsp; "title": "website title",  
+>  &emsp; "website": "https://pcsoup.caihongtu.asia/",  
+>  &emsp; "image": "https://picsum.photos/seed/34535s/800/600",  
+>  &emsp; "description": "Here are some toxic inspirational quotes...",  
+>  &emsp; "badge": {  
+>  &emsp;&emsp;     "icon": "🌚",  
+>  &emsp;&emsp;     "link": "https://cai-hong-tu-blog.pages.dev/",  
+>  &emsp;&emsp;     "description": "badge description"  
+>  &emsp;  }  
+> }  

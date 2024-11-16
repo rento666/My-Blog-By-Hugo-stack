@@ -12,7 +12,7 @@
         <pubDate>Fri, 15 Nov 2024 22:57:11 +0800</pubDate>
         
         <guid>http://localhost:1313/2024/outlook-smtp-oauth2-error/</guid>
-        <description>&lt;img src="https://picsum.photos/800/600.webp?random=643ac937" alt="Featured image of post Outlook邮箱的Smtp服务出现Oauth2认证失败错误" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
+        <description>&lt;img src="https://picsum.photos/seed/34535s/800/600" alt="Featured image of post Outlook邮箱的Smtp服务出现Oauth2认证失败错误" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
 &lt;p&gt;在本博客的评论系统接入邮箱提醒时，用到了outlook的smtp服务，但是在使用时却发现没有邮件提醒。&lt;/p&gt;
 &lt;h2 id=&#34;查看日志&#34;&gt;查看日志&lt;/h2&gt;
 &lt;p&gt;于是上vercel看了一下日志，如下图：&lt;/p&gt;
@@ -250,7 +250,7 @@
         <pubDate>Thu, 14 Nov 2024 22:49:27 +0800</pubDate>
         
         <guid>http://localhost:1313/2024/github-profile/</guid>
-        <description>&lt;img src="https://picsum.photos/800/600.webp?random=1234" alt="Featured image of post GitHub 个人主页 README 美化 &amp; Star 趋势图" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
+        <description>&lt;img src="https://picsum.photos/seed/231s2/800/600" alt="Featured image of post GitHub 个人主页 README 美化 &amp; Star 趋势图" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
 &lt;p&gt;每次看到有大佬的 Github 主页很炫酷，自己总是羡慕不已，那些大佬真是厉害，不仅技术强，就连 Github 个人主页都酷的一批。&lt;br&gt;
 于是我便查阅资料，最终决定美化一下自己的 Github 主页 &lt;del&gt;（虽然我是个小菜鸡，什么开源好项目都没写出来&amp;hellip;）&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id=&#34;个人主页的美化&#34;&gt;个人主页的美化&lt;/h2&gt;
@@ -741,7 +741,7 @@
         <pubDate>Thu, 14 Nov 2024 15:13:23 +0800</pubDate>
         
         <guid>http://localhost:1313/2024/must-read-content-for-blogging/</guid>
-        <description>&lt;img src="https://picsum.photos/800/600.webp?random=2131" alt="Featured image of post 写博客之必读内容" /&gt;&lt;h2 id=&#34;引言20241115-更新&#34;&gt;引言（2024.11.15 更新）&lt;/h2&gt;
+        <description>&lt;img src="https://picsum.photos/seed/645brg/800/600" alt="Featured image of post 写博客之必读内容" /&gt;&lt;h2 id=&#34;引言20241115-更新&#34;&gt;引言（2024.11.15 更新）&lt;/h2&gt;
 &lt;p&gt;最近想重新拾起写博客的习惯，但是发现之前的&lt;a class=&#34;link&#34; href=&#34;https://rento666.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hexo 博客 | (Github-Pages)&lt;/a&gt;有点花里胡哨的，找了半天，发现这个&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo | (Github)&lt;/a&gt;的&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -777,7 +777,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;内容
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{\% /spoiler &amp;#34;这是标题&amp;#34; %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{\% /spoiler %}}
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 去掉 % 前面的 \
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -878,16 +878,15 @@
 &lt;/div&gt;
 &lt;/div&gt;  &lt;/details&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;{{ T &amp;quot;welcome.emoji&amp;quot; }}&lt;/code&gt; 都是我在&lt;code&gt;.\themes\stack\i18n&lt;/code&gt;文件夹下的&lt;code&gt;xxx.yaml&lt;/code&gt;文件中定义的变量（xxx 代表多语言）.
-&lt;details&gt;
-&lt;summary&gt;
-  &lt;span&gt;
-     这是zh-CN.yaml文件中的配置 
-    &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(点击展开收缩) &lt;/span&gt;
-  &lt;/span&gt;
-&lt;/summary&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{{ T &amp;quot;welcome.emoji&amp;quot; }}&lt;/code&gt; 都是我在&lt;code&gt;.\themes\stack\i18n&lt;/code&gt;文件夹下的&lt;code&gt;xxx.yaml&lt;/code&gt;文件中定义的变量（xxx 代表多语言）.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;details&gt;
+  &lt;summary&gt;
+    &lt;span&gt;
+       这是zh-CN.yaml文件中的配置 
+      &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(点击展开收缩) &lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/summary&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -922,16 +921,15 @@
 &lt;/div&gt;
 &lt;/div&gt;  &lt;/details&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;{{.Site.BaseURL }}&lt;/code&gt; 是我在&lt;code&gt;.\config\_default\hugo.yaml&lt;/code&gt;文件中定义的变量。(我使用了多语言配置 config，默认应该是./config.yaml)
-&lt;details&gt;
-&lt;summary&gt;
-  &lt;span&gt;
-     hugo.yaml前几行的 
-    &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(点击展开收缩) &lt;/span&gt;
-  &lt;/span&gt;
-&lt;/summary&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{{.Site.BaseURL }}&lt;/code&gt; 是我在&lt;code&gt;.\config\_default\hugo.yaml&lt;/code&gt;文件中定义的变量。(我使用了多语言配置 config，默认应该是./config.yaml)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;details&gt;
+  &lt;summary&gt;
+    &lt;span&gt;
+       hugo.yaml前几行的 
+      &lt;span style=&#34;color: rgb(183, 107, 7); font-weight: bold;&#34;&gt;(点击展开收缩) &lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/summary&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -947,6 +945,27 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;  &lt;/details&gt;
+&lt;h3 id=&#34;markdown文档中插入空格&#34;&gt;Markdown文档中插入空格&lt;/h3&gt;
+&lt;p&gt;在 Markdown 文档中，可以直接采用 HTML 标记插入空格（blank space），而且无需任何其他前缀或分隔符。具体如下所示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;插入一个空格 (&lt;strong&gt;non-breaking space&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;    或    &lt;code&gt;&amp;amp;#160;&lt;/code&gt;     或      &lt;code&gt;&amp;amp;#xA0;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;插入两个空格 (&lt;strong&gt;en space&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;amp;ensp;&lt;/code&gt;     或    &lt;code&gt;&amp;amp;#8194;&lt;/code&gt;   或      &lt;code&gt;&amp;amp;#x2002;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;插入四个空格 (&lt;strong&gt;em space&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;amp;emsp;&lt;/code&gt;    或    &lt;code&gt;&amp;amp;#8195;&lt;/code&gt;   或      &lt;code&gt;&amp;amp;#x2003;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;插入细空格 (&lt;strong&gt;thin space&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;amp;thinsp;&lt;/code&gt;  或     &lt;code&gt;&amp;amp;#8201;&lt;/code&gt;  或      &lt;code&gt;&amp;amp;#x2009;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font style=&#34;background: yellow&#34;&gt;&lt;strong&gt;注意：不要漏掉分号。&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;常识对我来说需要记在这里&#34;&gt;常识（对我来说需要记在这里）&lt;/h2&gt;
 &lt;h3 id=&#34;html-字符集空格&#34;&gt;HTML 字符集——空格&lt;/h3&gt;
 &lt;ul&gt;

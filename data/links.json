@@ -1,21 +1,98 @@
 [
     {
-        "title": "毒鸡汤",
-        "website": "https://pcsoup.caihongtu.asia/",
-        "image": "pcsoup.png",
-        "description": "Here are some toxic inspirational quotes..."
+        "title": "彩虹兔の网站",
+        "links": [
+            {
+                "title": "彩虹兔の主页",
+                "website": "https://cai-hong-tu-profile.pages.dev/",
+                "image": "avatar.png",
+                "description": "My profile website",
+                "badge": {
+                    "icon": "🌚",
+                    "link": "https://cai-hong-tu-blog.pages.dev/",
+                    "description": "我的永久博客地址"
+                }
+            },
+            {
+                "title": "彩虹云",
+                "website": "https://cai-hong-tu-icloud.pages.dev/",
+                "image": "https://avatars.githubusercontent.com/u/104045737?s=400&u=7d9cb5c41cf5245b4afaa2e3ec5642b2fe8790d5&v=4",
+                "description": "彩虹兔的云盘"
+            },
+            {
+                "title": "毒鸡汤",
+                "website": "https://pcsoup.caihongtu.asia/",
+                "image": "pcsoup.png",
+                "description": "Here are some toxic inspirational quotes..."
+            }
+        ]
     },
 	{
-        "title": "暂时就这些",
-        "website": "",
-        "image": "",
-        "description": "That's all for now"
+        "title": "导航网站",
+        "links": [
+            {
+                "title": "随机图片",
+                "website": "https://picsum.photos/",
+                "image": "",
+                "description": "Lorem Picsum | 通过url获取随机图片"
+            },
+            {
+                "title": "SM.MS图床",
+                "website": "https://smms.app/",
+                "image": "",
+                "description": "可以免费上传5GB的图片 | 支持右键粘贴图片"
+            },
+            {
+                "title": "base64在线编码解码",
+                "website": "https://www.base64encode.org/",
+                "image": "",
+                "description": "可以在网站头部选择 Encode or Decode"
+            },
+            {
+                "title": "Emoji表情",
+                "website": "https://www.emojiall.com/zh-hans",
+                "image": "",
+                "description": "可以直接复制粘贴的emoji"
+            },
+            {
+                "title": "在线转换多种格式文件",
+                "website": "https://www.aconvert.com/cn/",
+                "image": "",
+                "description": "转换PDF、文档、电子书、图片、视频、音频、压缩包"
+            },
+            {
+                "title": "哪煮米-域名比价",
+                "website": "https://www.nazhumi.com/",
+                "image": "",
+                "description": "对域名后缀、注册价格、续费价格、转入价格进行排名"
+            },
+            {
+                "title": "Cosmotown域名服务商",
+                "website": "https://www.cosmotown.com/",
+                "image": "",
+                "description": ".com域名最便宜的服务商 | 支持Paypal付款",
+                "badge": {
+                    "icon": "💎",
+                    "link": "https://cosmotown.knoji.com/promo-codes/",
+                    "description": "优惠码"
+                }
+            }
+        ]
     },
     {
-        "title": "谢谢大家",
-        "website": "",
-        "image": "",
-        "description": "Thanks for visiting"
-
+        "title": "友链",
+        "links": [
+            {
+                "title": "失迹の博客",
+                "website": "https://blog.reincarnatey.net/",
+                "image": "https://npm.elemecdn.com/@mitr-yuzr/vno-dmego-yuzr@latest/assets/img/headimg.png",
+                "description": "猫与茶与代码与你：一位 编程 / 设计 / ACGN 爱好者的博客。",
+                "badge": {
+                    "icon": "🕊️",
+                    "link": "https://blog.reincarnatey.net/index.xml",
+                    "description": "失迹の博客的RSS地址"
+                }
+            }
+        ]
     }
 ]

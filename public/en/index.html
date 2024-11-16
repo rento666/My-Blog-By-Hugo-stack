@@ -9,7 +9,7 @@
      
 <link rel='canonical' href='http://localhost:1313/en/'>
 
-<link rel="stylesheet" href="/scss/style.min.62bce21936123c352fb29636874c0e5d1ed45126d3eac544fe625622c6662b5e.css"><meta property="og:title" content="Cai Hong Tu&#39;s Blog" />
+<link rel="stylesheet" href="/scss/style.min.6178df861af1267c46fa69ff3236a16b81dd938662a9eb5ef988db4f5e2ffbb9.css"><meta property="og:title" content="Cai Hong Tu&#39;s Blog" />
 <meta property="og:description" content="Learn and live." />
 <meta property="og:url" content="http://localhost:1313/en/" />
 <meta property="og:site_name" content="Cai Hong Tu&#39;s Blog" />
@@ -197,6 +197,26 @@
         
 
         <li >
+            <a href='/en/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Navi links</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
             <a href='/en/about/' >
                 
                 
@@ -211,26 +231,6 @@
 
                 
                 <span>About</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/en/links/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-</svg>
-
-
-
-                
-                <span>Friendly links</span>
             </a>
         </li>
         
@@ -338,7 +338,9 @@
     <span class="shake">👋</span>
     <span class="jump-text1"> Welcome </span>
     <span class="jump-text2"> To </span>
-    <span class="jump-text3" style="color: #e99312"> Cai Hong Tu&#39;s Blog </span>
+    <span id="site-title-static" style="color: #e99312">Cai Hong Tu&#39;s Blog</span>
+    <span id="site-title" style="display: none; color: #e99312"></span>
+    
     
   </p>
   <p style="font-size: 1.5rem; text-align: center; font-weight: bold">
@@ -356,6 +358,38 @@
     >
   </p>
 </div>
+<script type="module">
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const title = "Cai Hong Tu\u0027s Blog"; 
+    const titleContainer = document.getElementById("site-title");
+    const staticTitle = document.getElementById("site-title-static");
+
+    
+    title.split("").forEach((char, index) => {
+      const span = document.createElement("span");
+      span.textContent = char;
+      span.className = `jump-text jump-text${index}`;
+      titleContainer.appendChild(span);
+    });
+
+    
+    const styleSheet = document.styleSheets[0];
+    title.split("").forEach((_, index) => {
+      const delay = (index * 0.1).toFixed(1); 
+      const rule = `
+        .jump-text${index} {
+          display: inline-block;
+          animation: jump 0.5s 1;
+          animation-delay: ${delay}s;
+        }
+      `;
+      styleSheet.insertRule(rule, styleSheet.cssRules.length);
+      staticTitle.style.display = "none";
+      titleContainer.style.display = "inline";
+    });
+  });
+</script>
 
 
 <section class="article-list">
@@ -365,7 +399,7 @@
         <div class="article-image">
             <a href="/en/2024/outlook-smtp-oauth2-error/">
                 
-                    <img src="https://picsum.photos/800/600.webp?random=c24f44b5" loading="lazy" alt="Featured image of post Outlook Smtp Oauth2 Error" />
+                    <img src="https://picsum.photos/seed/34535s/800/600" loading="lazy" alt="Featured image of post Outlook Smtp Oauth2 Error" />
                 
             </a>
         </div>
@@ -375,7 +409,7 @@
     
     <header class="article-category">
         
-            <a href="/en/categories/email/" >
+            <a href="/en/categories/email/" style="background-color: #3a2d8f; color: #fff;">
                 Email
             </a>
         
@@ -505,7 +539,7 @@
         <div class="article-image">
             <a href="/en/2024/github-profile/">
                 
-                    <img src="https://picsum.photos/800/600.webp?random=3421" loading="lazy" alt="Featured image of post Github Personal HomePage(Profile) Beautification" />
+                    <img src="https://picsum.photos/seed/231s2/800/600" loading="lazy" alt="Featured image of post Github Personal HomePage(Profile) Beautification" />
                 
             </a>
         </div>
@@ -641,7 +675,7 @@
         <div class="article-image">
             <a href="/en/2024/must-read-content-for-blogging/">
                 
-                    <img src="https://picsum.photos/800/600.webp?random=6666" loading="lazy" alt="Featured image of post Must Read Content for Blogging" />
+                    <img src="https://picsum.photos/seed/645brg/800/600" loading="lazy" alt="Featured image of post Must Read Content for Blogging" />
                 
             </a>
         </div>
@@ -819,7 +853,7 @@
         &copy; 
         
         2024 <a href="https://stack-theme-mod.vercel.app/">彩虹兔的博客</a>·<i class="fas fa-bell"></i> 网站已平稳运行<a id="days">0</a>天<a id="hours">0</a>小时<a id="minutes">0</a>分<a id="seconds">0</a>秒<br>
-      共书写了2.4k字·共 3篇文章·共 <span class="waline-pageview-count" data-path="/">0</span> 次浏览</br><span><p>
+      共书写了2.5k字·共 3篇文章·共 <span class="waline-pageview-count" data-path="/">0</span> 次浏览</br><span><p>
     </section>
     
     <section class="powerby">

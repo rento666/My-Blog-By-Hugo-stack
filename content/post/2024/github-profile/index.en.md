@@ -5,7 +5,7 @@ slug: "Github Profile"
 description: 
 date: "2024-11-14T22:49:20+08:00"
 lastmod: "2024-11-14T22:49:20+08:00"
-image: "https://picsum.photos/800/600.webp?random=3421"
+image: "https://picsum.photos/seed/231s2/800/600"
 math: 
 license: 
 hidden: false

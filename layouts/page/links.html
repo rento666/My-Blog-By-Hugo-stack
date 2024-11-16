@@ -2,34 +2,51 @@
 {{ define "main" }}
     {{ partial "article/article.html" . }}
     
-    <div class="article-list--compact links">
+    <div>
         {{ $siteResources := resources }}
-        {{ range $i, $link :=  $.Site.Data.links }}
-            <article>
-                <a href="{{ $link.website }}" target="_blank" rel="noopener">
-                    <div class="article-details">
-                        <h2 class="article-title">
-                            {{- $link.title -}}
-                        </h2>
-                        <footer class="article-time">
-                            {{ with $link.description }}
-                                {{ . }}
-                            {{ else }}
-                                {{ $link.website }}
+        {{ range $i, $category :=  $.Site.Data.links }}
+            <span class="article-list--title">{{ $category.title }}</span>
+            <div class="article-list--compact links">
+                {{ $siteResources := resources }}
+                {{ range $i, $link :=  $category.links }}
+                    <article>
+                        <a href="{{ $link.website }}" target="_blank" rel="noopener">
+                            <div class="article-details">
+                                <h2 class="article-title">
+                                    {{- $link.title -}}
+                                </h2>
+                                <footer class="article-time">
+                                    {{ with $link.description }}
+                                        {{ . }}
+                                    {{ else }}
+                                        {{ $link.website }}
+                                    {{ end }}
+                                </footer>
+                            </div>
+                    
+                            {{ if $link.image }}
+                                {{ if or (strings.HasPrefix $link.image "http://") (strings.HasPrefix $link.image "https://") }}
+                                    <!-- 处理网络图片 -->
+                                    <div class="article-image">
+                                        <img src="{{ $link.image }}" width="120" height="120" loading="lazy" data-key="links-{{ $link.website }}" alt="web img">
+                                    </div>
+                                {{ else }}
+                                    <!-- 处理本地图片 -->
+                                    {{ $image := $siteResources.Get (delimit (slice "link-img/" $link.image) "") | resources.Fingerprint "md5" }}
+                                    {{ $imageResized := $image.Resize "120x120" }}
+                                    <div class="article-image">
+                                        <img src="{{ $imageResized.RelPermalink }}" width="{{ $imageResized.Width }}" height="{{ $imageResized.Height }}" alt="local img"
+                                            loading="lazy" data-key="links-{{ $link.website }}" data-hash="{{ $image.Data.Integrity }}">
+                                    </div>
+                                {{ end }}
                             {{ end }}
-                        </footer>
-                    </div>
-            
-                    {{ if $link.image }}
-                        {{ $image := $siteResources.Get (delimit (slice "link-img/" $link.image) "") | resources.Fingerprint "md5" }}
-                        {{ $imageResized := $image.Resize "120x120" }}
-                        <div class="article-image">
-                            <img src="{{ $imageResized.RelPermalink }}" width="{{ $imageResized.Width }}" height="{{ $imageResized.Height }}"
-                                loading="lazy" data-key="links-{{ $link.website }}" data-hash="{{ $image.Data.Integrity }}">
-                        </div>
-                    {{ end }}
-                </a>
-            </article>
+                        </a>
+                        {{ if $link.badge }}
+                            <a href="{{ $link.badge.link }}" target="_blank" title="{{ $link.badge.description}}" rel="noopener" class="badge">{{ $link.badge.icon }}</a>
+                        {{ end }}
+                    </article>
+                {{ end }}
+            </div>
         {{ end }}
     </div>
 

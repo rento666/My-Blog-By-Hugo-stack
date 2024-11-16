@@ -9,7 +9,7 @@
      
 <link rel='canonical' href='http://localhost:1313/'>
 
-<link rel="stylesheet" href="/scss/style.min.62bce21936123c352fb29636874c0e5d1ed45126d3eac544fe625622c6662b5e.css"><meta property="og:title" content="彩虹兔の博客" />
+<link rel="stylesheet" href="/scss/style.min.6178df861af1267c46fa69ff3236a16b81dd938662a9eb5ef988db4f5e2ffbb9.css"><meta property="og:title" content="彩虹兔の博客" />
 <meta property="og:description" content="人生没有那么多观众." />
 <meta property="og:url" content="http://localhost:1313/" />
 <meta property="og:site_name" content="彩虹兔の博客" />
@@ -18,7 +18,7 @@
   content="website"
 /><meta
   property="og:updated_time"
-  content=' 2024-11-16T12:01:49&#43;08:00 '
+  content=' 2024-11-16T12:42:56&#43;08:00 '
 />
 <meta name="twitter:title" content="彩虹兔の博客">
 <meta name="twitter:description" content="人生没有那么多观众."><link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/index.xml">
@@ -191,6 +191,26 @@
         
 
         <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>导航网站</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
             <a href='/about/' >
                 
                 
@@ -205,26 +225,6 @@
 
                 
                 <span>关于我</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/links/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-</svg>
-
-
-
-                
-                <span>友情链接</span>
             </a>
         </li>
         
@@ -332,7 +332,9 @@
     <span class="shake">👋</span>
     <span class="jump-text1"> 欢迎 </span>
     <span class="jump-text2"> 来到 </span>
-    <span class="jump-text3" style="color: #e99312"> 彩虹兔の博客 </span>
+    <span id="site-title-static" style="color: #e99312">彩虹兔の博客</span>
+    <span id="site-title" style="display: none; color: #e99312"></span>
+    
     
   </p>
   <p style="font-size: 1.5rem; text-align: center; font-weight: bold">
@@ -350,6 +352,38 @@
     >
   </p>
 </div>
+<script type="module">
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const title = "彩虹兔の博客"; 
+    const titleContainer = document.getElementById("site-title");
+    const staticTitle = document.getElementById("site-title-static");
+
+    
+    title.split("").forEach((char, index) => {
+      const span = document.createElement("span");
+      span.textContent = char;
+      span.className = `jump-text jump-text${index}`;
+      titleContainer.appendChild(span);
+    });
+
+    
+    const styleSheet = document.styleSheets[0];
+    title.split("").forEach((_, index) => {
+      const delay = (index * 0.1).toFixed(1); 
+      const rule = `
+        .jump-text${index} {
+          display: inline-block;
+          animation: jump 0.5s 1;
+          animation-delay: ${delay}s;
+        }
+      `;
+      styleSheet.insertRule(rule, styleSheet.cssRules.length);
+      staticTitle.style.display = "none";
+      titleContainer.style.display = "inline";
+    });
+  });
+</script>
 
 
 <section class="article-list">
@@ -359,7 +393,7 @@
         <div class="article-image">
             <a href="/2024/outlook-smtp-oauth2-error/">
                 
-                    <img src="https://picsum.photos/800/600.webp?random=643ac937" loading="lazy" alt="Featured image of post Outlook邮箱的Smtp服务出现Oauth2认证失败错误" />
+                    <img src="https://picsum.photos/seed/34535s/800/600" loading="lazy" alt="Featured image of post Outlook邮箱的Smtp服务出现Oauth2认证失败错误" />
                 
             </a>
         </div>
@@ -499,7 +533,7 @@
         <div class="article-image">
             <a href="/2024/github-profile/">
                 
-                    <img src="https://picsum.photos/800/600.webp?random=1234" loading="lazy" alt="Featured image of post GitHub 个人主页 README 美化 &amp; Star 趋势图" />
+                    <img src="https://picsum.photos/seed/231s2/800/600" loading="lazy" alt="Featured image of post GitHub 个人主页 README 美化 &amp; Star 趋势图" />
                 
             </a>
         </div>
@@ -639,7 +673,7 @@
         <div class="article-image">
             <a href="/2024/must-read-content-for-blogging/">
                 
-                    <img src="https://picsum.photos/800/600.webp?random=2131" loading="lazy" alt="Featured image of post 写博客之必读内容" />
+                    <img src="https://picsum.photos/seed/645brg/800/600" loading="lazy" alt="Featured image of post 写博客之必读内容" />
                 
             </a>
         </div>
@@ -695,7 +729,7 @@
 
                 <time class="article-words">
                     
-                    约7分钟，共1550字
+                    约8分钟，共1666字
                 </time>
             </div>
         
@@ -817,7 +851,7 @@
         &copy; 
         
         2024 <a href="https://stack-theme-mod.vercel.app/">彩虹兔的博客</a>·<i class="fas fa-bell"></i> 网站已平稳运行<a id="days">0</a>天<a id="hours">0</a>小时<a id="minutes">0</a>分<a id="seconds">0</a>秒<br>
-      共书写了5.4k字·共 3篇文章·共 <span class="waline-pageview-count" data-path="/">0</span> 次浏览</br><span><p>
+      共书写了5.6k字·共 3篇文章·共 <span class="waline-pageview-count" data-path="/">0</span> 次浏览</br><span><p>
     </section>
     
     <section class="powerby">
