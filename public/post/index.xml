@@ -6,14 +6,14 @@
     <description>Recent content in Posts on 彩虹兔の博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 16 Nov 2024 13:52:27 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2024 11:47:12 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>友情链接换成导航网站</title>
-      <link>http://localhost:1313/2024/friends-links-become-navigate-website/</link>
-      <pubDate>Sat, 16 Nov 2024 12:45:42 +0800</pubDate>
-      <guid>http://localhost:1313/2024/friends-links-become-navigate-website/</guid>
-      <description>&lt;h2 id=&#34;附录&#34;&gt;附录&lt;/h2&gt;&#xA;&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.reincarnatey.net/2024/0803-my-links-page/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;建站技术 | 我的链接页面是如何实现的？| 失迹の博客&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;版权信息&#34;&gt;版权信息&lt;/h3&gt;&#xA;&lt;p&gt;本文原载于 &lt;a class=&#34;link&#34; href=&#34;https://cai-hong-tu-blog.pages.dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;彩虹兔の博客&lt;/a&gt;，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。&lt;/p&gt;</description>
+      <title>移动Github Desktop之后，汉化失败的解决办法</title>
+      <link>http://localhost:1313/2024/github-desktop/</link>
+      <pubDate>Tue, 19 Nov 2024 11:25:20 +0800</pubDate>
+      <guid>http://localhost:1313/2024/github-desktop/</guid>
+      <description>&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;&#xA;&lt;p&gt;由于我在安装GitHub Desktop时，它自动安装到了C盘。&lt;/p&gt;&#xA;&lt;h2 id=&#34;下载汉化包&#34;&gt;下载汉化包&lt;/h2&gt;&#xA;&lt;p&gt;对于这个我肯定是不惯着他啊，直接去&lt;code&gt;C:\Users\%username%\AppData&lt;/code&gt;下的&lt;code&gt;Local&lt;/code&gt;和&lt;code&gt;Roaming&lt;/code&gt;目录，将里面的&lt;code&gt;Github Desktop&lt;/code&gt;和&lt;code&gt;GithubDesktop&lt;/code&gt;文件夹剪切到了我自己的&lt;code&gt;D:\Development\Github&lt;/code&gt;文件夹内。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Outlook邮箱的Smtp服务出现Oauth2认证失败错误</title>

@@ -5,7 +5,7 @@ slug: "{{ replace .Name "-" " " | title }}"
 description: 
 date: "{{ .Date }}"
 lastmod: "{{ .Date }}"
-image: "https://picsum.photos/seed/{{ replace .Name "-" " " | title }}11/800/600"
+image: "https://picsum.photos/seed/{{ .Name }}11/800/600"
 math: 
 license: 
 hidden: false

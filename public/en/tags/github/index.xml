@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/en/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How to solve the problem of Chinese localization failure after moving Github Desktop</title>
+      <link>http://localhost:1313/en/2024/github-desktop/</link>
+      <pubDate>Tue, 19 Nov 2024 11:25:27 +0800</pubDate>
+      <guid>http://localhost:1313/en/2024/github-desktop/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When I installed GitHub Desktop, it was automatically installed to the C drive.&lt;/p&gt;&#xA;&lt;h2 id=&#34;download-the-chinese-package&#34;&gt;Download the Chinese package&lt;/h2&gt;&#xA;&lt;p&gt;I definitely won&amp;rsquo;t spoil him for this. I went directly to the &lt;code&gt;Local&lt;/code&gt; and &lt;code&gt;Roaming&lt;/code&gt; directories under &lt;code&gt;C:\Users\%username%\AppData&lt;/code&gt; and cut the &lt;code&gt;Github Desktop&lt;/code&gt; and &lt;code&gt;GithubDesktop&lt;/code&gt; folders in them to my own &lt;code&gt;D:\Development\Github&lt;/code&gt; folder.&lt;/p&gt;&#xA;&lt;p&gt;Just like the picture below:&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure &#xD;&#xA;&#x9;&gt;&#xD;&#xA;&#x9;&lt;a href=&#34;https://s2.loli.net/2024/11/19/43h19yEMbDw8sTr.png&#34; &gt;&#xD;&#xA;&#x9;&#x9;&lt;img src=&#34;https://s2.loli.net/2024/11/19/43h19yEMbDw8sTr.png&#34;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;loading=&#34;lazy&#34;&#xD;&#xA;&#x9;&#x9;&#x9;alt=&#34;Github Directory&#34;&gt;&#xD;&#xA;&#x9;&lt;/a&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&lt;figcaption&gt;Github Directory&lt;/figcaption&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&lt;/figure&gt;&lt;/p&gt;&#xA;&lt;p&gt;After moving the folder, the administrator opens CMD and enters:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Github Personal HomePage(Profile) Beautification</title>
       <link>http://localhost:1313/en/2024/github-profile/</link>
       <pubDate>Thu, 14 Nov 2024 22:49:20 +0800</pubDate>

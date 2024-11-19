@@ -6,7 +6,70 @@
         <description>Recent content on Cai Hong Tu&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Fri, 15 Nov 2024 22:57:15 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 19 Nov 2024 11:25:27 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>How to solve the problem of Chinese localization failure after moving Github Desktop</title>
+        <link>http://localhost:1313/en/2024/github-desktop/</link>
+        <pubDate>Tue, 19 Nov 2024 11:25:27 +0800</pubDate>
+        
+        <guid>http://localhost:1313/en/2024/github-desktop/</guid>
+        <description>&lt;img src="https://picsum.photos/seed/GithubDesktop11/800/600" alt="Featured image of post How to solve the problem of Chinese localization failure after moving Github Desktop" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;When I installed GitHub Desktop, it was automatically installed to the C drive.&lt;/p&gt;
+&lt;h2 id=&#34;download-the-chinese-package&#34;&gt;Download the Chinese package&lt;/h2&gt;
+&lt;p&gt;I definitely won&amp;rsquo;t spoil him for this. I went directly to the &lt;code&gt;Local&lt;/code&gt; and &lt;code&gt;Roaming&lt;/code&gt; directories under &lt;code&gt;C:\Users\%username%\AppData&lt;/code&gt; and cut the &lt;code&gt;Github Desktop&lt;/code&gt; and &lt;code&gt;GithubDesktop&lt;/code&gt; folders in them to my own &lt;code&gt;D:\Development\Github&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Just like the picture below:&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s2.loli.net/2024/11/19/43h19yEMbDw8sTr.png&#34; &gt;
+		&lt;img src=&#34;https://s2.loli.net/2024/11/19/43h19yEMbDw8sTr.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Github Directory&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Github Directory&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;After moving the folder, the administrator opens CMD and enters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I forgot whether the GitHub folder in the Local directory or the Roaming directory has a space. You can see your own directory changes in the following code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;mklink&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Users\&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;%username%&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;\AppData\Local\Github Desktop&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\Development\Github\Github Desktop&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;mklink&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Users\&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;%username%&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;\AppData\Local\GithubDesktop&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\Development\Github\GithubDesktop&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Then go to this &lt;a class=&#34;link&#34; href=&#34;https://github.com/robotze/GithubDesktopZhTool&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github Desktop Chinese version - Github repository&lt;/a&gt;, click &lt;code&gt;Releases&lt;/code&gt; on the right to download the Chinese version tool for the &lt;strong&gt;corresponding version&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;start-chinese-version&#34;&gt;Start Chinese version&lt;/h2&gt;
+&lt;h3 id=&#34;chinese-version-failed&#34;&gt;Chinese version failed&lt;/h3&gt;
+&lt;p&gt;After decompression, click Chinese version, and find that the Chinese version failed, prompting that the path cannot be found.&lt;/p&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Open the unzipped Chinese package folder, enter the &lt;code&gt;Windows&lt;/code&gt; folder, copy the &lt;code&gt;main.js&lt;/code&gt; and &lt;code&gt;renderer.js&lt;/code&gt; (you can also cut them)&lt;/p&gt;
+&lt;p&gt;Enter the &lt;code&gt;Github\GitHubDesktop\app-3.4.9\resources\app&lt;/code&gt; directory, paste directly, replace the files, and the Chinese translation is complete.&lt;/p&gt;
+&lt;h2 id=&#34;reminder&#34;&gt;Reminder&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Please make sure to close the GitHub Desktop software before Chinese translation! ! !&lt;/li&gt;
+&lt;li&gt;Please make sure that the software version is the same as the Chinese version! ! !&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;appendix&#34;&gt;Appendix&lt;/h2&gt;
+&lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/robotze/GithubDesktopZhTool?tab=readme-ov-file&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GithubDesktopZhTool - Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;copyright-information&#34;&gt;Copyright Information&lt;/h3&gt;
+&lt;p&gt;This article was originally published in &lt;a class=&#34;link&#34; href=&#34;https://cai-hong-tu-blog.pages.dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;彩虹兔の博客&lt;/a&gt;, following the CC BY-NC-SA 4.0 agreement. Please keep the original source when copying.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Outlook Smtp Oauth2 Error</title>
         <link>http://localhost:1313/en/2024/outlook-smtp-oauth2-error/</link>
         <pubDate>Fri, 15 Nov 2024 22:57:15 +0800</pubDate>

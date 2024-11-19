@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Cai Hong Tu&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Nov 2024 13:52:50 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2024 11:47:07 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/en/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Friends Links Become Navigate Website</title>
-      <link>http://localhost:1313/en/2024/friends-links-become-navigate-website/</link>
-      <pubDate>Sat, 16 Nov 2024 12:45:36 +0800</pubDate>
-      <guid>http://localhost:1313/en/2024/friends-links-become-navigate-website/</guid>
-      <description>&lt;h2 id=&#34;附录&#34;&gt;附录&lt;/h2&gt;&#xA;&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;&#xA;&lt;h3 id=&#34;版权信息&#34;&gt;版权信息&lt;/h3&gt;&#xA;&lt;p&gt;本文原载于 &lt;a class=&#34;link&#34; href=&#34;https://cai-hong-tu-blog.pages.dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;彩虹兔の博客&lt;/a&gt;，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。&lt;/p&gt;</description>
+      <title>How to solve the problem of Chinese localization failure after moving Github Desktop</title>
+      <link>http://localhost:1313/en/2024/github-desktop/</link>
+      <pubDate>Tue, 19 Nov 2024 11:25:27 +0800</pubDate>
+      <guid>http://localhost:1313/en/2024/github-desktop/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When I installed GitHub Desktop, it was automatically installed to the C drive.&lt;/p&gt;&#xA;&lt;h2 id=&#34;download-the-chinese-package&#34;&gt;Download the Chinese package&lt;/h2&gt;&#xA;&lt;p&gt;I definitely won&amp;rsquo;t spoil him for this. I went directly to the &lt;code&gt;Local&lt;/code&gt; and &lt;code&gt;Roaming&lt;/code&gt; directories under &lt;code&gt;C:\Users\%username%\AppData&lt;/code&gt; and cut the &lt;code&gt;Github Desktop&lt;/code&gt; and &lt;code&gt;GithubDesktop&lt;/code&gt; folders in them to my own &lt;code&gt;D:\Development\Github&lt;/code&gt; folder.&lt;/p&gt;&#xA;&lt;p&gt;Just like the picture below:&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure &#xD;&#xA;&#x9;&gt;&#xD;&#xA;&#x9;&lt;a href=&#34;https://s2.loli.net/2024/11/19/43h19yEMbDw8sTr.png&#34; &gt;&#xD;&#xA;&#x9;&#x9;&lt;img src=&#34;https://s2.loli.net/2024/11/19/43h19yEMbDw8sTr.png&#34;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;loading=&#34;lazy&#34;&#xD;&#xA;&#x9;&#x9;&#x9;alt=&#34;Github Directory&#34;&gt;&#xD;&#xA;&#x9;&lt;/a&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&lt;figcaption&gt;Github Directory&lt;/figcaption&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&lt;/figure&gt;&lt;/p&gt;&#xA;&lt;p&gt;After moving the folder, the administrator opens CMD and enters:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Outlook Smtp Oauth2 Error</title>
