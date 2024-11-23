@@ -4,7 +4,7 @@
         "links": [
             {
                 "title": "彩虹兔の主页",
-                "website": "https://cai-hong-tu-profile.pages.dev/",
+                "website": "https://profile.caihongtu.asia/",
                 "image": "avatar.png",
                 "description": "My profile website",
                 "badge": {
@@ -14,10 +14,10 @@
                 }
             },
             {
-                "title": "彩虹云",
-                "website": "https://cai-hong-tu-icloud.pages.dev/",
+                "title": "彩虹兔の小屋",
+                "website": "https://arcane.caihongtu.asia/",
                 "image": "https://avatars.githubusercontent.com/u/104045737?s=400&u=7d9cb5c41cf5245b4afaa2e3ec5642b2fe8790d5&v=4",
-                "description": "彩虹兔的云盘"
+                "description": "双城之战——我的最爱"
             },
             {
                 "title": "毒鸡汤",
