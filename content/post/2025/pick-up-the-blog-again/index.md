@@ -72,7 +72,7 @@ ssh-keygen -t rsa
 
 打开Github，点击头像，点击`Settings`，点击`SSH and GPG keys`，新增一个SSH key。
 
-![998f87a9a3a6d28abc7445f27ea0efd4.png](https://s2.loli.net/2025/06/20/526Xyw3MsOWbNSu.png)
+![Github SSH key](https://s2.loli.net/2025/06/20/526Xyw3MsOWbNSu.png)
 
 ### 安装Git结束
 
@@ -110,6 +110,12 @@ winget uninstall --name "Hugo (Extended)"
 ### 安装Hugo结束
 
 至此，所有的前置操作都已完成，现在可以随意编写博客咯~
+
+---
+
+### 补充一：push到GitHub后博客自动打包
+
+我的项目是放在了**CloudFlare**上，作为一个pages项目，详情可查看[Pages文档 | CloudFlare](https://developers.cloudflare.com/pages/),在“设置-分支控制”启用了自动部署，这样，每当我Push到GitHub上最新的代码后，其就会自动部署，博客就自动出现新的！
 
 ## 附录
 
