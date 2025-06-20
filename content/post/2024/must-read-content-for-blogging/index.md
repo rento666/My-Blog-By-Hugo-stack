@@ -231,6 +231,8 @@ title: 彩虹兔の博客
 
 - [Stack 主题的自定义 | 博客](https://linsnow.cn/posts/bloglab/hugo-stack/modify-hugo/)
 
+- [Windows 安装 Hugo | 文档](https://gohugo.io/installation/windows/)
+
 ### 版权信息
 
 本文原载于 [彩虹兔の博客](https://cai-hong-tu-blog.pages.dev/)，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。
