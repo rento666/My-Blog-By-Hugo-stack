@@ -4,7 +4,7 @@ title: "个人推荐的一些应用、APP、网站"
 slug: "Recommended Apps"
 description: 
 date: "2024-12-08T21:44:34+08:00"
-lastmod: "2024-12-08T21:44:34+08:00"
+lastmod: "2025-08-07T11:18:21+08:00"
 image: "https://picsum.photos/seed/recommended-apps11/800/600"
 math: 
 license: 
@@ -107,8 +107,7 @@ https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json
 
 后续的续费操作如下图所示：
 
-![续费免费域名](https://s2.loli.net/2025/08/07/QzJNT4IVfP6c9e7.png)
-
+![续费免费域名](https://s2.loli.net/2025/08/07/UKrpyOXgcln95fQ.png)
 
 ## 附录
 
