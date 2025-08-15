@@ -25,15 +25,15 @@
             position: relative;
             .top-badge {
                 position: absolute;
-                left: 0;
-                top: 0;
+                left: 10;
+                top: 10;
                 background: #e43;
                 color: #fff;
-                padding: 6px 24px;
-                font-size: 1rem;
-                font-weight: bold;
-                transform: rotate(-30deg) translate(-20px, 10px);
-                box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+                padding: 6px 30px;
+                font-size: 1.5rem;
+                font-weight: 700;
+                transform: rotate(-35deg)translate(-20px,0px);
+                box-shadow: 0 2px 8px rgba(0,0,0,.15);
                 z-index: 2;
                 border-top-left-radius: 6px;
                 border-bottom-right-radius: 6px;
