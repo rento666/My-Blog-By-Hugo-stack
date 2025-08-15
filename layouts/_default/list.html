@@ -50,9 +50,6 @@
         {{/* This happens with taxonomies like categories or tags */}}
         {{- $pages = $subsections -}}
         {{- $subsections = slice -}}
-        <!-- 置顶文章 -->
-        {{- $topPages = where $pages ".Params.top" true -}}
-        {{- $normalPages = where $pages ".Params.top" "ne" true -}}
     {{- end -}}
 
     {{- with $subsections -}}

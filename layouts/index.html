@@ -1,10 +1,11 @@
 {{ define "main" }} 
 {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }} 
-{{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }} 
-{{ $filtered := ($pages | intersect $notHidden) }}
-{{ $topPages := where $filtered "Params.top" true }}
-{{ $normalPages := where $filtered "Params.top" "ne" true }}
-{{ $sorted := $topPages | append $normalPages }}
+<!-- {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}  -->
+<!-- {{ $filtered := ($pages | intersect $notHidden) }} -->
+<!-- {{ $pag := .Paginate ($filtered) }} -->
+{{ $topPages := where $pages "Params.top" true }}
+{{ $normalPages := where $pages "Params.top" "!=" true }}
+{{ $sorted := (union $topPages $normalPages) }}
 {{ $pag := .Paginate ($sorted) }}
 
 <!-- 首页欢迎字幅板块 -->
@@ -71,11 +72,7 @@
   });
 </script>
 <!-- ------首页欢迎字幅板块------ -->
-<pre>
-{{ range $sorted }}
-{{ .Title }} | top: {{ .Params.top }}
-{{ end }}
-</pre>
+
 <section class="article-list">
   {{ range $index, $element := $pag.Pages }} {{ partial "article-list/default" .
   }} {{ end }}
