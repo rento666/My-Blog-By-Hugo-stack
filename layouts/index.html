@@ -2,7 +2,9 @@
 {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }} 
 {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }} 
 {{ $filtered := ($pages | intersect $notHidden) }}
-{{ $sorted := sort $filtered "Params.top" "desc"}}
+{{ $topPages := where $filtered "Params.top" true }}
+{{ $normalPages := where $filtered "Params.top" "ne" true }}
+{{ $sorted := $topPages | append $normalPages }}
 {{ $pag := .Paginate ($sorted) }}
 
 <!-- 首页欢迎字幅板块 -->

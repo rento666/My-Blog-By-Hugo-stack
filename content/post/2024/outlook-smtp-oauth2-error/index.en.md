@@ -12,6 +12,7 @@ draft: false
 categories: ["email"]
 tags: ["outlook", "smtp"]
 reaction: true
+top: false
 ---
 
 ## Introduction
