@@ -73,10 +73,12 @@
 </script>
 <!-- ------首页欢迎字幅板块------ -->
 
+{{ printf "置顶文章数量: %d" (len $topPages) }}
 <section class="article-list">
   {{ range $index, $element := $pag.Pages }} {{ partial "article-list/default" .
   }} {{ end }}
 </section>
+
 <script type="module">
   import { commentCount } from "https://unpkg.com/@waline/client@v3/dist/comment.js";
 
