@@ -80,6 +80,7 @@
 
         <!-- 置顶文章列表 -->
     {{ if gt (len $topPages) 0 }}
+        <pre>{{ printf "%#v" $topPages }}</pre>
         <section class="article-list--top">
             <h2 class="section-title">置顶文章</h2>
             {{ range $topPages }}
@@ -90,6 +91,7 @@
 
     <!-- 普通文章分页列表 -->
     {{ $paginator := .Paginate $normalPages }}
+    <pre>{{ printf "111%#v" $normalPages }}</pre>
     <section class="article-list--compact">
         {{ range $paginator.Pages }}
             {{ partial "article-list/compact" . }}

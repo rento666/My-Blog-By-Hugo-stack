@@ -2,7 +2,7 @@
 
 title: "个人推荐的一些应用、APP、网站"
 slug: "Recommended Apps"
-description: 
+description: "内含你想要的工具！"
 date: "2024-12-08T21:44:34+08:00"
 lastmod: "2025-08-07T11:18:21+08:00"
 image: "https://picsum.photos/seed/recommended-apps11/800/600"
@@ -69,6 +69,16 @@ https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json
 [Watt Toolkit](https://steampp.net/)是一个开源跨平台的多功能 Steam 工具箱。
 
 之所以将其划分到[工具类](#工具类), 是因为我觉得这个除了加速[steam商店](https://store.steampowered.com/), 还能加速其他的网站，包括但不限于[Discord语音聊天 | 3.0.0-rc.13(2024-12-01)版本疑似已去除](https://discord.com/)、[Twitch直播](https://www.twitch.tv/)、[Origin游戏下载 - 烂橘子](https://www.origin.com/)、[Uplay商店 - 育碧](https://zh-cn.ubisoft.com/ubisoftconnect)、[一些公共CDN](#参考)、[Google翻译](https://translate.google.com/)、[Spotify](https://www.spotify.com)、[一些国外验证码平台](#参考)、[Github](https://www.github.com)、[Roblox](https://www.roblox.com)、[Mod.io](https://www.mod.io)、[Nexus Mods - N网MOD](https://www.nexusmods.com)、[一些网盘服务](#参考)、[其他网站](#参考)
+
+### 魔戒（薇屁恩）- 按流量计费、无限时间
+
+[魔戒 VPN注册](https://mojie.cyou/#/register?code=PuxpBY7b)是我见过的唯一一个按流量计费、不限时间的节点订阅网站。
+
+通过我这个链接`https://mojie.cyou/#/register?code=PuxpBY7b`注册账号，首次购买套餐有20%折扣！
+
+> 就我个人而言，130GB流断断续续用了3、4年还有15%左右！
+
+![套餐详情](https://s2.loli.net/2025/08/15/QzwZMekXqBW5YFu.png)
 
 ### SubsTracker-订阅管理与提醒系统
 
