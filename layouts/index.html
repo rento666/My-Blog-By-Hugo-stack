@@ -4,6 +4,7 @@
 <!-- {{ $filtered := ($pages | intersect $notHidden) }} -->
 <!-- {{ $pag := .Paginate ($filtered) }} -->
 {{ $topPages := where $pages "Params.top" true }}
+{{ $pagt := .Paginate ($topPages) }}
 {{ $normalPages := where $pages "Params.top" "!=" true }}
 {{ $pag := .Paginate ($normalPages) }}
 
@@ -73,7 +74,7 @@
 <!-- ------首页欢迎字幅板块------ -->
 
 <section class="article-list">
-  {{ range $index, $element := $topPages.Pages }} {{ partial "article-list/default" .
+  {{ range $index, $element := $pagt.Pages }} {{ partial "article-list/default" .
   }} {{ end }}
 </section>
 <section class="article-list">
