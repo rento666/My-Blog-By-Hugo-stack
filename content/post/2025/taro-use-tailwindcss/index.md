@@ -5,7 +5,7 @@ slug: "Taro Use Tailwindcss"
 description: "国内的tailwindcss版本较低"
 date: "2025-07-16T12:06:06+08:00"
 lastmod: "2025-07-16T12:06:06+08:00"
-image: "https://picsum.photos/seed/taro-use-tailwindcss11/800/600"
+image: "https://picsum.photos/seed/taro-use-tailwindcss800/600"
 math: 
 license: 
 hidden: false

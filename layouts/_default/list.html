@@ -46,8 +46,8 @@
     {{- $pages := .Pages | complement $subsections -}}
     
     <!-- 获取置顶文章和正常文章 -->
-    {{- $topPages := where $pages "Params.top" true -}}
-    {{- $normalPages := where $pages "Params.top" "ne" true -}}
+    {{- $topPages := where $pages ".Params.top" true -}}
+    {{- $normalPages := where $pages ".Params.top" "ne" true -}}
 
     {{- if eq (len $pages) 0 -}}
         {{/* If there are no normal pages, display subsections in list style, with pagination */}}
@@ -55,8 +55,8 @@
         {{- $pages = $subsections -}}
         {{- $subsections = slice -}}
         <!-- 置顶文章 -->
-        {{- $topPages = where $pages "Params.top" true -}}
-        {{- $normalPages = where $pages "Params.top" "ne" true -}}
+        {{- $topPages = where $pages ".Params.top" true -}}
+        {{- $normalPages = where $pages ".Params.top" "ne" true -}}
     {{- end -}}
 
     {{- with $subsections -}}
