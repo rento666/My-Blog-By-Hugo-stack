@@ -1,7 +1,9 @@
-{{ define "main" }} {{ $pages := where .Site.RegularPages "Type" "in"
-.Site.Params.mainSections }} {{ $notHidden := where .Site.RegularPages
-"Params.hidden" "!=" true }} {{ $filtered := ($pages | intersect $notHidden) }}
-{{ $pag := .Paginate ($filtered) }}
+{{ define "main" }} 
+{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }} 
+{{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }} 
+{{ $filtered := ($pages | intersect $notHidden) }}
+{{ $sorted := sort $filtered "Params.top" "desc"}}
+{{ $pag := .Paginate ($sorted) }}
 
 <!-- 首页欢迎字幅板块 -->
 <div class="welcome">
