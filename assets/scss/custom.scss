@@ -333,7 +333,7 @@ main.main {
 //为代码块顶部添加macos样式
 .article-content {
     .highlight {
-        box-shadow: var(--shadow-l1);
+        // box-shadow: var(--shadow-l1);
         border-bottom-left-radius: var(--mainradius);
         border-bottom-right-radius: var(--mainradius);
         margin-top: 20px;
