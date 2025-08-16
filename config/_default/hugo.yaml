@@ -4,7 +4,7 @@ theme: stack
 title: 彩虹兔の博客
 
 pagination:
-  pagerSize: 5
+  pagerSize: 15
 
 # 更新时间：优先读取git时间 -> git时间不存在，就读取本地文件修改时间
 frontmatter:
