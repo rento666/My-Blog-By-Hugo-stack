@@ -1,4 +1,4 @@
-<!-- {{ if gt .Paginator.TotalPages 1 }}
+{{ if gt .Paginator.TotalPages 1 }}
     <nav class='pagination'>
         {{ $.Scratch.Set "hasPrevDots" false }}
         {{ $.Scratch.Set "hasNextDots" false }}
@@ -23,41 +23,4 @@
                 {{ end }}
             {{ end }}
     </nav>
-{{ end }} -->
-
-{{ if gt .TotalPages 1 }}
-<nav class="pagination">
-  {{ $.Scratch.Set "hasPrevDots" false }}
-  {{ $.Scratch.Set "hasNextDots" false }}
-
-  <!-- 上一页 -->
-  {{ if gt .PageNumber 1 }}
-    <a class="page-link" href="{{ .Site.BaseURL }}page/{{ sub .PageNumber 1 }}/">{{ T "pagination.prev" }}</a>
-  {{ end }}
-
-  <!-- 页面编号 -->
-  {{ range $i := seq .TotalPages }}
-    {{ $pageNum := add $i 1 }}
-    {{ if eq $pageNum .PageNumber }}
-      <span class="page-link current">{{ $pageNum }}</span>
-    {{ else if or (eq $pageNum 1) (eq $pageNum .TotalPages) (eq $pageNum (sub .PageNumber 1)) (eq $pageNum (add .PageNumber 1)) }}
-      <!-- 显示第一页、最后一页、当前页的上下页 -->
-      <a class="page-link" href="{{ .Site.BaseURL }}page/{{ $pageNum }}/">{{ $pageNum }}</a>
-    {{ else }}
-      <!-- 显示省略号 -->
-      {{ if and (not ($.Scratch.Get "hasPrevDots")) (lt $pageNum .PageNumber) }}
-        {{ $.Scratch.Set "hasPrevDots" true }}
-        <span class="page-link dots">&hellip;</span>
-      {{ else if and (not ($.Scratch.Get "hasNextDots")) (gt $pageNum .PageNumber) }}
-        {{ $.Scratch.Set "hasNextDots" true }}
-        <span class="page-link dots">&hellip;</span>
-      {{ end }}
-    {{ end }}
-  {{ end }}
-
-  <!-- 下一页 -->
-  {{ if lt .PageNumber .TotalPages }}
-    <a class="page-link" href="{{ .Site.BaseURL }}page/{{ add .PageNumber 1 }}/">{{ T "pagination.next" }}</a>
-  {{ end }}
-</nav>
 {{ end }}
