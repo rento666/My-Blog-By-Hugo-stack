@@ -5,8 +5,7 @@
 <!-- {{ $pag := .Paginate ($filtered) }} -->
 {{ $topPages := where $pages "Params.top" true }}
 {{ $normalPages := where $pages "Params.top" false }}
-{{ $.Scratch.Set "paginator" (.Paginate $normalPages) }}
-{{ $pag := $.Scratch.Get "paginator" }}
+{{ $pag := .Paginate ($normalPages) }}
 
 <!-- 首页欢迎字幅板块 -->
 <div class="welcome">
@@ -73,23 +72,17 @@
 </script>
 <!-- ------首页欢迎字幅板块------ -->
 
-<pre>
-  {{ printf "toppages count: %d" (len $topPages) }}
-</pre>
-
 <section class="article-list">
   {{ range $index, $element := $topPages }} {{ partial "article-list/default" .
   }} {{ end }}
 </section>
 
-<pre>
-  {{ printf "normalpages count: %d" (len $normalPages) }}
-  {{ printf "pag count: %d" (len $pag.Pages) }}
-</pre>
-
 <section class="article-list">
-  {{ range $index, $element := $pag.Pages }} {{ partial "article-list/default" .
-  }} {{ end }}
+  {{ range $index, $element := $pag.Pages }} 
+    {{ if not .Params.top }}
+      {{ partial "article-list/default" . }}
+    {{ end }}
+  {{ end }}
 </section>
 
 <script type="module">
