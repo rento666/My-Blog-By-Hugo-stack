@@ -6,9 +6,13 @@
 
     <!-- Build paginator -->
     {{ $pages := where .Site.RegularPages "Section" "in" .Site.Params.mainSections }}
-    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
+    <!-- {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
     {{ $filtered := ($pages | intersect $notHidden) }}
-    {{ $pag := .Paginate ($filtered) }}
+    {{ $pag := .Paginate ($filtered) }} -->
+    {{ $topPages := where $pages "Params.top" true }}
+    {{ $normalPages := where $pages "Params.top" "!=" true }}
+    {{ $sorted := append $topPages $normalPages }}
+    {{ $pag := .Paginate ($sorted) }}
 
     {{ if .Paginator.HasPrev }}
         <!-- Paginated. Append page number to title -->

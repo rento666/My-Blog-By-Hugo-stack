@@ -5,7 +5,8 @@
 <!-- {{ $pag := .Paginate ($filtered) }} -->
 {{ $topPages := where $pages "Params.top" true }}
 {{ $normalPages := where $pages "Params.top" "!=" true }}
-{{ $pag := .Paginate ($normalPages) }}
+{{ $sorted := append $topPages $normalPages }}
+{{ $pag := .Paginate ($sorted) }}
 
 <!-- 首页欢迎字幅板块 -->
 <div class="welcome">
