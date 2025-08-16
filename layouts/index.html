@@ -4,7 +4,7 @@
 <!-- {{ $filtered := ($pages | intersect $notHidden) }} -->
 <!-- {{ $pag := .Paginate ($filtered) }} -->
 {{ $topPages := where $pages "Params.top" true }}
-{{ $normalPages := where (where $pages "Params.top" false) }}
+{{ $normalPages := where $pages "Params.top" false }}
 {{ $.Scratch.Set "paginator" (.Paginate $normalPages) }}
 {{ $pag := $.Scratch.Get "paginator" }}
 
