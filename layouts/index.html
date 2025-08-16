@@ -1,11 +1,11 @@
 {{ define "main" }} 
 {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }} 
-<!-- {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}  -->
-<!-- {{ $filtered := ($pages | intersect $notHidden) }} -->
-<!-- {{ $pag := .Paginate ($filtered) }} -->
-{{ $topPages := where $pages "Params.top" true }}
+{{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }} 
+{{ $filtered := ($pages | intersect $notHidden) }}
+{{ $pag := .Paginate ($filtered) }}
+<!-- {{ $topPages := where $pages "Params.top" true }}
 {{ $normalPages := where $pages "Params.top" false }}
-{{ $pag := .Paginate ($normalPages) }}
+{{ $pag := .Paginate ($normalPages) }} -->
 
 <!-- 首页欢迎字幅板块 -->
 <div class="welcome">
@@ -72,7 +72,7 @@
 </script>
 <!-- ------首页欢迎字幅板块------ -->
 
-<section class="article-list">
+<!-- <section class="article-list">
   {{ range $index, $element := $topPages }} {{ partial "article-list/default" .
   }} {{ end }}
 </section>
@@ -83,6 +83,11 @@
       {{ partial "article-list/default" . }}
     {{ end }}
   {{ end }}
+</section> -->
+
+<section class="article-list">
+  {{ range $index, $element := $pag.Pages }} {{ partial "article-list/default" .
+  }} {{ end }}
 </section>
 
 <script type="module">
