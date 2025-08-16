@@ -6,7 +6,6 @@
 {{ $topPages := where $pages "Params.top" true }}
 {{ $normalPages := where $pages "Params.top" "!=" true }}
 {{ $sorted := append $topPages $normalPages }}
-{{ $pag := .Paginate ($sorted) }}
 
 <!-- 首页欢迎字幅板块 -->
 <div class="welcome">
@@ -78,16 +77,20 @@
   {{ printf "total top pages: %d" (len $topPages) }}
   {{ printf "total normal pages: %d" (len $normalPages) }}
   {{ printf "total sorted pages: %d" (len $sorted) }}
-  {{ printf "total paginated pages: %d" (len $pag.Pages) }}
 </pre>
 
+{{ $perPage := .Site.Params.perPage | default 5 }}
+{{ $currentPage := .PageNumber | default 1 }}
+{{ $startIndex := mul (sub $currentPage 1) $perPage }}
+{{ $endIndex := add $startIndex $perPage }}
+{{ $paginatedPages := first $perPage (after $startIndex $sorted) }}
+{{ $totalPages := div (add (len $sorted) (sub $perPage 1)) $perPage }}
+
 <section class="article-list">
-  {{ range $index, $element := $topPages }} {{ partial "article-list/default" .
-  }} {{ end }}
-</section>
-<section class="article-list">
-  {{ range $index, $element := $pag.Pages }} {{ partial "article-list/default" .
-  }} {{ end }}
+  <!-- {{ range $index, $element := $pag.Pages }}  -->
+  {{ range $index, $element := $paginatedPages }} 
+    {{ partial "article-list/default" . }} 
+  {{ end }}
 </section>
 
 <script type="module">
@@ -98,5 +101,11 @@
   });
 </script>
 
-{{- partial "pagination.html" . -}} {{- partial "footer/footer" . -}} {{ end }}
-{{ define "right-sidebar" }} {{ partial "sidebar/right.html" . }} {{ end }}
+<!-- 分页导航 -->
+{{ partial "pagination.html" (dict "Site" .Site "PageNumber" $currentPage "TotalPages" $totalPages) }}
+<!-- {{- partial "pagination.html" . -}}  -->
+{{- partial "footer/footer" . -}} 
+{{ end }}
+{{ define "right-sidebar" }} 
+{{ partial "sidebar/right.html" . }} 
+{{ end }}
