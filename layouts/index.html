@@ -102,7 +102,7 @@
 </script>
 
 <!-- 分页导航 -->
-{{ partial "pagination.html" (dict "Site" .Site "PageNumber" $currentPage "TotalPages" $totalPages) }}
+{{ partial "pagination.html" (dict "Site" .Site "currentPage" $currentPage "totalPages" $totalPages) }}
 <!-- {{- partial "pagination.html" . -}}  -->
 {{- partial "footer/footer" . -}} 
 {{ end }}
