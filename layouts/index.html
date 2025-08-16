@@ -79,7 +79,7 @@
   {{ printf "total sorted pages: %d" (len $sorted) }}
 </pre>
 
-{{ $perPage := .Site.Params.perPage | default 5 }}
+{{ $perPage := .Site.Params.pagerSize | default 5 }}
 {{ $currentPage := .PageNumber | default 1 }}
 {{ $startIndex := mul (sub $currentPage 1) $perPage }}
 {{ $endIndex := add $startIndex $perPage }}
