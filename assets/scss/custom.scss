@@ -450,3 +450,167 @@ main.main {
 	color: var(--pre-text-color);
 	background: var(--body-background);
 }
+
+// 三角洲大红收藏品图鉴页面样式
+.sjzdh-page {
+    &.hide-sidebar-sm .left-sidebar {
+        display: none;
+
+        @include respond(md) {
+            display: inherit;
+        }
+    }
+}
+
+// 三角洲收藏品卡片样式
+/* 修改位置 1：优化 .collectibles-container，使用 column-width 结合媒体查询实现智能适配 */
+.collectibles-container {
+    column-width: 300px; /* 设置最小列宽，确保卡片宽度合理 */
+    column-gap: 40px; /* 列间距 */
+    padding: var(--card-padding);
+    break-inside: avoid; /* 防止内容在列中被分割 */
+    
+    /* 修改位置 2：添加媒体查询，动态调整列数 */
+    @media (max-width: 1024px) {
+        column-width: 280px; /* 较小屏幕减少列宽 */
+    }
+    @media (max-width: 768px) {
+        column-width: 260px; /* 移动设备进一步减少列宽 */
+    }
+    @media (max-width: 480px) {
+        column-count: 1; /* 小屏幕强制单列 */
+    }
+    
+    .card {
+        display: inline-block; /* 适应瀑布流 */
+        break-inside: avoid; /* 防止卡片被分割 */
+        border-radius: var(--card-border-radius);
+        padding: 16px;
+        box-shadow: var(--shadow-l1);
+        width: 100%; /* 卡片宽度占满列宽 */
+        max-width: 360px;
+        position: relative;
+        background-color: var(--card-background);
+        color: var(--card-text-color-main);
+        box-sizing: border-box;
+        margin-bottom: 40px; /* 卡片间垂直间距 */
+
+        .card-header {
+            margin-bottom: 12px;
+            .card-header-title {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+              .card-icon {
+                svg {
+                  width: 32px;
+                  height: 32px;
+                  stroke-width: 1.6;
+                  color: var(--body-text-color);
+                }
+              }
+              .card-title {
+                  margin: 0;
+                  margin-bottom: 6px;
+              }
+            }
+            .card-tag {
+                margin-top: 4px;
+                padding-left: 8px;
+                font-size: 12px;
+                line-height: 16px; 
+            }
+        }
+        
+        .card-image {
+            text-align: center;
+            margin: 10px 0;
+            img {
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                max-width: 120px;
+                max-height: 150px;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+
+        .card-weight {
+            text-align: right;
+            margin-bottom: 0.75rem;
+            font-size: 12px;
+            line-height: 16px; 
+        }
+
+        .card-desc {
+            font-size: 14px;
+            line-height: 20px; 
+        }
+
+        .card-ability {
+            border-radius: 8px;
+            background-color: var(--card-background-secondary);
+            padding: 12px;
+            margin-top: 12px;
+
+            .ability-title {
+                font-weight: 600;
+                margin-bottom: 8px;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--card-accent-text);
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.6;
+                margin: 6px 0;
+                text-indent: 2em;
+            }
+
+            .ability-item {
+                margin: 8px 0;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                padding-top: 6px;
+
+                &-name {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    font-weight: bold;
+                    color: var(--card-accent2-text);
+                    font-size: 14px;
+
+                    &::after {
+                        content: "＋";
+                        font-size: 14px;
+                        color: #bbb;
+                        transition: transform 0.3s;
+                    }
+                }
+
+                &.active {
+                    .ability-item-name::after {
+                        content: "－";
+                        color: #4fc3f7;
+                    }
+
+                    .ability-item-content {
+                        display: block;
+                    }
+                }
+
+                &-content {
+                    display: none;
+                    margin-top: 6px;
+                    font-size: 13px;
+                    color: var(--card-text-color-secondary);
+                    line-height: 1.6;
+                    text-indent: 2em;
+                }
+            }
+        }
+    }
+}

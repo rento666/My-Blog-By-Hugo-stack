@@ -1,0 +1,54 @@
+{{ define "body-class" }}article-page  keep-sidebar{{ end }}
+{{ define "main" }}
+    {{ partial "article/article.html" . }}
+
+    <div class="collectibles-container">
+        {{ $siteResources := resources }}
+        {{ range $i, $collectibles := $.Site.Data.collectibles }}
+            <article class="card">
+                <div class="card-header">
+                    <div class="card-header-title">
+                        <div class="card-icon">
+                            {{ partial "helper/icon" "grade6" }}
+                        </div>
+                        <h3 class="card-title">{{- $collectibles.name -}}</h3>
+                    </div>
+                    <div class="card-tag">{{- $collectibles.tag -}}</div>
+                </div>
+                <div class="card-image">
+                    <img src="{{ $collectibles.image }}" width="120" height="120" loading="lazy" data-key="collectibles-{{ $collectibles.image }}" alt="{{ $collectibles.name }}">
+                </div>
+                <div class="card-weight">{{- $collectibles.weight -}}</div>
+                <div class="card-desc">{{- $collectibles.desc -}}</div>
+                
+                {{ if $collectibles.ability }}
+                    <div class="card-ability">
+                        <div class="ability-title">{{- $collectibles.ability.title -}}</div>
+                        <p>{{- $collectibles.ability.content -}}</p>
+                        {{ range $effect := $collectibles.ability.effects }}
+                            <div class="ability-item">
+                                <div class="ability-item-name">{{- $effect.name -}}</div>
+                                <div class="ability-item-content">{{- $effect.content -}}</div>
+                            </div>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </article>
+        {{ end }}
+    </div>
+    <script>
+        document.querySelectorAll('.ability-item-name').forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.parentElement;
+            item.classList.toggle('active');
+        });
+        });
+    </script>
+
+    {{ if or (not (isset .Params "comments")) (eq .Params.comments "true")}} 
+        {{ partial "comments/include" . }}
+    {{ end }}
+
+    {{ partialCached "footer/footer" . }}
+
+{{ end }}

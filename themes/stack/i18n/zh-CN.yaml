@@ -58,6 +58,16 @@ search:
     resultTitle:
         other: "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
 
+sjzdh:
+    title:
+        other: 三角洲行动-大红卡片搜索
+
+    placeholder:
+        other: 输入收藏品名称进行搜索...
+
+    resultTitle:
+        other: "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
+
 welcome:
     emoji: 
         other: 👋

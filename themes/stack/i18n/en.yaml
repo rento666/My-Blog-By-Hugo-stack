@@ -71,6 +71,16 @@ search:
     resultTitle:
         other: "#PAGES_COUNT pages (#TIME_SECONDS seconds)"
 
+sjzdh:
+    title:
+        other: Delta Force - Search
+
+    placeholder:
+        other: Type something...
+
+    resultTitle:
+        other: "#PAGES_COUNT pages (#TIME_SECONDS seconds)"
+
 footer:
     builtWith:
         other: Built with {{ .Generator }}

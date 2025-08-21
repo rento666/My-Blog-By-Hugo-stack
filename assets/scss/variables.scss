@@ -53,11 +53,14 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 */
 :root {
     --card-background: #fff;
+    --card-background-secondary: #fbfbfb;
     --card-background-selected: #eaeaea;
 
     --card-text-color-main: #000;
     --card-text-color-secondary: #747474;
     --card-text-color-tertiary: #bababa;
+    --card-accent-text: #007bff; // 强调文字（蓝色，适合交互元素）
+    --card-accent2-text: #ff5722; // 次强调文字（橙色，适合警告或重要提示）
     --card-separator-color: rgba(218, 218, 218, 0.5);
 
     --card-border-radius: 10px;
@@ -80,10 +83,13 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     &[data-scheme="dark"] {
         --card-background: #424242;
+        --card-background-secondary: rgba(255, 255, 255, 0.04);
         --card-background-selected: rgba(255, 255, 255, 0.16);
         --card-text-color-main: rgba(255, 255, 255, 0.9);
         --card-text-color-secondary: rgba(255, 255, 255, 0.7);
         --card-text-color-tertiary: rgba(255, 255, 255, 0.5);
+        --card-accent-text: #4dabf7; // 强调文字（浅蓝色，适合交互元素）
+        --card-accent2-text: #ff8a65; // 次强调文字（浅橙色，适合警告或重要提示）
         --card-separator-color: rgba(255, 255, 255, 0.12);
     }
 }

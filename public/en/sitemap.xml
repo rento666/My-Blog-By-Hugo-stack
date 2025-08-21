@@ -2,8 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/en/sjzdh/</loc>
+    <lastmod>2025-08-21T11:44:59+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/sjzdh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/sjzdh/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/</loc>
-    <lastmod>2024-11-19T11:47:07+08:00</lastmod>
+    <lastmod>2025-08-21T11:44:59+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -15,21 +28,34 @@
                 href="http://localhost:1313/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/2024/github-desktop/</loc>
-    <lastmod>2024-11-19T11:47:07+08:00</lastmod>
+    <loc>http://localhost:1313/en/page/</loc>
+    <lastmod>2025-08-21T11:44:59+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/2024/github-desktop/"
+                href="http://localhost:1313/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/2024/github-desktop/"
+                href="http://localhost:1313/en/page/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/2025/df-hm-sayings/</loc>
+    <lastmod>2025-08-15T22:05:05+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/2025/df-hm-sayings/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/2025/df-hm-sayings/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/post/</loc>
-    <lastmod>2024-11-19T11:47:07+08:00</lastmod>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -41,8 +67,60 @@
                 href="http://localhost:1313/en/post/"
                 />
   </url><url>
+    <loc>http://localhost:1313/en/2025/taro-use-tailwindcss/</loc>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/2025/taro-use-tailwindcss/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/2025/taro-use-tailwindcss/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/categories/steam/</loc>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/categories/steam/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/steam/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/steam/</loc>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/tags/steam/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/steam/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/2025/steam-download-location/</loc>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/2025/steam-download-location/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/2025/steam-download-location/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/tags/</loc>
-    <lastmod>2024-11-19T11:47:07+08:00</lastmod>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -54,8 +132,73 @@
                 href="http://localhost:1313/en/tags/"
                 />
   </url><url>
+    <loc>http://localhost:1313/en/2025/make-use-of-the-coze-to-make-an-ai-translation/</loc>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/2025/make-use-of-the-coze-to-make-an-ai-translation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/2025/make-use-of-the-coze-to-make-an-ai-translation/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/2025/pick-up-the-blog-again/</loc>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/2025/again-blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/2025/pick-up-the-blog-again/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/2024/recommended-apps/</loc>
+    <lastmod>2025-08-15T12:41:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/2024/recommended-apps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/2024/recommended-apps/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/2024/hugo-theme/</loc>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/2024/hugo-theme/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/2024/hugo-theme/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/2024/github-desktop/</loc>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/2024/github-desktop/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/2024/github-desktop/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/2024/outlook-smtp-oauth2-error/</loc>
-    <lastmod>2024-11-16T20:39:26+08:00</lastmod>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -68,7 +211,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/en/2024/github-profile/</loc>
-    <lastmod>2024-11-16T20:39:26+08:00</lastmod>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -81,7 +224,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/en/about/</loc>
-    <lastmod>2024-11-14T23:56:10+08:00</lastmod>
+    <lastmod>2024-11-21T10:55:51+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -93,21 +236,8 @@
                 href="http://localhost:1313/en/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/page/</loc>
-    <lastmod>2024-11-16T20:39:26+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/page/"
-                />
-  </url><url>
     <loc>http://localhost:1313/en/2024/must-read-content-for-blogging/</loc>
-    <lastmod>2024-11-16T20:39:26+08:00</lastmod>
+    <lastmod>2025-08-15T22:07:12+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -143,6 +273,32 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/links/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/categories/ai/</loc>
+    <lastmod>2025-06-20T19:43:54+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/categories/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/ai/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/ai/</loc>
+    <lastmod>2025-06-20T19:43:54+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/tags/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/ai/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/categories/build-website/</loc>

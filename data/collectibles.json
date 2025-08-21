@@ -1,0 +1,1177 @@
+[
+  {
+    "name": "海洋之泪",
+    "tag": "工艺藏品",
+    "weight": "0.05KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050142.png",
+    "desc": "浑然天成，珠圆玉润的巨大天然珍珠，其通体散发镭射光泽，令人目眩神迷。",
+    "ability": {
+      "title": "核心效果",
+      "content": "佩戴海洋之泪时，使用者可永久获得 “潮汐幻光” 能力。",
+      "effects": [
+        {
+          "name": "幻光屏障",
+          "content": "还没想好怎么编..."
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "非洲之心",
+
+    "tag": "工艺藏品",
+    "weight": "0.62KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050006.png",
+    "desc": "世界上最大的钻石，璀璨夺目，象征永恒的爱。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "复苏呼吸机",
+    "tag": "医疗道具",
+    "weight": "5KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050097.png",
+    "desc": "医疗道具，专为体征已经极度衰弱，自主呼吸已经消失的病患设计的辅助呼吸设备，生命的最终防线。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "纵横",
+    "tag": "工艺藏品",
+    "weight": "4.5KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050123.png",
+    "desc": "对弈中最忌讳的即是错判局势，误以为优势还在自己手中……",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "万金泪冠",
+    "tag": "工艺藏品",
+    "weight": "0.75KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050121.png",
+    "desc": "哈夫克高层的藏品，王冠与海图被小心翼翼地存放于宝箱之中。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "装甲车电池",
+    "tag": "能源燃料",
+    "weight": "15KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050099.png",
+    "desc": "为装甲车辆提供动力的大型储能电池，是为了满足军用要求而设计的定制化产品。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "强化碳纤维板",
+    "tag": "工具材料",
+    "weight": "3.73KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15020010031.png",
+    "desc": "工具&材料，一种轻量、高强度、高刚性的先进复合材料，广泛应用于航空航天、建筑等领域。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "微型反应炉",
+    "tag": "能源燃料",
+    "weight": "10KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050098.png",
+    "desc": "搭载小型反应装置，通过正电子和光子碰撞时产生的巨大能量为设备供能，哈夫克已将其投入在公司研发的新型航天器上。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "ECMO",
+    "tag": "医疗道具",
+    "weight": "6.5KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050128.png",
+    "desc": "ECMO(体外膜肺氧合)，使用人造体外循环系统替代心肺功能，为重症患者提供持续的氧合和血液循环支持，是挽救心肺衰竭患者生命的关键医疗设备。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "主战坦克模型",
+    "tag": "工艺藏品",
+    "weight": "3.35KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050040.png",
+    "desc": "这台主战坦克模型，严格按照真实尺寸缩比制作，细节精致。炮塔与车身可电动旋转，让您全方位欣赏这台钢铁巨兽。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "绝密服务器",
+    "tag": "资料情报",
+    "weight": "5.52KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050044.png",
+    "desc": "已贮存极高密级情报的服务器机柜，经研判属于高性能的军事级数据处理装置，数据已经过复杂加密，需要专业人员解析。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "便携军用雷达",
+    "tag": "电子物品",
+    "weight": "9.5KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050031.png",
+    "desc": "这台便携式军用雷达体积轻巧，易于携带，可在各种环境中使用。其高精度传感器和强大数据处理能力，能够迅速探测到周边敌情，为部队提供有力支持。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "曼德尔超算单元",
+    "tag": "电子物品",
+    "weight": "4.52KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050030.png",
+    "desc": "哈夫克公司生产的M100超算单元，是基于曼德尔砖进行技术流用的民品级芯片，但其中依然充斥着外界无法解决的黑盒架构，颇具研究价值。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "扫拖一体机器人",
+    "tag": "家居物品",
+    "weight": "5.6KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050066.png",
+    "desc": "哈夫克家居产品，采用智能导航系统规划清洁路线，提升家庭卫生效率。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        },
+        {
+          "name": "能力3",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "高速磁盘阵列",
+    "tag": "电子物品",
+    "weight": "4.71KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15030050012.png",
+    "desc": "电子物品，存储加密数据，可为军用，带自毁功能。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "飞行记录仪",
+    "tag": "电子物品",
+    "weight": "15KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15030050014.png",
+    "desc": "电子物品，飞行数据记录仪。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "动力电池组",
+    "tag": "能源燃料",
+    "weight": "20KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050100.png",
+    "desc": "使用新型材料大幅提升储能性能的电池组，被用于支持超大功耗的工业、航天设备运转。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "军用炮弹",
+    "tag": "工具材料",
+    "weight": "20.15KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15030050017.png",
+    "desc": "军用物品，全自动多模式炮弹，可装载于多种军用设备上。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "强力吸尘器",
+    "tag": "家居物品",
+    "weight": "4.8KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050067.png",
+    "desc": "哈夫克家居产品，采用智能光学探测系统，快速扫清顽垢，居家首选。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "刀片服务器",
+    "tag": "电子物品",
+    "weight": "6.56KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15030050008.png",
+    "desc": "电子物品，高性能的军事级数据处理装置，专为提供强大计算能力和高速数据传输能力，以满足战场上严苛的信息处理需求。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "自动体外除颤器",
+    "tag": "医疗道具",
+    "weight": "1.36KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050058.png",
+    "desc": "便携式医疗设备，用于心脏骤停急救。操作简便，内置语音指导，关键时刻挽救生命。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "云存储阵列",
+    "tag": "资料情报",
+    "weight": "4KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050061.png",
+    "desc": "集成了最先端磁盘阵列技术的次世代数据存储设备，已经可以满足军用级别的数据加密要求。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "步战车模型",
+    "tag": "工艺藏品",
+    "weight": "2.35KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050041.png",
+    "desc": "这台步战车仿真模型，比例精确，细节丰富。配有金属炮管及橡胶轮胎，是军事爱好者收藏的绝佳之选。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "医疗机械人",
+    "tag": "医疗道具",
+    "weight": "5KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050113.png",
+    "desc": "专门用于复杂微创手术场合的医用机械人，超高精度的机械臂可以将手术创伤控制到最小，大大提高手术的成功率。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "雷斯的留声机",
+    "tag": "工艺藏品",
+    "weight": "2.5KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050120.png",
+    "desc": "这段旋律经久不衰，被人们铭记于心。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "克劳迪乌斯半身像",
+    "tag": "工艺藏品",
+    "weight": "1.09KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15040050002.png",
+    "desc": "阿萨拉著名艺术家参考古罗马皇帝克劳迪乌斯创作的半身像。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "笔记本电脑",
+    "tag": "电子物品",
+    "weight": "2.26KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15030050007.png",
+    "desc": "电子物品，笔记本电脑，高效屏幕比例，轻薄随行，散热系统新升级，带来畅爽使用体验。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "军用信息终端",
+    "tag": "电子物品",
+    "weight": "2.71KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050032.png",
+    "desc": "这台军用信息终端，具备坚固耐用的外壳和防尘防水设计，能在恶劣环境下稳定工作。搭载高性能处理器和加密存储，确保军事数据安全可靠。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "军用电台",
+    "tag": "电子物品",
+    "weight": "5.34KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15030050004.png",
+    "desc": "电子物品，无线信号发射器是一种能提供各种频率、波形和输出电平电信号的设备。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "天圆地方",
+    "tag": "工艺藏品",
+    "weight": "2KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050122.png",
+    "desc": "“天圆如方盖，地方如棋局”，可真实的世界如若运转起来则更加不可思议。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "滑膛枪展品",
+    "tag": "工艺藏品",
+    "weight": "4.11KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050003.png",
+    "desc": "稀有且具备历史意义的阿萨拉土制滑膛枪，曾被用在对抗外国殖民者的独立战争中。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "摄影机",
+    "tag": "电子物品",
+    "weight": "2.35KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15030010012.png",
+    "desc": "电子物品，可以拍摄16K，240帧高精度视频。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "军用无人机",
+    "tag": "电子物品",
+    "weight": "0.87KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15030050002.png",
+    "desc": "电子物品，利用无线电遥控设备和自备的程序控制装置操纵的飞行器。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        },
+        {
+          "name": "能力2",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "呼吸机",
+    "tag": "医疗道具",
+    "weight": "1.09KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15060040004.png",
+    "desc": "医疗道具，能够协助或完全替代患者呼吸，通过向患者提供氧气和控制呼吸频率与压力，以改善呼吸功能和维持生命。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "黄金瞪羚",
+    "tag": "工艺藏品",
+    "weight": "2.9KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15010050001.png",
+    "desc": "黄金瞪羚，约300年历史，被阿萨拉王子用于追求潜在伴侣。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "奥莉薇娅香槟",
+    "tag": "家居物品",
+    "weight": "0.8KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15060080015.png",
+    "desc": "是一种产自法国香槟地区的气泡酒，以其独特的口感和气泡而闻名，常被用于庆祝重要场合和佳节。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "万足金条",
+    "tag": "工艺藏品",
+    "weight": "4.25KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050010.png",
+    "desc": "一整根金条，可以拿去卖钱。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "显卡",
+    "tag": "电子物品",
+    "weight": "1.43KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15030050001.png",
+    "desc": "电子物品，计算机中一种专门处理图形数据的硬件设备，用于加速图形和影像的处理，包括3D图形渲染、视频解码和显示输出等功能，高端游戏电脑必备。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "军用控制终端",
+    "tag": "电子物品",
+    "weight": "0.17KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15030050018.png",
+    "desc": "军用密钥，主要在极端天气和复杂网络下使用，破译机密设备。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "棘龙爪化石",
+    "tag": "工艺藏品",
+    "weight": "0.93KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080040001.png",
+    "desc": "棘龙的爪子，是迄今为止阿萨拉档案中记载的最大的已知恐龙之一。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "量子存储",
+    "tag": "资料情报",
+    "weight": "0.05KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15070050001.png",
+    "desc": "情报道具，哈夫克公司基于量子存储技术开发的小型便携式存储单元，能够实现极高的传输速率和TB级的数据。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "实验数据",
+    "tag": "资料情报",
+    "weight": "0.04KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15070040003.png",
+    "desc": "情报道具，实验数据。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "潮汐监狱地图-4",
+    "tag": "资料情报",
+    "weight": "0.05KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050151.png",
+    "desc": "潮汐监狱地图的第四部分。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Alpha脑机实验数据-渡鸦",
+    "tag": "资料情报",
+    "weight": "0.05KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050161.png",
+    "desc": "丑陋的世界扭曲了本性善良、圣洁孤傲的王子，使其变成了行为莫测、播种混乱的渡鸦。他仇视哈夫克和G.T.1.，更痛恨阿萨拉皇室、阿萨拉卫队甚至是阿萨拉人。过去带给阿萨拉秩序、希望、欢乐的王子，如今所到之处，充斥着混乱、无序和令人不寒而栗的狂笑。当他“入驻”潮汐监狱后，一场震动哈夫克的暴动便在监狱中悄然酝酿！",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "名贵机械表",
+    "tag": "工艺藏品",
+    "weight": "0.16KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050042.png",
+    "desc": "这块金质名贵机械表，镶钻表盘璀璨夺目，精细机芯运转精准。佩戴它，彰显您非凡品味与优雅气质。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "赛伊德的怀表",
+    "tag": "工艺藏品",
+    "weight": "0.33KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050014.png",
+    "desc": "游荡猎人赛伊德的贴身怀表，听说里面有着他身世的秘密。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "钻石鱼子酱",
+    "tag": "家居物品",
+    "weight": "0.1KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050131.png",
+    "desc": "“钻石”鱼子酱因其产量稀少且仅使用顶级鲟鱼出产而闻名世间，它已不仅是一道美食，更是一种身份的象征，常出现在顶级餐厅和奢华场合。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "火箭燃料",
+    "tag": "能源燃料",
+    "weight": "21.72KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15020010033.png",
+    "desc": "尚未开封的20升高性能航空燃料，专为火箭发动机所设计，提供澎湃动力。\n【用途】解锁仓库7级必要材料。\n【来源】仅限航天城产出，禁止交易。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "G.T.I卫星通信天线",
+    "tag": "电子物品",
+    "weight": "13.57KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15030050013.png",
+    "desc": "电子物品，G.T.I.专为恶劣环境下保持稳定、高速的卫星连接而打造的便携式、高性能通信设备。\n【用途】解锁训练中心7级必要材料.\n【来源】仅限航天城产出，禁止交易。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "高级咖啡豆",
+    "tag": "家居物品",
+    "weight": "0.5KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050069.png",
+    "desc": "高级咖啡豆选自阿萨拉地区优质咖啡树，经过精心烘焙和筛选，具有独特风味和香气，为咖啡爱好者提供纯正且丰富的口感体验。\n【用途】可在医疗部门同其他材料兑换三个机械工蜂模型。\n【来源】局内获得，禁止交易。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "浮力补偿设备",
+    "tag": "工具材料",
+    "weight": "5KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050144.png",
+    "desc": "用于蛙人部队的潜泳设备，潜水员佩戴设备时可在水下/水面状态时灵活建立及调整浮力大小。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "乙巳玄武",
+    "tag": "工艺藏品",
+    "weight": "1KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15200000034.png",
+    "desc": "乙巳年关，新春祥瑞。据说获得它的人将拥有一整年的好运气。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "炫彩麦小蛋",
+    "tag": "工艺藏品",
+    "weight": "0.6KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15200000049.png",
+    "desc": "“炫彩麦小蛋（隐藏款）”重磅来袭——黑夜之子赛季的稀有收藏品。炫彩表面，光芒闪耀。全新的视觉和把玩体验，萌力爆棚！获取炫彩麦小蛋，为你的仓库增添一份独一无二的魅力！",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "幸运木雕",
+    "tag": "工艺藏品",
+    "weight": "1.4KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15200000058.png",
+    "desc": "祝你好运！",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+ {
+    "name": "吴彦祖之镜",
+    "tag": "工艺藏品",
+    "weight": "0.6KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15200000059.png",
+    "desc": "魔镜魔镜，谁是世上最帅的男人？",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "炫彩克小圈",
+    "tag": "工艺藏品",
+    "weight": "0.66KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15200000069.png",
+    "desc": "“炫彩克小圈(隐藏款)”重磅登场——破壁赛季最稀有的收藏品。炫彩表面，光芒闪耀。全新的视觉和把玩体验，萌力爆棚！获取炫彩克小圈，为你的仓库增添一份独一无二的魅力！",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "手办-阿米娅（近卫）",
+    "tag": "工艺藏品",
+    "weight": "0.5KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15200000071.png",
+    "desc": "以阿米娅的近卫形象打造的两头身手办，展现出少女在阴影之下不屈战斗的英姿。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "至纯源石",
+    "tag": "工艺藏品",
+    "weight": "1KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15200000072.png",
+    "desc": "在工业中用量巨大的源石结晶，但有着较高的提取难度。是世界的主要能源类精加工产物，同时也是几乎所有源石技艺得以施展的根本。如今，即使“它会传播绝症”的传言甚嚣尘上，也依旧没多少人能抵挡住它的诱惑。",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  }
+]
