@@ -22,16 +22,20 @@
                 <div class="card-desc">{{- $collectibles.desc -}}</div>
                 
                 {{ if $collectibles.ability }}
-                    <div class="card-ability">
-                        <div class="ability-title">{{- $collectibles.ability.title -}}</div>
-                        <p>{{- $collectibles.ability.content -}}</p>
-                        {{ range $effect := $collectibles.ability.effects }}
-                            <div class="ability-item">
-                                <div class="ability-item-name">{{- $effect.name -}}</div>
-                                <div class="ability-item-content">{{- $effect.content -}}</div>
-                            </div>
-                        {{ end }}
-                    </div>
+                    {{ if $collectibles.ability.content }}
+                        <div class="card-ability">
+                            <div class="ability-title">{{- $collectibles.ability.title -}}</div>
+                            <p>{{- $collectibles.ability.content -}}</p>
+                            {{ range $effect := $collectibles.ability.effects }}
+                                {{ if $effect.content }}
+                                    <div class="ability-item">
+                                        <div class="ability-item-name">{{- $effect.name -}}</div>
+                                        <div class="ability-item-content">{{- $effect.content -}}</div>
+                                    </div>
+                                {{ end}}
+                            {{ end }}
+                        </div>
+                    {{ end}}
                 {{ end }}
             </article>
         {{ end }}
