@@ -3,7 +3,7 @@
     "name": "“雷明顿”打印机",
     "tag": "家居物品",
     "weight": "6.5KG",
-    "image": "",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050173.png",
     "desc": "经典款雷明顿英文机械打字机，外观设计简洁不失优雅，敲击流畅，坚固耐用。虽然已经过时，但仍是众多收藏家和怀旧爱好者的心头好。",
     "ability": {
       "title": "核心效果",
@@ -20,7 +20,7 @@
     "name": "印象派名画",
     "tag": "工艺藏品",
     "weight": "5.0KG",
-    "image": "",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050166.png",
     "desc": "一幅享誉艺术界的印象派名画，艺术家运用强烈的色彩与大胆的笔触将阿萨拉的独特风光定格。",
     "ability": {
       "title": "核心效果",
@@ -37,7 +37,7 @@
     "name": "已封存音源",
     "tag": "资料情报",
     "weight": "3.5KG",
-    "image": "",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050170.png",
     "desc": "经过特殊处理的旧式音频存储设备，具有高度保密性，对其进行操作时需要熟练掌握录音的基本原理。",
     "ability": {
       "title": "核心效果",
@@ -58,7 +58,7 @@
     "desc": "经过特殊改装的电子脚镣，内置定位与警报系统，用于实时追踪佩戴者的位置与活动。",
     "ability": {
       "title": "核心效果",
-      "content": "",
+      "content": "https://playerhub.df.qq.com/playerhub/60004/object/15080050175.png",
       "effects": [
         {
           "name": "能力1",
@@ -71,7 +71,7 @@
     "name": "定位接收器",
     "tag": "电子物品",
     "weight": "0.3KG",
-    "image": "",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15080050167.png",
     "desc": "精密的定位接收设备，具备高灵敏度与低噪声性能，内置多频段接收模块，可以在复杂环境下稳定接收信号并精确定位目标。",
     "ability": {
       "title": "核心效果",
@@ -85,11 +85,28 @@
     }
   },
   {
-    "name": "鎏金卡牌",
-    "tag": "资料情报",
-    "weight": "0.1KG",
-    "image": "",
-    "desc": "熠熠生辉的鎏金卡牌",
+    "name": "黄金鸟窝",
+    "tag": "工艺藏品",
+    "weight": "1.5KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15200000123.png",
+    "desc": "",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "炫彩兰小登",
+    "tag": "工艺藏品",
+    "weight": "0.6KG",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15200000115.png",
+    "desc": "炫彩兰小登（隐藏款）”重磅现身——烈火冲天赛季最稀有的收藏品。炫彩表面，光影流转;伪装之下，更添神秘。全新的视觉与把玩体验，让惊喜超乎想象。获取炫彩兰小登，为你的仓库增添一份独一无二的魅力！",
     "ability": {
       "title": "核心效果",
       "content": "",
