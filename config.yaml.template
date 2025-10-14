@@ -1,4 +1,4 @@
-baseurl: https://caihongtu.asia
+baseurl: https://caihongtu.top
 languageCode: zh-cn
 theme: stack
 title: 彩虹兔の博客
@@ -102,7 +102,7 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/client.html
         waline:
-            serverURL: https://waline.caihongtu.asia
+            serverURL: https://waline.caihongtu.top
             lang: zh-CN
             visitor: true
             avatar:

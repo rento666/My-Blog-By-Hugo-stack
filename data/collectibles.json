@@ -1,5 +1,22 @@
 [
   {
+    "name": "炫彩鸟蛋",
+    "tag": "工艺藏品",
+    "weight": "",
+    "image": "https://playerhub.df.qq.com/playerhub/60004/object/15200000125.png",
+    "desc": "",
+    "ability": {
+      "title": "核心效果",
+      "content": "",
+      "effects": [
+        {
+          "name": "能力1",
+          "content": ""
+        }
+      ]
+    }
+  },
+  {
     "name": "“雷明顿”打印机",
     "tag": "家居物品",
     "weight": "6.5KG",

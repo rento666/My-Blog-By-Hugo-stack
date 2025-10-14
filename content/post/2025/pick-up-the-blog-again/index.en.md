@@ -125,7 +125,7 @@ Now that all the preliminaries are done, feel free to blog!
 
 ### Copyright information
 
-This article was originally published in [CaiHongTu Blog](https://caihongtu.asia) and follows the CC BY-NC-SA 4.0 agreement. Please keep the original source when copying.
+This article was originally published in [CaiHongTu Blog](https://caihongtu.top) and follows the CC BY-NC-SA 4.0 agreement. Please keep the original source when copying.
 
 ---
 ## END

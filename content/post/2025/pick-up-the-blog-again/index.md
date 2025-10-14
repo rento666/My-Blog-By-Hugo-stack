@@ -118,6 +118,16 @@ winget uninstall --name "Hugo (Extended)"
 
 我的项目是放在了**CloudFlare**上，作为一个pages项目，详情可查看[Pages文档 | CloudFlare](https://developers.cloudflare.com/pages/),在“设置-分支控制”启用了自动部署，这样，每当我Push到GitHub上最新的代码后，其就会自动部署，博客就自动出现新的！
 
+## 更换域名
+
+> 2025年10月14日更新
+
+原域名为`caihongtu.asia`，是我在腾讯云买的，首年优惠价12块钱一年，但是后续续费需要80块/年。
+
+但是在玩博客的时候，无意间发现了[哪煮米](https://www.nazhumi.com/)这个域名比价网站，发现[SpaceShip](https://www.spaceship.com/)的top后缀域名最便宜，首年8块钱(1.05刀)，后续续费只需要27块钱左右(3.85刀)
+
+所以，现在本博客的域名便是`caihongtu.top`啦
+
 ## 附录
 
 ### 参考

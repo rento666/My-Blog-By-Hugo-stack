@@ -118,7 +118,7 @@ welcome:
 {{% spoiler "hugo.yaml前几行的" %}}
 
 ```
-baseurl: https://caihongtu.asia/
+baseurl: https://caihongtu.top/
 languageCode: zh-cn
 theme: stack
 title: 彩虹兔の博客

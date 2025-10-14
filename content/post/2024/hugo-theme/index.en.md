@@ -27,6 +27,8 @@ top: false
 
 ## Welcome banner on the homepage
 
+> 2025-10-14 update，domain change to`caihongtu.top`
+
 Preview:
 ![Welcome banner](https://s2.loli.net/2024/11/21/XhInQYoesvJf1N3.png)
 

@@ -32,7 +32,7 @@ menu:
 
 > {  
 >  &emsp; "title": "毒鸡汤",  
->  &emsp; "website": "https://pcsoup.caihongtu.asia/",  
+>  &emsp; "website": "https://pcsoup.caihongtu.top/",  
 >  &emsp; "image": "https://picsum.photos/seed/34535s/800/600",  
 >  &emsp; "description": "Here are some toxic inspirational quotes...",  
 >  &emsp; "badge": {  

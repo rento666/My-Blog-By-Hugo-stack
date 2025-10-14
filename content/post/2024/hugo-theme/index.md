@@ -28,6 +28,8 @@ weight: -98
 
 ## 首页的欢迎横幅
 
+> 2025年10月14日更新，域名已经更改为`caihongtu.top`
+
 预览：
 ![欢迎横幅](https://s2.loli.net/2024/11/21/XhInQYoesvJf1N3.png)
 

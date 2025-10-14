@@ -25,7 +25,7 @@ social:
 
     - identifier: email
       name: Email
-      url: mailto:admin_reply@caihongtu.asia
+      url: mailto:admin_reply@caihongtu.top
       weight: 3
       params:
           icon: brand-email
