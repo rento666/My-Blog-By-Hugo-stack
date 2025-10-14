@@ -4,7 +4,7 @@ title: "Pick Up the Blog Again"
 slug: "Pick Up the Blog Again"
 description: 
 date: "2025-06-20T13:56:15+08:00"
-lastmod: "2025-06-20T13:56:15+08:00"
+lastmod: "2025-10-14T13:56:15+08:00"
 image: "https://picsum.photos/seed/pick-up-the-blog-again11/800/600"
 math: 
 license: 
@@ -112,8 +112,16 @@ If you happen to be using vscode, you can set it up like this:
 
 Now that all the preliminaries are done, feel free to blog!
 
+## Changing the Domain Name
 
-### Appendix
+> Updated on October 14, 2025
+
+The original domain name was `caihongtu.asia`, which I bought on Tencent Cloud. The first-year discount price was 12 yuan per year, but the renewal afterwards costs 80 yuan per year.However, while playing with blogs, I accidentally discovered [Nazhumi](https://www.nazhumi.com/), a domain price comparison website, and found that the `.top` domains on [SpaceShip](https://www.spaceship.com/) were the cheapest: 8 yuan for the first year ($1.05), and renewal only costs about 27 yuan ($3.85).
+
+So now, the domain of this blog is `caihongtu.top`.
+
+
+## Appendix
 
 ### Reference
 

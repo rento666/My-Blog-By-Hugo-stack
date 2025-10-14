@@ -4,7 +4,7 @@ title: "重拾博客"
 slug: "again blog"
 description: "在新电脑上继续写博客需要做的事情"
 date: "2025-06-20T13:56:11+08:00"
-lastmod: "2025-06-20T13:56:11+08:00"
+lastmod: "2025-10-14T13:56:11+08:00"
 image: "https://picsum.photos/seed/pick-up-the-blog-again11/800/600"
 math: 
 license: 
