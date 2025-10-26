@@ -1,5 +1,6 @@
 @echo off
-echo 【创建标签】
-set /p input= 请输入标签名: 
+echo new tag
+set /p input=  please input the tag name: 
 hugo new tags/%input%/_index.md
+hugo new tags/%input%/_index.en.md
 pause

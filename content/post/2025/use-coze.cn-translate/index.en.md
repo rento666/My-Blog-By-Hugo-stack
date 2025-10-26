@@ -5,7 +5,7 @@ slug: "Make use of the coze to make an AI translation"
 description: 
 date: "2025-06-20T16:38:34+08:00"
 lastmod: "2025-06-20T16:38:34+08:00"
-image: "https://picsum.photos/seed/use-coze.cn-translate11/800/600"
+image: ""
 math: 
 license: 
 hidden: false

@@ -6,6 +6,19 @@
         <description>Recent content in Categories on Cai Hong Tu&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language><atom:link href="http://localhost:1313/en/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Create Weapp by Taro and Cloudflare Workers for Free</title>
+        <link>http://localhost:1313/en/2025/cwbtacwff/</link>
+        <pubDate>Tue, 14 Oct 2025 15:25:40 +0800</pubDate>
+        
+        <guid>http://localhost:1313/en/2025/cwbtacwff/</guid>
+        <description>&lt;img src="https://picsum.photos/seed/1014-create-weapp-by-taro-and-cloudflare-workers-for-free11/800/600" alt="Featured image of post Create Weapp by Taro and Cloudflare Workers for Free" /&gt;&lt;h2 id=&#34;附录&#34;&gt;附录&lt;/h2&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;版权信息&#34;&gt;版权信息&lt;/h3&gt;
+&lt;p&gt;本文原载于 &lt;a class=&#34;link&#34; href=&#34;https://cai-hong-tu-blog.pages.dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;彩虹兔の博客&lt;/a&gt;，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Df Hm Sayings</title>
         <link>http://localhost:1313/en/2025/df-hm-sayings/</link>
         <pubDate>Thu, 14 Aug 2025 12:16:18 +0800</pubDate>
@@ -425,7 +438,14 @@ Note that the author has only tested on Coze Space with the.cn suffix and is not
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;end-of-installing-hugo&#34;&gt;End of installing Hugo&lt;/h3&gt;
 &lt;p&gt;Now that all the preliminaries are done, feel free to blog!&lt;/p&gt;
-&lt;h3 id=&#34;appendix&#34;&gt;Appendix&lt;/h3&gt;
+&lt;h2 id=&#34;changing-the-domain-name&#34;&gt;Changing the Domain Name&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Updated on October 14, 2025&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The original domain name was &lt;code&gt;caihongtu.asia&lt;/code&gt;, which I bought on Tencent Cloud. The first-year discount price was 12 yuan per year, but the renewal afterwards costs 80 yuan per year.However, while playing with blogs, I accidentally discovered &lt;a class=&#34;link&#34; href=&#34;https://www.nazhumi.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Nazhumi&lt;/a&gt;, a domain price comparison website, and found that the &lt;code&gt;.top&lt;/code&gt; domains on &lt;a class=&#34;link&#34; href=&#34;https://www.spaceship.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SpaceShip&lt;/a&gt; were the cheapest: 8 yuan for the first year ($1.05), and renewal only costs about 27 yuan ($3.85).&lt;/p&gt;
+&lt;p&gt;So now, the domain of this blog is &lt;code&gt;caihongtu.top&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;appendix&#34;&gt;Appendix&lt;/h2&gt;
 &lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -442,7 +462,7 @@ Note that the author has only tested on Coze Space with the.cn suffix and is not
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;copyright-information&#34;&gt;Copyright information&lt;/h3&gt;
-&lt;p&gt;This article was originally published in &lt;a class=&#34;link&#34; href=&#34;https://caihongtu.asia&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;This article was originally published in &lt;a class=&#34;link&#34; href=&#34;https://caihongtu.top&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;CaiHongTu Blog&lt;/a&gt; and follows the CC BY-NC-SA 4.0 agreement. Please keep the original source when copying.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;end&#34;&gt;END&lt;/h2&gt;
@@ -484,6 +504,8 @@ Note that the author has only tested on Coze Space with the.cn suffix and is not
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;welcome-banner-on-the-homepage&#34;&gt;Welcome banner on the homepage&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2025-10-14 update，domain change to&lt;code&gt;caihongtu.top&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Preview:
 &lt;figure 
 	&gt;
@@ -1754,7 +1776,7 @@ Related documents: &lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&#34;appendix&#34;&gt;Appendix&lt;/h2&gt;
 &lt;h3 id=&#34;copyright-information&#34;&gt;Copyright information&lt;/h3&gt;
-&lt;p&gt;This article was originally published in &lt;a class=&#34;link&#34; href=&#34;https://caihongtu.asia&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;This article was originally published in &lt;a class=&#34;link&#34; href=&#34;https://caihongtu.top&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;CaiHongTu Blog&lt;/a&gt; and follows the CC BY-NC-SA 4.0 agreement. Please keep the original source when copying.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;end&#34;&gt;END&lt;/h2&gt;

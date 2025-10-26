@@ -5,7 +5,7 @@ slug: "Taro Use Tailwindcss"
 description: 
 date: "2025-07-16T12:06:11+08:00"
 lastmod: "2025-07-16T12:06:11+08:00"
-image: "https://picsum.photos/seed/taro-use-tailwindcss/800/600"
+image: ""
 math: 
 license: 
 hidden: false

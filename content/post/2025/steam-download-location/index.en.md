@@ -5,7 +5,7 @@ slug: "Steam Download Location"
 description: "The Steam download location can be customized"
 date: "2025-07-10T11:18:07+08:00"
 lastmod: "2025-07-10T11:18:07+08:00"
-image: "https://picsum.photos/seed/steam-download-location11/800/600"
+image: ""
 math: 
 license: 
 hidden: false

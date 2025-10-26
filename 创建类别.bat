@@ -1,5 +1,6 @@
 @echo off
-echo 【创建类别】
-set /p input= 请输入类别名: 
+echo new category
+set /p input= please input the category name: 
 hugo new categories/%input%/_index.md
+hugo new categories/%input%/_index.en.md
 pause

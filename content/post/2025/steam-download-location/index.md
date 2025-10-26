@@ -5,7 +5,7 @@ slug: "Steam Download Location"
 description: "可以自定义修改steam下载位置"
 date: "2025-07-10T11:18:03+08:00"
 lastmod: "2025-07-10T11:18:03+08:00"
-image: "https://picsum.photos/seed/steam-download-location11/800/600"
+image: ""
 math: 
 license: 
 hidden: false

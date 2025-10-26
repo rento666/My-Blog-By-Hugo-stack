@@ -5,7 +5,7 @@ slug: "Pick Up the Blog Again"
 description: 
 date: "2025-06-20T13:56:15+08:00"
 lastmod: "2025-10-14T13:56:15+08:00"
-image: "https://picsum.photos/seed/pick-up-the-blog-again11/800/600"
+image: ""
 math: 
 license: 
 hidden: false

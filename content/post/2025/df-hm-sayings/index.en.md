@@ -5,10 +5,10 @@ slug: "Df Hm Sayings"
 description: 
 date: "2025-08-14T12:16:18+08:00"
 lastmod: "2025-08-14T12:16:18+08:00"
-image: "https://picsum.photos/seed/df-hm-sayings11/800/600"
+image: ""
 math: 
 license: 
-hidden: false
+hidden: true
 draft: false 
 categories: [""]
 tags: [""]

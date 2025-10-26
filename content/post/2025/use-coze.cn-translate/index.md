@@ -5,7 +5,7 @@ slug: "Make use of the coze to make an AI translation"
 description: "只适用于2025.06.20的https://www.coze.cn/，无法保证后续的消费计划（现阶段500资源点/天足够自己使用）"
 date: "2025-06-20T16:38:30+08:00"
 lastmod: "2025-06-20T16:38:30+08:00"
-image: "https://picsum.photos/seed/use-coze.cn-translate11/800/600"
+image: ""
 math: 
 license: 
 hidden: false

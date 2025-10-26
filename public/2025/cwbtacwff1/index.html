@@ -1,0 +1,2205 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='除了需要购买域名，让小程序能够访问后台，其余步骤均是免费！（教买低价域名）'><title>【持续更新中...】【全流程】使用React的Taro和Cloudflare Workers免费创建部署微信小程序！</title>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8353154221194666"
+     crossorigin="anonymous"></script>
+     
+<link rel='canonical' href='http://localhost:1313/2025/cwbtacwff1/'>
+
+<link rel="stylesheet" href="/scss/style.min.ebb30e25c757b9487a105b9234b82d3c7945d78c58034e0acbbf63e190a2a5f4.css"><meta property="og:title" content="【持续更新中...】【全流程】使用React的Taro和Cloudflare Workers免费创建部署微信小程序！" />
+<meta property="og:description" content="除了需要购买域名，让小程序能够访问后台，其余步骤均是免费！（教买低价域名）" />
+<meta property="og:url" content="http://localhost:1313/2025/cwbtacwff1/" />
+<meta property="og:site_name" content="彩虹兔の博客" />
+<meta
+  property="og:type"
+  content="article"
+/><meta property="article:section" content="Post" /><meta property="article:tag" content="weapp" /><meta property="article:tag" content="cloudflare" /><meta
+  property="article:published_time"
+  content='2025-10-14T15:25:40&#43;08:00'
+/><meta
+  property="article:modified_time"
+  content='2025-10-17T11:40:24&#43;08:00'
+/><meta property="og:image" content="https://picsum.photos/seed/1014-create-weapp-by-taro-and-cloudflare-workers-for-free11/800/600" />
+<meta name="twitter:title" content="【持续更新中...】【全流程】使用React的Taro和Cloudflare Workers免费创建部署微信小程序！">
+<meta name="twitter:description" content="除了需要购买域名，让小程序能够访问后台，其余步骤均是免费！（教买低价域名）"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://picsum.photos/seed/1014-create-weapp-by-taro-and-cloudflare-workers-for-free11/800/600' />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+<style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
+
+<script> 
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;700&display=swap"; 
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+
+    </head>
+    <body class="
+    article-page
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    <!-- 
+        extended
+     -->
+    on-phone--column extended
+">
+    
+        <div id="article-toolbar" style="display: flex;position: sticky;top: 5px;z-index: 1000;">
+            <a href="http://localhost:1313/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+
+    
+
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/2025/cwbtacwff1/">
+                
+                    <img src="https://picsum.photos/seed/1014-create-weapp-by-taro-and-cloudflare-workers-for-free11/800/600" loading="lazy" alt="Featured image of post 【持续更新中...】【全流程】使用React的Taro和Cloudflare Workers免费创建部署微信小程序！" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/weapp/" style="background-color: #2a9d8f; color: #fff;">
+                微信小程序
+            </a>
+        
+            <a href="/categories/cloudflare/" style="background-color: #2a9d8f; color: #fff;">
+                Cloudflare
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/2025/cwbtacwff1/">【持续更新中...】【全流程】使用React的Taro和Cloudflare Workers免费创建部署微信小程序！</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        除了需要购买域名，让小程序能够访问后台，其余步骤均是免费！（教买低价域名）
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025年 10月 14日 15:25 CST</time>
+            </div>
+        
+    
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-words">
+                    
+                    约30分钟，共6526字
+                </time>
+            </div>
+        
+    
+        <div>
+            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1731571978497" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4337" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"><path d="M512 195.047619c150.79619 0 288.280381 92.013714 412.42819 276.041143a73.142857 73.142857 0 0 1 2.755048 77.385143l-2.755048 4.437333-6.92419 10.118095C795.184762 740.303238 659.992381 828.952381 512 828.952381c-150.79619 0-288.280381-92.013714-412.42819-276.041143a73.142857 73.142857 0 0 1-2.755048-77.385143l2.755048-4.437333 6.92419-10.118095C228.815238 283.696762 364.007619 195.047619 512 195.047619z m0 73.142857c-120.880762 0-235.471238 75.142095-345.088 234.008381L160.207238 512l6.729143 9.825524C276.650667 680.740571 391.216762 755.809524 512 755.809524c120.880762 0 235.471238-75.142095 345.088-234.008381l6.704762-9.801143-6.729143-9.825524C747.349333 343.259429 632.783238 268.190476 512 268.190476z m0 88.551619a161.694476 161.694476 0 1 1 0 323.364572 161.694476 161.694476 0 0 1 0-323.364572z m0 73.142857a88.551619 88.551619 0 1 0 0 177.078858 88.551619 88.551619 0 0 0 0-177.078858z" p-id="4338" fill="currentColor"></path></svg>
+            <time class="article-pageview">
+                <span class="waline-pageview-count" data-path="/2025/cwbtacwff1/">0</span> 次浏览
+            </time>
+        </div>
+    
+        <div>
+            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1731571999261" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5443" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"><path d="M853.333333 138.666667H170.666667c-40.533333 0-74.666667 34.133333-74.666667 74.666666v512c0 40.533333 34.133333 74.666667 74.666667 74.666667h151.466666V917.333333c0 12.8 8.533333 25.6 19.2 29.866667 4.266667 2.133333 8.533333 2.133333 12.8 2.133333 8.533333 0 17.066667-4.266667 23.466667-10.666666l136.533333-138.666667H853.333333c40.533333 0 74.666667-34.133333 74.666667-74.666667V213.333333c0-40.533333-34.133333-74.666667-74.666667-74.666666z m10.666667 586.666666c0 6.4-4.266667 10.666667-10.666667 10.666667H501.333333c-8.533333 0-17.066667 4.266667-23.466666 10.666667l-89.6 93.866666V768c0-17.066667-14.933333-32-32-32H170.666667c-6.4 0-10.666667-4.266667-10.666667-10.666667V213.333333c0-6.4 4.266667-10.666667 10.666667-10.666666h682.666666c6.4 0 10.666667 4.266667 10.666667 10.666666v512z" fill="currentColor" p-id="5444"></path><path d="M512 490.666667H298.666667c-17.066667 0-32 14.933333-32 32S281.6 554.666667 298.666667 554.666667h213.333333c17.066667 0 32-14.933333 32-32S529.066667 490.666667 512 490.666667zM672 341.333333H298.666667c-17.066667 0-32 14.933333-32 32S281.6 405.333333 298.666667 405.333333h373.333333c17.066667 0 32-14.933333 32-32s-14.933333-32-32-32z" fill="currentColor" p-id="5445"></path></svg>
+            <time class="article-comment">
+                <span class="waline-comment-count" data-path="/2025/cwbtacwff1/">0</span> 条评论
+            </time>
+        </div>
+
+        <div>
+            
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                        
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                        
+                        
+                            <time class="article-comment">
+                                <li id="selected"><?xml version="1.0" encoding="utf-8"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="currentColor" height="24px" width="24px" version="1.1" id="anna_vital_language_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	  viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+<path d="M62.4,101c-1.5-2.1-2.1-3.4-1.8-3.9c0.2-0.5,1.6-0.7,3.9-0.5c2.3,0.2,4.2,0.5,5.8,0.9c1.5,0.4,2.8,1,3.8,1.7
+	c1,0.7,1.8,1.5,2.3,2.6c0.6,1,1,2.3,1.4,3.7c0.7,2.8,0.5,4.7-0.5,5.7c-1.1,1-2.6,0.8-4.6-0.6c-2.1-1.4-3.9-2.8-5.5-4.2
+	C65.5,105.1,63.9,103.2,62.4,101z M40.7,190.1c4.8-2.1,9-4.2,12.6-6.4c3.5-2.1,6.6-4.4,9.3-6.8c2.6-2.3,5-4.9,7-7.7
+	c2-2.7,3.8-5.8,5.4-9.2c1.3,1.2,2.5,2.4,3.8,3.5c1.2,1.1,2.5,2.2,3.8,3.4c1.3,1.2,2.8,2.4,4.3,3.8c1.5,1.4,3.3,2.8,5.3,4.5
+	c0.7,0.5,1.4,0.9,2.1,1c0.7,0.1,1.7,0,3.1-0.6c1.3-0.5,3-1.4,5.1-2.8c2.1-1.3,4.7-3.1,7.9-5.4c1.6-1.1,2.4-2,2.3-2.7
+	c-0.1-0.7-1-1-2.7-0.9c-3.1,0.1-5.9,0.1-8.3-0.1c-2.5-0.2-5-0.6-7.4-1.4c-2.4-0.8-4.9-1.9-7.5-3.4c-2.6-1.5-5.6-3.6-9.1-6.2
+	c1-3.9,1.8-8,2.4-12.4c0.3-2.5,0.6-4.3,0.8-5.6c0.2-1.2,0.5-2.4,0.9-3.3c0.3-0.8,0.4-1.4,0.5-1.9c0.1-0.5-0.1-1-0.4-1.6
+	c-0.4-0.5-1-1.1-1.9-1.7c-0.9-0.6-2.2-1.4-3.9-2.3c2.4-0.9,5.1-1.7,7.9-2.6c2.7-0.9,5.7-1.8,8.8-2.7c3-0.9,4.5-1.9,4.6-3.1
+	c0.1-1.2-0.9-2.3-3.2-3.5c-1.5-0.8-2.9-1.1-4.3-0.9c-1.4,0.2-3.2,0.9-5.4,2.2c-0.6,0.4-1.8,0.9-3.4,1.6c-1.7,0.7-3.6,1.5-6,2.5
+	c-2.4,1-5,2-7.8,3.1c-2.9,1.1-5.8,2.2-8.7,3.2c-2.9,1.1-5.7,2-8.2,2.8c-2.6,0.8-4.6,1.4-6.1,1.6c-3.8,0.8-5.8,1.6-5.9,2.4
+	c0,0.8,1.5,1.6,4.4,2.4c1.2,0.3,2.3,0.6,3.1,0.6c0.8,0.1,1.7,0.1,2.5,0c0.8-0.1,1.6-0.3,2.4-0.5c0.8-0.3,1.7-0.7,2.8-1.1
+	c1.6-0.8,3.9-1.7,6.9-2.8c2.9-1,6.6-2.4,11.2-4c0.9,2.7,1.4,6,1.4,9.8c0,3.8-0.4,8.1-1.4,13c-1.3-1.1-2.7-2.3-4.2-3.6
+	c-1.5-1.3-2.9-2.6-4.3-3.9c-1.6-1.5-3.2-2.5-4.7-3c-1.6-0.5-3.4-0.5-5.5,0c-3.3,0.9-5,1.9-4.9,3.1c0,1.2,1.3,1.8,3.8,1.9
+	c0.9,0.1,1.8,0.3,2.7,0.6c0.9,0.3,1.9,0.9,3.2,1.8c1.3,0.9,2.9,2.2,4.7,3.8c1.8,1.6,4.2,3.7,7,6.3c-1.2,2.9-2.6,5.6-4.1,8
+	c-1.5,2.5-3.4,5-5.5,7.3c-2.2,2.4-4.7,4.8-7.7,7.2c-3,2.5-6.6,5.1-10.8,7.8c-4.3,2.8-6.5,4.7-6.5,5.6C35,192.1,37,191.7,40.7,190.1z
+	 M250.5,81.8v165.3l-111.6-36.4L10.5,253.4V76.1l29.9-10V10.4l81.2,28.7L231.3,2.6v73.1L250.5,81.8z M124.2,50.6L22.3,84.6v152.2
+	l101.9-33.9V50.6L124.2,50.6z M219.4,71.9V19L138.1,46L219.4,71.9z M227,201.9L196.5,92L176,85.6l-30.9,90.8l18.9,5.9l5.8-18.7
+	l31.9,10l5.7,22.3L227,201.9z M174.8,147.7l22.2,6.9l-10.9-42.9L174.8,147.7z"/>
+</svg><a href="/en/2025/cwbtacwff/"><span>English</span></a></li>
+                            </time>
+                        
+                    
+                
+            
+            
+        </div>
+    </footer>
+    
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="引言">引言</h2>
+<blockquote>
+<p><a class="link" href="https://www.cloudflare.com/"  target="_blank" rel="noopener"
+    >Cloudflare</a>人称&quot;赛博活佛&quot;, 其中的<code>workers</code>更是能够作为代码初学者的一个练手工具, 其免费功能便足以支撑一个微小型的程序运行.<br>
+本篇文章旨在给大家分享: 使用Taro(React框架)和Cloudflare workers 来完成一个微信小程序.<br>
+预计文章会很长, 持续更新中&hellip;</p></blockquote>
+<h2 id="一-前提条件">一. 前提条件</h2>
+<blockquote>
+<p>这里先贴一下各个官网链接, 后续看情况给出详细步骤.</p></blockquote>
+<ol>
+<li><a class="link" href="https://nodejs.org/en/download"  target="_blank" rel="noopener"
+    >安装node</a></li>
+</ol>
+<p>这个是必须的, 当然, 推荐也安装上nvm, 这样切换版本更方便.</p>
+<ol start="2">
+<li><a class="link" href="https://github.com/nvm-sh/nvm"  target="_blank" rel="noopener"
+    >nvm(推荐)</a></li>
+</ol>
+<p>node的版本管理工具, 推荐安装.</p>
+<ol start="3">
+<li><a class="link" href="https://docs.taro.zone/docs/GETTING-STARTED"  target="_blank" rel="noopener"
+    >安装Taro</a></li>
+</ol>
+<p>前端框架, 你也可以选择使用Vue, 或者直接在微信开发者工具中编写代码.</p>
+<ol start="4">
+<li><a class="link" href="https://code.visualstudio.com/"  target="_blank" rel="noopener"
+    >安装vscode(推荐)</a></li>
+</ol>
+<p>代码编辑器, 主要用来写后端代码.</p>
+<ol start="5">
+<li><a class="link" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html"  target="_blank" rel="noopener"
+    >安装微信开发者工具</a></li>
+</ol>
+<p>用来展示程序界面、发布微信小程序的必需工具.</p>
+<ol start="6">
+<li><a class="link" href="https://www.cloudflare.com/"  target="_blank" rel="noopener"
+    >Cloudflare注册并开启存储和数据库功能</a></li>
+</ol>
+<p>一切的根源, 因为有它, 笔者才打算写此篇文章.</p>
+<ol start="7">
+<li><a class="link" href="https://www.spaceship.com/"  target="_blank" rel="noopener"
+    >注册一个域名(推荐spaceship)并在Cloudflare解析</a></li>
+</ol>
+<p>推荐6-9位数纯数字的xyz域名,每年不到10块钱的价格,非常香的域名了.(毕竟咱们只用在后端, 页面展示选择的是微信小程序)</p>
+<ol start="8">
+<li>任意AI工具</li>
+</ol>
+<p>编写代码的时候将会用到, 你可以根据自身情况选择chatgpt、豆包之类的.</p>
+<h2 id="二-有话要问">二. 有话要问</h2>
+<ul>
+<li>为什么选择Taro?</li>
+</ul>
+<p>因为我个人觉得React比Vue更好. 当然, 你也可以去选择使用Vue之类的代码, 甚至你还可以直接使用微信开发者工具来直接写!</p>
+<ul>
+<li>为什么开发微信小程序?</li>
+</ul>
+<p>有比较重要的一点, 就是免费版的Cloudflare D1数据库每天支持的读次数仅仅才500万, UV稍微高一点就会超出限制, 但是对于一个微小型程序来说足够日常使用了.</p>
+<p>当然, 由于咱们的域名是纯数字的, 并且不方便将域名公开给大众, 所以就选择了微信小程序, 如果你有网站需求, taro框架也可以直接编译成网站, 只需要自己打包一下就行了.</p>
+<ul>
+<li>更多问题整理中&hellip;</li>
+</ul>
+<h2 id="三-需求分析">三. 需求分析</h2>
+<h3 id="项目背景">项目背景</h3>
+<p>随着情侣、伴侣之间的日常开销增多，许多人希望能更方便地记录、共享和统计两人共同的花费情况。传统的记账应用多为个人使用，不支持双人协作或互动。本项目旨在打造一款专为情侣设计的双人共享记账小程序，帮助双方轻松记录、查看和管理共同开销，提升沟通与财务透明度。</p>
+<h3 id="目标用户">目标用户</h3>
+<ul>
+<li>
+<p>恋爱中或已结婚的情侣；</p>
+</li>
+<li>
+<p>需要共同管理支出的室友、朋友；</p>
+</li>
+<li>
+<p>想要建立“共享记账习惯”的小群体（2人为主）。</p>
+</li>
+</ul>
+<h3 id="核心需求">核心需求</h3>
+<ul>
+<li>
+<p>用户账户与绑定</p>
+</li>
+<li>
+<ul>
+<li>支持微信登录；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>用户可以通过邀请码/二维码绑定另一半；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>绑定后自动形成一个“共同账本”；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>支持解绑、更换搭档等操作。</li>
+</ul>
+</li>
+<li>
+<p>记账功能</p>
+</li>
+<li>
+<ul>
+<li>支持快速添加账单（金额、分类、日期、备注）；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>支持选择「谁支付」「谁消费」；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>可设为「共同支出」或「个人支出」；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>支持图片上传（如小票）。</li>
+</ul>
+</li>
+<li>
+<p>数据统计与可视化</p>
+</li>
+<li>
+<ul>
+<li>查看当月支出总额；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>自动计算双方“结余”与“平摊”金额；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>支持分类统计（餐饮、出行、礼物、房租等）；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>图表展示（饼图、折线图）。</li>
+</ul>
+</li>
+<li>
+<p>情侣特色功能</p>
+</li>
+<li>
+<ul>
+<li>每月结算提醒；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>「甜蜜语」模式（添加账单时可附加一句小情话或表情）；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>纪念日账单或特殊标签（如“恋爱100天晚餐”）；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>支持自定义封面与情侣头像。</li>
+</ul>
+</li>
+<li>
+<p>安全与隐私</p>
+</li>
+<li>
+<ul>
+<li>数据仅双方可见；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>重要操作（解绑、删除账本）需双方确认；</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>云端存储数据，防止误删丢失。</li>
+</ul>
+</li>
+</ul>
+<h3 id="非功能性需求">非功能性需求</h3>
+<ul>
+<li>
+<p>简洁美观：界面风格清新、情侣主题；</p>
+</li>
+<li>
+<p>操作流畅：记账操作≤3步；</p>
+</li>
+<li>
+<p>跨设备同步：双方实时同步账单；</p>
+</li>
+<li>
+<p>隐私保护：不公开、不社交化。</p>
+</li>
+</ul>
+<h3 id="后续规划可选">后续规划（可选）</h3>
+<ul>
+<li>
+<p>添加「情侣预算」功能；</p>
+</li>
+<li>
+<p>月度结算报告自动生成；</p>
+</li>
+<li>
+<p>多人模式扩展（家庭账本）；</p>
+</li>
+<li>
+<p>AI智能账单分析与建议。</p>
+</li>
+</ul>
+<h3 id="项目目标">项目目标</h3>
+<p>打造一款：</p>
+<ul>
+<li>
+<p>轻量级、操作简单；</p>
+</li>
+<li>
+<p>聚焦情侣场景；</p>
+</li>
+<li>
+<p>兼具情感互动与实用功能的微信小程序。</p>
+</li>
+</ul>
+<h2 id="四产品分析">四.产品分析</h2>
+<h3 id="用户流程图简易">用户流程图（简易）</h3>
+<p><code>首次使用 → 微信授权登录 → 创建/加入情侣账本 → 记账/查看记录 → 统计分析 → 月结算提醒</code></p>
+<h3 id="功能模块">功能模块</h3>
+<ul>
+<li>用户模块</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>功能</th>
+          <th>描述</th>
+          <th>备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>微信登录</td>
+          <td>通过 openid 获取用户身份</td>
+          <td>必需</td>
+      </tr>
+      <tr>
+          <td>创建账本</td>
+          <td>单方创建后生成邀请码/二维码</td>
+          <td>账本ID自动生成</td>
+      </tr>
+      <tr>
+          <td>加入账本</td>
+          <td>输入邀请码或扫码加入</td>
+          <td>限制一对一</td>
+      </tr>
+      <tr>
+          <td>解绑功能</td>
+          <td>双方同意后解绑</td>
+          <td>防误操作</td>
+      </tr>
+      <tr>
+          <td>用户信息</td>
+          <td>用户昵称、头像</td>
+          <td>从微信获取</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>记账模块</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>功能</th>
+          <th>描述</th>
+          <th>备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>添加账单</td>
+          <td>金额、分类、支付者、消费方、备注、时间</td>
+          <td>支持快速输入</td>
+      </tr>
+      <tr>
+          <td>账单类型</td>
+          <td>共同支出 / 个人支出</td>
+          <td>默认共同支出</td>
+      </tr>
+      <tr>
+          <td>图片上传</td>
+          <td>上传消费凭证或照片</td>
+          <td>微信云存储</td>
+      </tr>
+      <tr>
+          <td>编辑/删除账单</td>
+          <td>支持修改与删除</td>
+          <td>权限控制：任意一方均可</td>
+      </tr>
+      <tr>
+          <td>情感元素</td>
+          <td>可添加“甜蜜语”或表情</td>
+          <td>可选功能</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>分类示例：
+餐饮、交通、娱乐、购物、日用品、房租、礼物、其他（支持自定义）。</p>
+<ul>
+<li>账单模块</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>功能</th>
+          <th>描述</th>
+          <th>备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>列表展示</td>
+          <td>按日期分组展示账单</td>
+          <td>支持上拉加载</td>
+      </tr>
+      <tr>
+          <td>筛选功能</td>
+          <td>按分类、月份、支付者筛选</td>
+          <td>可选多条件</td>
+      </tr>
+      <tr>
+          <td>搜索功能</td>
+          <td>按备注关键字搜索</td>
+          <td>模糊匹配</td>
+      </tr>
+      <tr>
+          <td>账单详情</td>
+          <td>显示账单所有字段 + 图片</td>
+          <td>支持编辑</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>统计模块</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>功能</th>
+          <th>描述</th>
+          <th>备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>支出汇总</td>
+          <td>本月/自定义时间区间总支出</td>
+          <td>自动更新</td>
+      </tr>
+      <tr>
+          <td>平摊计算</td>
+          <td>计算双方结余与应补差额</td>
+          <td>共同支出时按 1:1 分摊</td>
+      </tr>
+      <tr>
+          <td>分类统计</td>
+          <td>饼图显示各类支出比例</td>
+          <td>图表组件</td>
+      </tr>
+      <tr>
+          <td>时间趋势</td>
+          <td>折线图展示支出变化</td>
+          <td>支持月份切换</td>
+      </tr>
+      <tr>
+          <td>每月结算</td>
+          <td>一键生成结算报告</td>
+          <td>可导出/分享</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>情侣模块</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>功能</th>
+          <th>描述</th>
+          <th>备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>甜蜜语记账</td>
+          <td>每笔账单可添加一句“甜言蜜语”</td>
+          <td>自带模板</td>
+      </tr>
+      <tr>
+          <td>纪念日提醒</td>
+          <td>自动生成纪念日账单</td>
+          <td>支持自定义日期</td>
+      </tr>
+      <tr>
+          <td>封面主题</td>
+          <td>不同配色（粉色系、极简系）</td>
+          <td>按情侣风格选</td>
+      </tr>
+      <tr>
+          <td>情侣头像</td>
+          <td>双人圆环头像显示</td>
+          <td>从绑定信息中取</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>系统模块</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>功能</th>
+          <th>描述</th>
+          <th>备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>数据加密</td>
+          <td>云端存储加密</td>
+          <td>使用微信云开发数据库</td>
+      </tr>
+      <tr>
+          <td>权限控制</td>
+          <td>仅绑定双方可见数据</td>
+          <td>不可分享账本</td>
+      </tr>
+      <tr>
+          <td>数据备份</td>
+          <td>自动每日备份</td>
+          <td>可手动导出JSON</td>
+      </tr>
+      <tr>
+          <td>推送提醒</td>
+          <td>账单添加、月结算提醒</td>
+          <td>微信模板消息</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="页面设计初版">页面设计（初版）</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">首页（账本概览）
+</span></span><span class="line"><span class="cl">├── 当月总支出
+</span></span><span class="line"><span class="cl">├── 双方支出比例图
+</span></span><span class="line"><span class="cl">├── 快速记账按钮
+</span></span><span class="line"><span class="cl">└── 最近账单预览
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">账单页
+</span></span><span class="line"><span class="cl">├── 添加账单（表单）
+</span></span><span class="line"><span class="cl">├── 图片上传
+</span></span><span class="line"><span class="cl">├── 甜蜜语选择
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">统计页
+</span></span><span class="line"><span class="cl">├── 分类统计饼图
+</span></span><span class="line"><span class="cl">├── 趋势折线图
+</span></span><span class="line"><span class="cl">├── 平摊计算结果
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">情侣页（个人中心）
+</span></span><span class="line"><span class="cl">├── 我的信息
+</span></span><span class="line"><span class="cl">├── 绑定状态
+</span></span><span class="line"><span class="cl">├── 纪念日设置
+</span></span><span class="line"><span class="cl">├── 解绑操作
+</span></span><span class="line"><span class="cl">├── 设置（主题风格）
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="数据结构示例">数据结构（示例）</h3>
+<ul>
+<li>用户表<code>Users</code></li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>字段</th>
+          <th>类型</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>userId</td>
+          <td>string</td>
+          <td>用户ID（openid）</td>
+      </tr>
+      <tr>
+          <td>nickname</td>
+          <td>string</td>
+          <td>昵称</td>
+      </tr>
+      <tr>
+          <td>avatarUrl</td>
+          <td>string</td>
+          <td>头像</td>
+      </tr>
+      <tr>
+          <td>coupleId</td>
+          <td>string</td>
+          <td>绑定账本ID</td>
+      </tr>
+      <tr>
+          <td>joinDate</td>
+          <td>date</td>
+          <td>加入时间</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>账本表 <code>couples</code></li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>字段</th>
+          <th>类型</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>coupleId</td>
+          <td>string</td>
+          <td>账本唯一ID</td>
+      </tr>
+      <tr>
+          <td>userA</td>
+          <td>string</td>
+          <td>用户A ID</td>
+      </tr>
+      <tr>
+          <td>userB</td>
+          <td>string</td>
+          <td>用户B ID</td>
+      </tr>
+      <tr>
+          <td>createTime</td>
+          <td>date</td>
+          <td>创建时间</td>
+      </tr>
+      <tr>
+          <td>status</td>
+          <td>string</td>
+          <td>active / unbind</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>账单表 <code>records</code></li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>字段</th>
+          <th>类型</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>recordId</td>
+          <td>string</td>
+          <td>账单ID</td>
+      </tr>
+      <tr>
+          <td>coupleId</td>
+          <td>string</td>
+          <td>所属账本ID</td>
+      </tr>
+      <tr>
+          <td>payer</td>
+          <td>string</td>
+          <td>支付者ID</td>
+      </tr>
+      <tr>
+          <td>consumer</td>
+          <td>string</td>
+          <td>消费方ID</td>
+      </tr>
+      <tr>
+          <td>type</td>
+          <td>string</td>
+          <td>共同/个人</td>
+      </tr>
+      <tr>
+          <td>category</td>
+          <td>string</td>
+          <td>消费类别</td>
+      </tr>
+      <tr>
+          <td>amount</td>
+          <td>number</td>
+          <td>金额</td>
+      </tr>
+      <tr>
+          <td>remark</td>
+          <td>string</td>
+          <td>备注</td>
+      </tr>
+      <tr>
+          <td>sweetNote</td>
+          <td>string</td>
+          <td>甜蜜语</td>
+      </tr>
+      <tr>
+          <td>image</td>
+          <td>string</td>
+          <td>图片URL</td>
+      </tr>
+      <tr>
+          <td>createTime</td>
+          <td>date</td>
+          <td>创建时间</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="技术方案建议">技术方案（建议）</h3>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>项目</th>
+          <th>建议技术栈</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>前端框架</td>
+          <td>Taro + React</td>
+      </tr>
+      <tr>
+          <td>后端</td>
+          <td>CloudFlare Workers</td>
+      </tr>
+      <tr>
+          <td>数据库</td>
+          <td>CloudFlare D1 SQL数据库</td>
+      </tr>
+      <tr>
+          <td>图表</td>
+          <td>AntV F2</td>
+      </tr>
+      <tr>
+          <td>文件存储</td>
+          <td>CloudFlare R2 对象存储</td>
+      </tr>
+      <tr>
+          <td>登录</td>
+          <td>微信 openid 授权登录</td>
+      </tr>
+  </tbody>
+</table></div>
+<h2 id="五ui原型结构描述">五.UI原型结构描述</h2>
+<p>Figma 结构稿文字描述版</p>
+<h3 id="总体风格方向">🌈总体风格方向</h3>
+<ul>
+<li>
+<p>主题：温馨简约风（粉色/奶白/淡蓝为主色调）</p>
+</li>
+<li>
+<p>设计语言：极简卡片式布局 + 轻圆角（12–16px）</p>
+</li>
+<li>
+<p>图标风格：线性图标（lucide 或 iconfont）</p>
+</li>
+<li>
+<p>主要字体：苹方 / HarmonyOS Sans</p>
+</li>
+<li>
+<p>交互感受：柔和动效、轻点击反馈</p>
+</li>
+</ul>
+<h3 id="首页账本总览页">🏠首页（账本总览页）</h3>
+<p><strong>页面名称：首页 / 我的账本</strong></p>
+<p><strong>路径：</strong><code>/pages/home/index</code></p>
+<p><strong>主要结构</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">[顶部栏]
+</span></span><span class="line"><span class="cl"><span class="gd">- 左：情侣头像圆环（两人头像并列）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 中：账本名称（例如：“我们的账本❤️”）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 右：设置图标（⚙️）
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>
+</span></span><span class="line"><span class="cl">[数据概览卡片]
+</span></span><span class="line"><span class="cl"><span class="gd">- 当月总支出（￥xxxx.xx）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- A 支出 / B 支出 / 平摊差额
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 小饼图（展示比例）
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>
+</span></span><span class="line"><span class="cl">[快捷操作区]
+</span></span><span class="line"><span class="cl"><span class="gd">- + 新建账单（主按钮，粉色）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 本月趋势图（折线图卡片）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 最近3条账单列表（卡片式展示）
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>  - 图标（类别）+ 金额 + 备注 + 日期
+</span></span><span class="line"><span class="cl">  - 点击进入账单详情
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>动效建议</strong></p>
+<ul>
+<li>
+<p>新建账单按钮采用悬浮+阴影；</p>
+</li>
+<li>
+<p>列表滑动时轻微弹性。</p>
+</li>
+</ul>
+<h3 id="记账页添加账单">💰记账页（添加账单）</h3>
+<p><strong>页面名称：添加账单</strong></p>
+<p><strong>路径：</strong> <code>/pages/add/index</code></p>
+<p><strong>主要结构</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">[顶部]
+</span></span><span class="line"><span class="cl"><span class="gd">- 返回 ←
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 标题：添加账单
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>
+</span></span><span class="line"><span class="cl">[输入区（卡片样式）]
+</span></span><span class="line"><span class="cl"><span class="gd">- 金额输入框（大字号）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 分类选择（icon + 名称）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 谁支付（A / B 头像单选按钮）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 消费类型（共同支出 / 个人支出）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 备注输入框
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 图片上传（最多3张）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 日期选择（默认当天）
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>
+</span></span><span class="line"><span class="cl">[甜蜜语区]
+</span></span><span class="line"><span class="cl"><span class="gd">- 文本框：“今天也要开心花钱呀~”
+</span></span></span><span class="line"><span class="cl"><span class="gd">- ❤️ 表情可选 3–5 个模板（点击随机切换）
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>
+</span></span><span class="line"><span class="cl">[底部按钮]
+</span></span><span class="line"><span class="cl"><span class="gd">- 保存账单（粉色主按钮）
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>交互说明</strong></p>
+<ul>
+<li>
+<p>金额输入完成后自动聚焦到分类；</p>
+</li>
+<li>
+<p>上传图片采用微信原生选择；</p>
+</li>
+<li>
+<p>提交成功后显示动画：“记好了~ ❤️”。</p>
+</li>
+</ul>
+<h3 id="账单列表页">📋账单列表页</h3>
+<p><strong>页面名称：账单记录</strong></p>
+<p><strong>路径：</strong> <code>/pages/records/index</code></p>
+<p><strong>主要结构</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">[顶部筛选栏]
+</span></span><span class="line"><span class="cl"><span class="gd">- 时间选择（本月 ▼）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 分类筛选（全部 ▼）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 支付者筛选（全部 ▼）
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>
+</span></span><span class="line"><span class="cl">[账单分组列表]
+</span></span><span class="line"><span class="cl"><span class="gd">- 每月或每日分组标题（如 “10月15日”）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 账单卡片：
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>  [图标] [分类] [金额右对齐]
+</span></span><span class="line"><span class="cl">   小字：备注 + 谁支付
+</span></span><span class="line"><span class="cl"><span class="gd">- 点击进入账单详情页
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 长按：弹出编辑/删除选项
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>辅助功能</strong></p>
+<ul>
+<li>
+<p>搜索框：输入备注关键字；</p>
+</li>
+<li>
+<p>上拉加载更多账单；</p>
+</li>
+<li>
+<p>空状态：可爱插画“还没有账单哦~”。</p>
+</li>
+</ul>
+<h3 id="统计页">📈统计页</h3>
+<p><strong>页面名称：统计分析</strong></p>
+<p><strong>路径：</strong> <code>/pages/statistics/index</code></p>
+<p><strong>模块结构</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">[顶部月份选择]
+</span></span><span class="line"><span class="cl"><span class="gd">- 左右箭头切换月份（&lt; 10月 &gt;）
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>
+</span></span><span class="line"><span class="cl">[图表区]
+</span></span><span class="line"><span class="cl"><span class="gd">- 饼图：分类支出比例
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 折线图：支出趋势
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>
+</span></span><span class="line"><span class="cl">[明细卡片]
+</span></span><span class="line"><span class="cl"><span class="gd">- 总支出：￥xxxx.xx
+</span></span></span><span class="line"><span class="cl"><span class="gd">- A 支出：￥xxx.xx
+</span></span></span><span class="line"><span class="cl"><span class="gd">- B 支出：￥xxx.xx
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 平摊后差额提示
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>
+</span></span><span class="line"><span class="cl">[结算提醒按钮]
+</span></span><span class="line"><span class="cl"><span class="gd">- “生成月度结算报告” → 弹窗显示差额 + 分享图（可选）
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="情侣中心页">💞情侣中心页</h3>
+<p><strong>页面名称：情侣中心 / 我的</strong></p>
+<p><strong>路径：</strong> <code>/pages/profile/index</code></p>
+<p><strong>页面结构</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">[顶部]
+</span></span><span class="line"><span class="cl"><span class="gd">- 双人头像展示（圆形并列）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 昵称与绑定状态（“与 某某 已绑定”）
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>
+</span></span><span class="line"><span class="cl">[信息卡片]
+</span></span><span class="line"><span class="cl"><span class="gd">- 纪念日：恋爱100天 💕
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 上次结算日期：10月1日
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 当前账本ID：#ABC123
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 邀请码 / 扫码绑定（若未绑定）
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>
+</span></span><span class="line"><span class="cl">[功能区]
+</span></span><span class="line"><span class="cl"><span class="gd">- 编辑纪念日
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 更换主题（粉色 / 极简灰）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 导出数据（JSON）
+</span></span></span><span class="line"><span class="cl"><span class="gd">- 解绑（红字，需双重确认）
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span>
+</span></span><span class="line"><span class="cl">[页脚]
+</span></span><span class="line"><span class="cl"><span class="gd">- “我们的小账本，让爱更有秩序 ❤️”
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="系统与弹窗交互">⚙️系统与弹窗交互</h3>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>弹窗</th>
+          <th>触发场景</th>
+          <th>内容说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>绑定邀请弹窗</td>
+          <td>生成邀请码后</td>
+          <td>显示二维码 + 链接说明</td>
+      </tr>
+      <tr>
+          <td>解绑确认弹窗</td>
+          <td>点击解绑时</td>
+          <td>双方必须同时确认</td>
+      </tr>
+      <tr>
+          <td>保存成功</td>
+          <td>添加账单后</td>
+          <td>“记录成功~ ❤️”</td>
+      </tr>
+      <tr>
+          <td>错误提示</td>
+          <td>网络或输入异常</td>
+          <td>Toast 弹窗提醒</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="配色建议">🎨配色建议</h3>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>元素</th>
+          <th>主色</th>
+          <th>辅色</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>主色调</td>
+          <td>#FF7DA3</td>
+          <td>#FFF1F5</td>
+          <td>甜蜜粉</td>
+      </tr>
+      <tr>
+          <td>文本主色</td>
+          <td>#333333</td>
+          <td></td>
+          <td>主要文字</td>
+      </tr>
+      <tr>
+          <td>次级文字</td>
+          <td>#999999</td>
+          <td></td>
+          <td>辅助说明</td>
+      </tr>
+      <tr>
+          <td>背景</td>
+          <td>#FAFAFA</td>
+          <td></td>
+          <td>通用背景</td>
+      </tr>
+      <tr>
+          <td>成功色</td>
+          <td>#5DD39E</td>
+          <td></td>
+          <td>保存成功动画</td>
+      </tr>
+      <tr>
+          <td>警示色</td>
+          <td>#FF6363</td>
+          <td></td>
+          <td>删除 / 解绑警告</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="交互动效建议">🧩交互动效建议</h3>
+<ul>
+<li>
+<p>按钮点击轻缩放 0.95 → 1.0；</p>
+</li>
+<li>
+<p>图表加载渐入；</p>
+</li>
+<li>
+<p>新建账单后出现小心形粒子动效；</p>
+</li>
+<li>
+<p>页面切换使用滑入动画；</p>
+</li>
+<li>
+<p>解绑操作加入倒计时确认。</p>
+</li>
+</ul>
+<h3 id="figma-结构层级">🪄Figma 结构层级</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-makefile" data-lang="makefile"><span class="line"><span class="cl"><span class="nf">Page</span><span class="o">:</span> 首页
+</span></span><span class="line"><span class="cl">  ├── Header
+</span></span><span class="line"><span class="cl">  ├── OverviewCard
+</span></span><span class="line"><span class="cl">  ├── QuickActions
+</span></span><span class="line"><span class="cl">  └── RecentRecords
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">Page</span><span class="o">:</span> 添加账单
+</span></span><span class="line"><span class="cl">  ├── InputForm
+</span></span><span class="line"><span class="cl">  ├── SweetNoteSection
+</span></span><span class="line"><span class="cl">  └── SubmitButton
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">Page</span><span class="o">:</span> 账单记录
+</span></span><span class="line"><span class="cl">  ├── FilterBar
+</span></span><span class="line"><span class="cl">  ├── RecordList
+</span></span><span class="line"><span class="cl">  └── EmptyState
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">Page</span><span class="o">:</span> 统计分析
+</span></span><span class="line"><span class="cl">  ├── ChartContainer
+</span></span><span class="line"><span class="cl">  ├── SummaryCards
+</span></span><span class="line"><span class="cl">  └── ReportButton
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">Page</span><span class="o">:</span> 情侣中心
+</span></span><span class="line"><span class="cl">  ├── ProfileHeader
+</span></span><span class="line"><span class="cl">  ├── InfoCards
+</span></span><span class="line"><span class="cl">  └── SettingOptions
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="figma文本形式">Figma文本形式</h3>
+<details>
+  <summary>
+    <span>
+       在 Figma 中使用 「Wireframe / Builder / Autoflow」类插件导入，即可快速生成页面框架。 
+      <span style="color: rgb(183, 107, 7); font-weight: bold;">(点击展开收缩) </span>
+    </span>
+  </summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># Figma Structure: 情侣双人记账小程序</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Page: 首页（账本总览）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Frame</span><span class="p">:</span><span class="w"> </span><span class="l">Home</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Header</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Left</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">AvatarGroup] 情侣头像（双人并列）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">“我们的账本 ❤️”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Right</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">IconButton] ⚙️ 设置</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">OverviewCard</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Label</span><span class="p">:</span><span class="w"> </span><span class="l">“本月支出总额”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Value</span><span class="p">:</span><span class="w"> </span><span class="l">￥1,234.56</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">SubInfo</span><span class="p">:</span><span class="w"> </span><span class="l">“你：￥600 | TA：￥634 | 平摊差：-￥34”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Chart</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">PieChart] 支出比例</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">QuickActions</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">ButtonPrimary</span><span class="p">:</span><span class="w"> </span><span class="l">“+ 新建账单”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">TrendCard</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">“支出趋势”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Chart</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">LineChart]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">RecentList</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">“最近账单”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">RecordItem x3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">Icon (分类)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">Text</span><span class="p">:</span><span class="w"> </span><span class="l">“咖啡 - ￥28.00”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">SubText</span><span class="p">:</span><span class="w"> </span><span class="l">“你支付 · 10月12日”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">FloatingButton</span><span class="p">:</span><span class="w"> </span><span class="l">“+ 记账”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Page: 添加账单</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Frame</span><span class="p">:</span><span class="w"> </span><span class="l">AddRecord</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Header</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">BackButton ←</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">“添加账单”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">InputForm</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">AmountInput</span><span class="p">:</span><span class="w"> </span><span class="l">“输入金额（大号字体）”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">CategoryPicker</span><span class="p">:</span><span class="w"> </span><span class="l">“选择分类 → 餐饮 / 出行 / 礼物 / 其他”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">PayerSelect</span><span class="p">:</span><span class="w"> </span><span class="l">“谁支付 → [头像A] [头像B]”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">TypeSelect</span><span class="p">:</span><span class="w"> </span><span class="l">“共同支出 / 个人支出”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">RemarkInput</span><span class="p">:</span><span class="w"> </span><span class="l">“备注（可选）”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">ImageUpload</span><span class="p">:</span><span class="w"> </span><span class="l">“添加图片（+）”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">DatePicker</span><span class="p">:</span><span class="w"> </span><span class="l">“选择日期（默认今日）”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">SweetNoteSection</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">“甜蜜语 ❤️”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">TextField</span><span class="p">:</span><span class="w"> </span><span class="l">“今天也要开心花钱呀~”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">IconSet</span><span class="p">:</span><span class="w"> </span><span class="l">❤️ 😘 🌸 🍰 💌</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">SubmitArea</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">ButtonPrimary</span><span class="p">:</span><span class="w"> </span><span class="l">“保存账单”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">SuccessAnimation</span><span class="p">:</span><span class="w"> </span><span class="l">“心形粒子动画”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Page: 账单记录</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Frame</span><span class="p">:</span><span class="w"> </span><span class="l">Records</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Header</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">“账单记录”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">SearchBar</span><span class="p">:</span><span class="w"> </span><span class="l">“搜索备注...”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">FilterBar</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Filter1</span><span class="p">:</span><span class="w"> </span><span class="l">“月份 ▼”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Filter2</span><span class="p">:</span><span class="w"> </span><span class="l">“分类 ▼”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Filter3</span><span class="p">:</span><span class="w"> </span><span class="l">“支付者 ▼”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">RecordList</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Section</span><span class="p">:</span><span class="w"> </span><span class="l">“10月15日”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">RecordCard</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">Icon</span><span class="p">:</span><span class="w"> </span><span class="l">🍜</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">“晚餐”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">Amount</span><span class="p">:</span><span class="w"> </span><span class="l">￥85.00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">SubText</span><span class="p">:</span><span class="w"> </span><span class="l">“共同支出 · 你支付”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Section</span><span class="p">:</span><span class="w"> </span><span class="l">“10月14日”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">RecordCard</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">Icon</span><span class="p">:</span><span class="w"> </span><span class="l">🚌</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">“地铁交通”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">Amount</span><span class="p">:</span><span class="w"> </span><span class="l">￥6.00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">SubText</span><span class="p">:</span><span class="w"> </span><span class="l">“TA 支付”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">EmptyState</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Illustration</span><span class="p">:</span><span class="w"> </span><span class="l">“暂无账单插画”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Text</span><span class="p">:</span><span class="w"> </span><span class="l">“还没有记录哦~”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Page: 统计分析</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Frame</span><span class="p">:</span><span class="w"> </span><span class="l">Statistics</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Header</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">“统计分析”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">MonthSwitcher</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">LeftArrow &lt; 9月</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Label</span><span class="p">:</span><span class="w"> </span><span class="l">“10月”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">RightArrow &gt; 11月</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">ChartSection</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">PieChart</span><span class="p">:</span><span class="w"> </span><span class="l">“支出分类比例”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">LineChart</span><span class="p">:</span><span class="w"> </span><span class="l">“支出趋势变化”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">SummaryCards</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Card1</span><span class="p">:</span><span class="w"> </span><span class="l">“总支出 ￥1234.56”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Card2</span><span class="p">:</span><span class="w"> </span><span class="l">“你支出 ￥600”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Card3</span><span class="p">:</span><span class="w"> </span><span class="l">“TA 支出 ￥634”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Card4</span><span class="p">:</span><span class="w"> </span><span class="l">“平摊差额 -￥34”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">ReportButton</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Button</span><span class="p">:</span><span class="w"> </span><span class="l">“生成月度结算报告”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Page: 情侣中心</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Frame</span><span class="p">:</span><span class="w"> </span><span class="l">Profile</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Header</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">AvatarGroup</span><span class="p">:</span><span class="w"> </span><span class="l">双人头像</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">“情侣中心”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Subtitle</span><span class="p">:</span><span class="w"> </span><span class="l">“已绑定：小王 ❤️ 小李”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">InfoSection</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Card</span><span class="p">:</span><span class="w"> </span><span class="l">“纪念日：恋爱100天 💕”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Card</span><span class="p">:</span><span class="w"> </span><span class="l">“上次结算：10月1日”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Card</span><span class="p">:</span><span class="w"> </span><span class="l">“账本ID：#A1B2C3”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">FunctionList</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Item</span><span class="p">:</span><span class="w"> </span><span class="l">“编辑纪念日”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Item</span><span class="p">:</span><span class="w"> </span><span class="l">“更换主题（粉色 / 极简灰）”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Item</span><span class="p">:</span><span class="w"> </span><span class="l">“导出数据 JSON”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">ItemDanger</span><span class="p">:</span><span class="w"> </span><span class="l">“解绑情侣（需双方确认）”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Footer</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Text</span><span class="p">:</span><span class="w"> </span><span class="l">“让爱与账本都更有秩序 ❤️”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Common Components</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Component</span><span class="p">:</span><span class="w"> </span><span class="l">ButtonPrimary（主按钮）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Component</span><span class="p">:</span><span class="w"> </span><span class="l">IconButton（图标按钮）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Component</span><span class="p">:</span><span class="w"> </span><span class="l">PieChart</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Component</span><span class="p">:</span><span class="w"> </span><span class="l">LineChart</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Component</span><span class="p">:</span><span class="w"> </span><span class="l">RecordCard</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Component</span><span class="p">:</span><span class="w"> </span><span class="l">EmptyState</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Component</span><span class="p">:</span><span class="w"> </span><span class="l">AvatarGroup</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Component</span><span class="p">:</span><span class="w"> </span><span class="l">FilterBar</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Component</span><span class="p">:</span><span class="w"> </span><span class="l">SweetNoteSection</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>  </details>
+<p>📘<strong>导入说明：</strong></p>
+<ul>
+<li>
+<p>如果你会使用figma，那么只需要导入以上文本，即可生成页面</p>
+</li>
+<li>
+<p>如果你在国内，并且没用过figma，那么可以用AI将上述文本转成自然语言，然后通过<a class="link" href="https://modao.cc/"  target="_blank" rel="noopener"
+    >墨刀设计</a>、<a class="link" href="https://mastergo.com/"  target="_blank" rel="noopener"
+    >mastergo</a>等国内设计平台的AI功能来自动生成页面.</p>
+</li>
+</ul>
+<details>
+  <summary>
+    <span>
+       自然语言描述 
+      <span style="color: rgb(183, 107, 7); font-weight: bold;">(点击展开收缩) </span>
+    </span>
+  </summary>
+<hr>
+<p>这是一个情侣双人记账小程序的界面结构设计描述。整个应用包含五个主要页面和一些共用组件。</p>
+<p><strong>​​首页（账本总览）​</strong></p>
+<p>这是应用的主页面，顶部有情侣的双人头像和标题“我们的账本”，以及设置按钮。页面中间显示本月总支出金额，并细分了你和TA各自的支出及平摊差额，还用一个饼图展示了支出比例。页面有醒目的“新建账单”按钮，下方提供了支出趋势折线图和最近的三条账单记录，如“咖啡-￥28.00”。页面右下角还有一个悬浮的“+”记账按钮。</p>
+<p><strong>​​添加账单页面​​</strong></p>
+<p>这个页面用于记录新账单。顶部有返回按钮和标题。主体是一个表单，需要填写金额、选择消费分类（如餐饮、出行）、选择由谁支付、确定是共同还是个人支出，还可以添加备注、图片和日期。页面还有一个特色的“甜蜜语”区域，可以输入温馨话语并选择表情。最后有“保存账单”按钮，成功后会有心形动画效果。</p>
+<p><strong>​​账单记录页面​​</strong>
+这个页面展示所有历史账单。顶部可以搜索备注，下面有按月份、分类、支付者进行筛选的选项。账单列表按日期分组显示，每条记录都包含消费图标、名称、金额和支付详情。</p>
+<p><strong>​​统计分析页面​​</strong></p>
+<p>这个页面用图表展示消费数据。顶部可以切换月份。页面包含展示消费分类比例的饼图、显示支出变化的趋势图，以及总结总支出、双方各自支出和平摊差额的数据卡片。还可以一键生成月度结算报告。</p>
+<p><strong>​​情侣中心页面​​</strong></p>
+<p>这是管理双方账户的页面。显示情侣头像、昵称和绑定状态。主要信息区展示纪念日、上次结算日期和账本ID。功能列表包括编辑纪念日、更换应用主题、导出数据，以及需要双方确认的解绑功能。</p>
+<p><strong>​​共用组件​​</strong></p>
+<p>设计中使用了一套统一的组件库，包括主要按钮、图标按钮、饼图、折线图、账单卡片、空状态提示、双人头像组、筛选栏和甜蜜语输入区等，以保证整个应用体验的一致性。
+总的来说，这是一个功能清晰、注重情侣共同理财和情感互动体验的记账小程序设计。</p>
+<hr>
+  </details>
+<h3 id="输出效果图可参考">输出效果图（可参考）</h3>
+<p>这是我生成的图：</p>
+<p><figure 
+	>
+	<a href="https://s2.loli.net/2025/10/17/fFpkX39IPLCc7Uw.png" >
+		<img src="https://s2.loli.net/2025/10/17/fFpkX39IPLCc7Uw.png"
+			
+			
+			
+			loading="lazy"
+			alt="记账小程序原型设计">
+	</a>
+	
+	<figcaption>记账小程序原型设计</figcaption>
+	
+</figure></p>
+<h2 id="六小程序页面开发">六.小程序页面开发</h2>
+<h3 id="新建并初始化项目">新建并初始化项目</h3>
+<p>在你的文件夹下打开CMD, 然后输入<code>taro init couple-ledger</code></p>
+<p><figure 
+	>
+	<a href="https://s2.loli.net/2025/10/17/ItAWxGLSXnygiYD.png" >
+		<img src="https://s2.loli.net/2025/10/17/ItAWxGLSXnygiYD.png"
+			
+			
+			
+			loading="lazy"
+			alt="输入初始化命令">
+	</a>
+	
+	<figcaption>输入初始化命令</figcaption>
+	
+</figure></p>
+<p>项目介绍、框架之类的可以参考我的选择：</p>
+<p>防止图片失效，这里给出文字版：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">? 请输入项目介绍                         情侣账本微信小程序
+</span></span><span class="line"><span class="cl">? 请选择框架                             React
+</span></span><span class="line"><span class="cl">? 是否需要使用 TypeScript ？              Yes
+</span></span><span class="line"><span class="cl">? 是否需要编译为 ES5 ？                   No
+</span></span><span class="line"><span class="cl">? 请选择 CSS 预处理器（Sass/Less/Stylus） Sass
+</span></span><span class="line"><span class="cl">? 请选择包管理工具                        npm
+</span></span><span class="line"><span class="cl">? 请选择编译工具                          Webpack5
+</span></span><span class="line"><span class="cl">? 请选择模板源                            Gitee（最快）
+</span></span><span class="line"><span class="cl">✔ 拉取远程模板仓库成功！
+</span></span><span class="line"><span class="cl">? 请选择模板                              默认模板
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><figure 
+	>
+	<a href="https://s2.loli.net/2025/10/17/9oslGZz5mniFfNK.png" >
+		<img src="https://s2.loli.net/2025/10/17/9oslGZz5mniFfNK.png"
+			
+			
+			
+			loading="lazy"
+			alt="杂项">
+	</a>
+	
+	<figcaption>杂项</figcaption>
+	
+</figure></p>
+<p>最后,<code>cd couple-ledger</code>进入项目目录,输入<code>npm install</code>即初始化完毕.</p>
+<h3 id="引入tailwindcssantd-f2">引入tailwindcss、antd-f2</h3>
+<p>在项目目录下, cmd中输入<code>npm install -D tailwindcss@3.4.17 postcss autoprefixer</code></p>
+<h2 id="附录">附录</h2>
+<h3 id="参考">参考</h3>
+<ul>
+<li>
+<p><a class="link" href="https://www.cloudflare.com/"  target="_blank" rel="noopener"
+    >Cloudflare 官网 |“赛博活佛”地址</a></p>
+</li>
+<li>
+<p><a class="link" href="https://www.yuque.com/antv/f2"  target="_blank" rel="noopener"
+    >AntV-F2 文档 | 适配移动端的图表方案</a></p>
+</li>
+<li>
+<p><a class="link" href="https://juejin.cn/post/7207737667991306298"  target="_blank" rel="noopener"
+    >手摸手教你用 Taro + React 封装一个antv-f2 | 稀土掘金</a></p>
+</li>
+</ul>
+<h3 id="版权信息">版权信息</h3>
+<p>本文原载于 <a class="link" href="https://cai-hong-tu-blog.pages.dev/"  target="_blank" rel="noopener"
+    >彩虹兔の博客</a>，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/weapp/">Weapp</a>
+        
+            <a href="/tags/cloudflare/">Cloudflare</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2025年 10月 17日 11:40 CST
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+     
+     
+        
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    init({"comment":true,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://npm.elemecdn.com/@waline/emojis@1.2.0/qq","https://npm.elemecdn.com/@waline/emojis@1.2.0/tieba","https://npm.elemecdn.com/@waline/emojis@1.2.0/weibo","https://npm.elemecdn.com/@waline/emojis@1.2.0/bilibili","https://npm.elemecdn.com/@waline/emojis@1.2.0/alus"],"lang":"zh-CN","locale":{"admin":"屑博主","reaction0":"非常有用","reaction1":"有帮助","reaction2":"一般","reaction3":"无帮助","reaction4":"看不懂","reaction5":"有错误","reactionTitle":"这篇文章对你有帮助吗？","sofa":"还没有人评论哦！快来抢沙发吧~"},"pageview":true,"placeholder":"欢迎留下宝贵的评论！请留下正确的邮箱以便有回复时进行邮箱提醒，请勿发布任何与本文章无关的内容。","reaction":["https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_heart_eyes.png","https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_thumbsup.png","https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_zhoumei.png","https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_grievance.png","https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_dizzy_face.png","https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_slap.png"],"requiredMeta":["name"],"search":false,"serverURL":"https://waline.caihongtu.top","visitor":true});
+</script>
+
+    
+
+    
+        <div class="post-reward" data-html2canvas-ignore>
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+      <img class="image" src="https://s2.loli.net/2024/11/15/qfjwTJbRWVCNugE.jpg" alt="wechat">
+      <span>微信打赏</span>
+    </label>
+    
+    
+    <label class="qr-code-image" for="reward">
+      <img class="image" src="https://s2.loli.net/2024/11/15/iSJ3BIE4uXfsMRe.jpg" alt="alipay">
+      <span>支付宝打赏</span>
+    </label>
+    
+    
+    <label class="qr-code-image" for="reward">
+      <a href="https://paypal.me/wangruntong?country.x=C2&amp;locale.x=zh_XC" target="_blank"><span>Click this to PayPal</span></a>
+    </label>
+    
+  </div>
+</div>
+
+    
+    
+    <footer class="site-footer">
+  
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<script>
+(function(u, c) {
+  var d = document, t = 'script', o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  o.src = u;
+  if (c) { o.addEventListener('load', function(e) { c(e); }); }
+  s.parentNode.insertBefore(o, s);
+})('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function() {
+  pangu.spacingPage();
+});
+</script>
+
+    <section class="copyright">
+        &copy; 
+        
+            2024 - 
+        
+        2025 <a href="https://stack-theme-mod.vercel.app/">彩虹兔的博客</a>·<i class="fas fa-bell"></i> 网站已平稳运行<a id="days">0</a>天<a id="hours">0</a>小时<a id="minutes">0</a>分<a id="seconds">0</a>秒<br>
+      共书写了23.7k字·共 12篇文章·共 <span class="waline-pageview-count" data-path="/">0</span> 次浏览</br><span><p>
+    </section>
+    
+    <section class="powerby">
+         <br />
+        <br />
+         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">© Licensed Under CC BY-NC-SA 4.0</a>
+    </section>
+
+<script>
+  function updateTime() {
+    var s1 = '2024-11-13 14:12:42'; 
+    s1 = new Date(s1.replace(/-/g, "/")); 
+
+    var s2 = new Date(); 
+
+    
+    var timeDifference = s2.getTime() - s1.getTime();
+
+    
+    var number_of_days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    
+    document.getElementById('days').innerHTML = number_of_days;
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
+}
+
+
+setInterval(updateTime, 1000);
+
+
+
+
+
+
+
+</script>
+    
+<script type="module">
+  import { pageviewCount } from 'https://unpkg.com/@waline/client@v3/dist/pageview.js';
+
+  pageviewCount({
+    serverURL: "https:\/\/waline.caihongtu.top"
+  });
+</script>
+
+</footer>
+
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#引言">引言</a></li>
+    <li><a href="#一-前提条件">一. 前提条件</a></li>
+    <li><a href="#二-有话要问">二. 有话要问</a></li>
+    <li><a href="#三-需求分析">三. 需求分析</a>
+      <ol>
+        <li><a href="#项目背景">项目背景</a></li>
+        <li><a href="#目标用户">目标用户</a></li>
+        <li><a href="#核心需求">核心需求</a></li>
+        <li><a href="#非功能性需求">非功能性需求</a></li>
+        <li><a href="#后续规划可选">后续规划（可选）</a></li>
+        <li><a href="#项目目标">项目目标</a></li>
+      </ol>
+    </li>
+    <li><a href="#四产品分析">四.产品分析</a>
+      <ol>
+        <li><a href="#用户流程图简易">用户流程图（简易）</a></li>
+        <li><a href="#功能模块">功能模块</a></li>
+        <li><a href="#页面设计初版">页面设计（初版）</a></li>
+        <li><a href="#数据结构示例">数据结构（示例）</a></li>
+        <li><a href="#技术方案建议">技术方案（建议）</a></li>
+      </ol>
+    </li>
+    <li><a href="#五ui原型结构描述">五.UI原型结构描述</a>
+      <ol>
+        <li><a href="#总体风格方向">🌈总体风格方向</a></li>
+        <li><a href="#首页账本总览页">🏠首页（账本总览页）</a></li>
+        <li><a href="#记账页添加账单">💰记账页（添加账单）</a></li>
+        <li><a href="#账单列表页">📋账单列表页</a></li>
+        <li><a href="#统计页">📈统计页</a></li>
+        <li><a href="#情侣中心页">💞情侣中心页</a></li>
+        <li><a href="#系统与弹窗交互">⚙️系统与弹窗交互</a></li>
+        <li><a href="#配色建议">🎨配色建议</a></li>
+        <li><a href="#交互动效建议">🧩交互动效建议</a></li>
+        <li><a href="#figma-结构层级">🪄Figma 结构层级</a></li>
+        <li><a href="#figma文本形式">Figma文本形式</a></li>
+        <li><a href="#输出效果图可参考">输出效果图（可参考）</a></li>
+      </ol>
+    </li>
+    <li><a href="#六小程序页面开发">六.小程序页面开发</a>
+      <ol>
+        <li><a href="#新建并初始化项目">新建并初始化项目</a></li>
+        <li><a href="#引入tailwindcssantd-f2">引入tailwindcss、antd-f2</a></li>
+      </ol>
+    </li>
+    <li><a href="#附录">附录</a>
+      <ol>
+        <li><a href="#参考">参考</a></li>
+        <li><a href="#版权信息">版权信息</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<script
+    src="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/js/nprogress.min.js"
+    integrity="sha384-bHDlAEUFxsRI7JfULv3DTpL2IXbbgn4JHQJibgo5iiXSK6Iu8muwqHANhun74Cqg"
+    crossorigin="anonymous"
+></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/css/nprogress.css"
+    integrity="sha384-KJyhr2syt5+4M9Pz5dipCvTrtvOmLk/olWVdfhAp858UCa64Ia5GFpTN7+G4BWpE"
+    crossorigin="anonymous"
+/>
+<script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "interactive") NProgress.inc(0.8);
+        if (document.readyState === "complete") NProgress.done();
+    });
+</script>
+
+
+
+        <button type="button" class="btn" onclick="smoothScrollTop()" id="goTopBtn" title="Go to top">回到顶部</button>
+    </body>
+    <script>
+        
+        window.onscroll = function() {scrollTopButton()};
+
+        function scrollTopButton() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("goTopBtn").style.display = "block";
+        } else {
+            document.getElementById("goTopBtn").style.display = "none";
+        }
+        }
+
+        
+        function scrollTop() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+        }
+
+        
+        function smoothScrollTop(){
+            var timer  = null;
+            cancelAnimationFrame(timer);
+            timer = requestAnimationFrame(function fn(){
+                var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+                if(oTop > 0){
+                    document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+                    timer = requestAnimationFrame(fn);
+                }else{
+                    cancelAnimationFrame(timer);
+                }
+            });
+        }
+    </script>
+</html>

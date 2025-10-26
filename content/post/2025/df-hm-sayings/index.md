@@ -5,10 +5,10 @@ slug: "Df Hm Sayings"
 description: "记录了阿萨拉小兵以及特殊兵种、哈夫克小兵以及特殊兵种、各个地图BOSS的语音（文字版）"
 date: "2025-08-14T12:16:08+08:00"
 lastmod: "2025-08-14T12:16:08+08:00"
-image: "https://picsum.photos/seed/df-hm-sayings11/800/600"
+image: ""
 math: 
 license: 
-hidden: false
+hidden: true
 draft: false 
 categories: [""]
 tags: [""]
