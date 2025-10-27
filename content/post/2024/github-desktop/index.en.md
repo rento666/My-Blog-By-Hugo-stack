@@ -5,7 +5,7 @@ slug: "Github Desktop"
 description: 
 date: "2024-11-19T11:25:27+08:00"
 lastmod: "2024-11-19T11:25:27+08:00"
-image: "https://picsum.photos/seed/GithubDesktop11/800/600"
+image: ""
 math: 
 license: 
 hidden: false

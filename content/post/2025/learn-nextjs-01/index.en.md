@@ -1,8 +1,8 @@
 ---
 
 title: "[01] Learning Next.js Framework: Installation, Routing, and Layouts"
-slug: "This article introduces the basics, routing, and layouts of Next.js, suitable for those with some React foundation."
-description: 
+slug: "learn-nextjs-01"
+description: "This article introduces the basics, routing, and layouts of Next.js, suitable for those with some React foundation."
 date: "2025-10-26T11:37:50+08:00"
 lastmod: "2025-10-26T11:37:50+08:00"
 image: ""

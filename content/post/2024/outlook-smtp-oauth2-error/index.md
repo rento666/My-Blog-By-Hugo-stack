@@ -5,7 +5,7 @@ slug: "Outlook Smtp Oauth2 Error"
 description: "在本博客的评论系统接入邮箱提醒时，用到了outlook的smtp服务，但是在使用时却发现了一个错误。"
 date: "2024-11-15T22:57:11+08:00"
 lastmod: "2024-11-15T22:57:11+08:00"
-image: "https://picsum.photos/seed/34535s/800/600"
+image: ""
 math: 
 license: 
 hidden: false

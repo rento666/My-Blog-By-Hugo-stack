@@ -4,7 +4,7 @@ title: "Must Read Content for Blogging"
 slug: "Must Read Content for Blogging"
 description: "Things you need to pay attention to when writing a blog with Hugo."
 date: "2024-11-14T15:13:30+08:00"
-image: "https://picsum.photos/seed/645brg/800/600"
+image: ""
 math: 
 license: 
 hidden: false

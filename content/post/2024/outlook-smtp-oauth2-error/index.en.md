@@ -4,7 +4,7 @@ slug: "Outlook Smtp Oauth2 Error"
 description: "In this blog, I used Outlook's SMTP service when accessing email alerts in the comment system, but I found an error when using it."
 date: "2024-11-15T22:57:15+08:00"
 lastmod: "2024-11-15T22:57:15+08:00"
-image: "https://picsum.photos/seed/34535s/800/600"
+image: ""
 math:
 license:
 hidden: false

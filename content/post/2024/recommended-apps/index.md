@@ -5,7 +5,7 @@ slug: "Recommended Apps"
 description: "内含你想要的工具！"
 date: "2024-12-08T21:44:34+08:00"
 lastmod: "2025-08-07T11:18:21+08:00"
-image: "https://picsum.photos/seed/recommended-apps11/800/600"
+image: ""
 math: 
 license: 
 hidden: false

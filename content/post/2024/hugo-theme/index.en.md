@@ -5,7 +5,7 @@ slug: "Hugo Theme"
 description: 
 date: "2024-11-21T12:08:53+08:00"
 lastmod: "2024-11-21T12:08:53+08:00"
-image: "https://picsum.photos/seed/hugo-theme11/800/600"
+image: ""
 math: 
 license: 
 hidden: false
