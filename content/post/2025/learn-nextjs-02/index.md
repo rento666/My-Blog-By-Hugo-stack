@@ -1,6 +1,6 @@
 ---
 
-title: "【02】学习Next.js框架之链接、导航"
+title: "【02】学习Next.js框架之链接、导航、进阶路由"
 slug: "learn-nextjs-02"
 description: "本文介绍了Next.js的入门、路由、布局等知识，适合有一定React基础的人阅读。"
 date: "2025-10-27T09:17:42+08:00"
@@ -244,6 +244,208 @@ const [input, setInput] = useState("");
 ## 加载页面
 
 我们已经学习了`page.tsx`、`layout.tsx`、`template.tsx`、`not-found.tsx`，下面我们继续学习新的特殊文件：`loading.tsx`
+
+```ts
+export default function Loading() {
+    return <h1>Loading</h1>;
+}
+```
+
+一般如果使用加载页面的，都会为该页面做一个骨架加载器(skeleton loaders)或者其他
+
+### 优点
+
+- 当用户导航到新地方时，它会立即提供反馈。
+
+这使您的应用程序感觉流畅且响应迅速，用户知道他们的点击确实产生了效果。
+
+- Next.is 在加载新内容时保持共享布局的交互性。
+
+即使主要内容尚未准备好，用户仍可使用导航菜单或侧边栏等功能。
+
+## 错误处理
+
+通过`error.tsx`的特殊文件实现。
+
+```ts
+// app/products/[productId]/reviews/[reviewId]/error.tsx
+"use client";
+
+export default function ErrorBoundary({ error }: { error: Error }) {
+    return <div>{error.message}</div>
+}
+```
+
+- `error.tsx`必须为客户端组件，即必须填写`"use client";`
+
+```ts
+// app/products/[productId]/reviews/[reviewId]/page.tsx
+
+// ...
+// 假设randomInt 只能取 0 或者 1
+if(randomInt === 1) {
+    throw new Error("Error loading review");
+}
+
+// ...
+```
+
+- 它会自动将路由段及其嵌套子组件包裹在React错误边界中
+
+- 您可以使用文件系统层次结构为特定段创建自定义错误UI
+
+- 它将错误隔离在受影响的段落中，同时保持应用程序其余部分的功能正常
+
+- 它使您能够在不重新加载整个页面的情况下尝试从错误中恢复
+
+### 组件层次结构
+
+![组件层次结构](https://s2.loli.net/2025/10/29/9sgQHLceP2j8rwd.png)
+
+### 从错误中恢复
+
+`error.tsx`的参数还有一个reset方法，用来恢复客户端组件，如果`page.tsx`没有写`"use client";`，则可以在`error.tsx`中使用`useRouter`的Hook来重新加载页面。
+
+```ts
+"use client";
+
+import { useRouter } from "next/navigation";
+import { startTransition } from "react";
+
+export default function ErrorBoundary({ error, reset }: { error: Error; reset: () => void }) {
+
+    const router = useRouter();
+    const reload = () => {
+        startTransition(() => {
+            router.refresh();
+            reset();
+        });
+    };
+
+    return (
+        <div>
+            <div>{error.message}</div>
+            <button onClick={reload}>Try again</button>
+        </div>
+    )
+}
+```
+
+### 处理全局错误
+
+- 处理错误优先从同一目录下寻找`error.tsx`，若无，则会寻找父级目录，直至根目录下的`error.tsx`。
+
+- 如果找到的是父级目录的`error.tsx`，则会替换父级`page.tsx`所展示的所有内容，包括所有的子组件内容。
+
+- 如果本目录下的`layout.tsx`出错，则其会渲染父级目录下的`error.tsx`，而不是本目录下的`error.tsx`。
+
+- 当应用程序的最高层级（根目录）的`layout.tsx`出现错误时，Next.js提供了`global-error.tsx`，该文件应该位于项目的`app`目录下。
+
+- `global-error.tsx`仅在生产模式下工作
+
+- return中需`<html><body> ... </body></html>`包裹。
+
+- 由于无法再捕获任何错误，所以`global-error.tsx`请尽可能简单，最好包含HTML和CSS。
+
+## 并行路由
+
+是一种高级路由机制，可以在同一布局内同时渲染多个页面。
+
+### 使用并行路由
+
+- 在Next.js中，并行路由是通过一种称为插槽`slots`的功能来定义的。
+
+- 插槽有助于以模块化的方式组织内容。
+
+- 要创建一个插槽，我们使用`@folder`命名约定。
+
+- 每个定义的插槽会自动成为其对应`layout.tsx`文件中的一个组件。
+
+### 举例说明
+
+想象一下，构建一个复杂的仪表板，同时在同一个页面显示用户分析、收入指标和通知等。
+
+![并行路由的使用情景](https://s2.loli.net/2025/10/29/aBFq3N8QWyvrCzt.png)
+
+#### 传统做法
+
+传统的做法是为每个部分创建三个单独的组件，并将他们组织在`app/dashboard/layout.tsx`中。
+
+![传统做法的layout.tsx代码](https://s2.loli.net/2025/10/29/HCfhEvpesrDS4Yk.png)
+
+#### 并行路由做法
+
+而并行路由做法是在`app/dashboard`文件夹内创建`@users/page.tsx`、`@revenue/page.tsx`、`@notifications/page.tsx`三个插槽。
+
+![在dashboard文件夹内创建三个slots](https://s2.loli.net/2025/10/29/anMyeXzZRAmKFvJ.png)
+
+在`app/dashboard/layout.tsx`中，无需导入，直接在参数中定义，然后使用即可。
+
+![并行路由做法的部分layout.tsx代码](https://s2.loli.net/2025/10/29/lKHhGU5LEzkXMvC.png)
+
+### slots无路由
+
+你无法通过URL来访问到单独的插槽组件，例如`http:localhost:3000/dashboard/user`或者`http:localhost:3000/dashboard/@user`均为404 NOT FOUND。
+
+### 使用案例
+
+- 带有多个部分的仪表板
+
+- 分屏界面
+
+- 多窗格布局
+
+- 复杂的管理界面
+
+### 优势
+
+- 并行路线非常适合将布局分成可管理的槽位(特别是当不同团队在不同的部分工作时)
+
+- 独立的路由处理
+
+布局中的每个槽位，例如用户、收入和通知，都可以处理其自身的加载和错误状态。
+
+这种细粒度控制在页面不同部分加载速度不一或遇到独特错误的场景中尤为有用。
+
+![一个出错，不影响其他](https://s2.loli.net/2025/10/29/XGMYfxrc2gOwDnT.png)
+
+- 子导航
+
+每个插槽本质上可以作为一个迷你应用程序，具备自己的导航和状态管理功能。
+
+用户可以单独与每个部分进行交互，应用过滤器、排序数据或浏览页面而不影响其他部分。
+
+![子导航之间共享](https://s2.loli.net/2025/10/29/ZJCnN29aDuFS4e7.png)
+
+
+### 未匹配的路由
+
+根据上图可知，`http://localhost:3000/dashboard`与`http:localhost:3000/dashboard/archived`的user、revenue是共享的。
+
+由dashboard页面进入archived页面，没问题，那么在archived页面刷新一下，会如何呢？
+
+答案是报错 404
+
+因为：
+
+- 从UI进行导航
+
+当通过UI导航(例如点击链接)时，Next.js会继续显示之前未匹配槽位中的内容。
+
+- 页面重新加载
+
+Next.js会在每个未匹配的插槽中查找名为`default.tsx`的文件。该文件至关重要，当框架无法从当前URL检索到插槽的活动状态时，它将作为回退以渲染内容。
+
+所以我们可以在`app/dashboard`、`app/dashboard/@users`、`app/dashboard/@revenue`文件夹内创建`default.tsx`，并将对应`page.tsx`文件的内容复制到里面。
+
+## 条件路由
+
+## src目录（可选）
+
+`app`目录可直接放在项目的根目录下，也可放在`src`目录下。
+
+放在`src`目录下就是单纯的方便项目结构整理，后续如果有公共组件，可以在`src`目录下创建`components`目录，用此目录存放公共组件。
+
 
 ## 附录
  
