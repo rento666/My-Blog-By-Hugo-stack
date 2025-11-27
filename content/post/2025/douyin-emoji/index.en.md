@@ -39,6 +39,11 @@ table th { width: 100px; }
 
 I wonder if anyone else thinks some of the little emojis on Douyin are pretty cute? So I thought of extracting them to use them later as stickers on WeChat for myself.
 
+## GitHub Repository
+
+[douyin-emoji | GitHub Repository](https://www.github.com/rento666/douyin-emoji)
+
+- First archived emoji images on November 27, 2025
 
 ## Default Emoji Display
 

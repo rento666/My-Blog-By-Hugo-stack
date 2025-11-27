@@ -39,6 +39,12 @@ table th { width: 100px; }
 
 不知道有没有人觉得，抖音有些小表情还挺好看的？于是我就想提取出来，将来上传到微信表情里面供自己使用。
 
+## GitHub 仓库
+
+[douyin-emoji | GitHub仓库](https://www.github.com/rento666/douyin-emoji)
+
+- 2025年11月27日初次存档表情图片
+
 
 ## 默认表情展示
 
