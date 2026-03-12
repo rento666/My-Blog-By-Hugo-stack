@@ -16,6 +16,9 @@ reaction: true
 top: false
 
 ---
+
+> Updated on March 12, 2026, **SMMS** has been changed to [S.EE](https://s.ee/). Accounts and stored images have been synchronized and migrated, but passwords need to be reset.
+
 ## Introduction
 
 When I got a new computer and was bored, it occurred to me that I hadn't updated my blog for a long time, so here is this post.
