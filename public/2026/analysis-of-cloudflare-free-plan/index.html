@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='对Cloudflare workers 的免费计划进行剖析，计算个人如何最大程度的白嫖~'><title>分析Cloudflare免费计划</title>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8353154221194666"
+     crossorigin="anonymous"></script>
+     
+<link rel='canonical' href='http://localhost:1313/2026/analysis-of-cloudflare-free-plan/'>
+
+<link rel="stylesheet" href="/scss/style.min.ebb30e25c757b9487a105b9234b82d3c7945d78c58034e0acbbf63e190a2a5f4.css"><meta property="og:title" content="分析Cloudflare免费计划" />
+<meta property="og:description" content="对Cloudflare workers 的免费计划进行剖析，计算个人如何最大程度的白嫖~" />
+<meta property="og:url" content="http://localhost:1313/2026/analysis-of-cloudflare-free-plan/" />
+<meta property="og:site_name" content="彩虹兔の博客" />
+<meta
+  property="og:type"
+  content="article"
+/><meta property="article:section" content="Post" /><meta property="article:tag" content="cloudflare" /><meta
+  property="article:published_time"
+  content='2026-03-09T09:45:40&#43;08:00'
+/><meta
+  property="article:modified_time"
+  content='2026-03-09T18:59:32&#43;08:00'
+/>
+<meta name="twitter:title" content="分析Cloudflare免费计划">
+<meta name="twitter:description" content="对Cloudflare workers 的免费计划进行剖析，计算个人如何最大程度的白嫖~">
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+<style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
+
+<script> 
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;700&display=swap"; 
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+
+    </head>
+    <body class="
+    article-page
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    <!-- 
+        extended
+     -->
+    on-phone--column extended
+">
+    
+        <div id="article-toolbar" style="display: flex;position: sticky;top: 5px;z-index: 1000;">
+            <a href="http://localhost:1313/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span></span>
+            </a>
+        </div>
+    
+
+    
+
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/cloudflare/" style="background-color: #2a9d8f; color: #fff;">
+                Cloudflare
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/2026/analysis-of-cloudflare-free-plan/">分析Cloudflare免费计划</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        对Cloudflare workers 的免费计划进行剖析，计算个人如何最大程度的白嫖~
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2026年 03月 09日 09:45 CST</time>
+            </div>
+        
+    
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-words">
+                    
+                    约16分钟，共3592字
+                </time>
+            </div>
+        
+    
+        <div>
+            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1731571978497" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4337" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"><path d="M512 195.047619c150.79619 0 288.280381 92.013714 412.42819 276.041143a73.142857 73.142857 0 0 1 2.755048 77.385143l-2.755048 4.437333-6.92419 10.118095C795.184762 740.303238 659.992381 828.952381 512 828.952381c-150.79619 0-288.280381-92.013714-412.42819-276.041143a73.142857 73.142857 0 0 1-2.755048-77.385143l2.755048-4.437333 6.92419-10.118095C228.815238 283.696762 364.007619 195.047619 512 195.047619z m0 73.142857c-120.880762 0-235.471238 75.142095-345.088 234.008381L160.207238 512l6.729143 9.825524C276.650667 680.740571 391.216762 755.809524 512 755.809524c120.880762 0 235.471238-75.142095 345.088-234.008381l6.704762-9.801143-6.729143-9.825524C747.349333 343.259429 632.783238 268.190476 512 268.190476z m0 88.551619a161.694476 161.694476 0 1 1 0 323.364572 161.694476 161.694476 0 0 1 0-323.364572z m0 73.142857a88.551619 88.551619 0 1 0 0 177.078858 88.551619 88.551619 0 0 0 0-177.078858z" p-id="4338" fill="currentColor"></path></svg>
+            <time class="article-pageview">
+                <span class="waline-pageview-count" data-path="/2026/analysis-of-cloudflare-free-plan/">0</span> 次浏览
+            </time>
+        </div>
+    
+        <div>
+            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1731571999261" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5443" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"><path d="M853.333333 138.666667H170.666667c-40.533333 0-74.666667 34.133333-74.666667 74.666666v512c0 40.533333 34.133333 74.666667 74.666667 74.666667h151.466666V917.333333c0 12.8 8.533333 25.6 19.2 29.866667 4.266667 2.133333 8.533333 2.133333 12.8 2.133333 8.533333 0 17.066667-4.266667 23.466667-10.666666l136.533333-138.666667H853.333333c40.533333 0 74.666667-34.133333 74.666667-74.666667V213.333333c0-40.533333-34.133333-74.666667-74.666667-74.666666z m10.666667 586.666666c0 6.4-4.266667 10.666667-10.666667 10.666667H501.333333c-8.533333 0-17.066667 4.266667-23.466666 10.666667l-89.6 93.866666V768c0-17.066667-14.933333-32-32-32H170.666667c-6.4 0-10.666667-4.266667-10.666667-10.666667V213.333333c0-6.4 4.266667-10.666667 10.666667-10.666666h682.666666c6.4 0 10.666667 4.266667 10.666667 10.666666v512z" fill="currentColor" p-id="5444"></path><path d="M512 490.666667H298.666667c-17.066667 0-32 14.933333-32 32S281.6 554.666667 298.666667 554.666667h213.333333c17.066667 0 32-14.933333 32-32S529.066667 490.666667 512 490.666667zM672 341.333333H298.666667c-17.066667 0-32 14.933333-32 32S281.6 405.333333 298.666667 405.333333h373.333333c17.066667 0 32-14.933333 32-32s-14.933333-32-32-32z" fill="currentColor" p-id="5445"></path></svg>
+            <time class="article-comment">
+                <span class="waline-comment-count" data-path="/2026/analysis-of-cloudflare-free-plan/">0</span> 条评论
+            </time>
+        </div>
+
+        <div>
+            
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                        
+                    
+                
+                    
+                
+            
+                
+                
+                    
+                
+                    
+                        
+                        
+                            <time class="article-comment">
+                                <li id="selected"><?xml version="1.0" encoding="utf-8"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="currentColor" height="24px" width="24px" version="1.1" id="anna_vital_language_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	  viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+<path d="M62.4,101c-1.5-2.1-2.1-3.4-1.8-3.9c0.2-0.5,1.6-0.7,3.9-0.5c2.3,0.2,4.2,0.5,5.8,0.9c1.5,0.4,2.8,1,3.8,1.7
+	c1,0.7,1.8,1.5,2.3,2.6c0.6,1,1,2.3,1.4,3.7c0.7,2.8,0.5,4.7-0.5,5.7c-1.1,1-2.6,0.8-4.6-0.6c-2.1-1.4-3.9-2.8-5.5-4.2
+	C65.5,105.1,63.9,103.2,62.4,101z M40.7,190.1c4.8-2.1,9-4.2,12.6-6.4c3.5-2.1,6.6-4.4,9.3-6.8c2.6-2.3,5-4.9,7-7.7
+	c2-2.7,3.8-5.8,5.4-9.2c1.3,1.2,2.5,2.4,3.8,3.5c1.2,1.1,2.5,2.2,3.8,3.4c1.3,1.2,2.8,2.4,4.3,3.8c1.5,1.4,3.3,2.8,5.3,4.5
+	c0.7,0.5,1.4,0.9,2.1,1c0.7,0.1,1.7,0,3.1-0.6c1.3-0.5,3-1.4,5.1-2.8c2.1-1.3,4.7-3.1,7.9-5.4c1.6-1.1,2.4-2,2.3-2.7
+	c-0.1-0.7-1-1-2.7-0.9c-3.1,0.1-5.9,0.1-8.3-0.1c-2.5-0.2-5-0.6-7.4-1.4c-2.4-0.8-4.9-1.9-7.5-3.4c-2.6-1.5-5.6-3.6-9.1-6.2
+	c1-3.9,1.8-8,2.4-12.4c0.3-2.5,0.6-4.3,0.8-5.6c0.2-1.2,0.5-2.4,0.9-3.3c0.3-0.8,0.4-1.4,0.5-1.9c0.1-0.5-0.1-1-0.4-1.6
+	c-0.4-0.5-1-1.1-1.9-1.7c-0.9-0.6-2.2-1.4-3.9-2.3c2.4-0.9,5.1-1.7,7.9-2.6c2.7-0.9,5.7-1.8,8.8-2.7c3-0.9,4.5-1.9,4.6-3.1
+	c0.1-1.2-0.9-2.3-3.2-3.5c-1.5-0.8-2.9-1.1-4.3-0.9c-1.4,0.2-3.2,0.9-5.4,2.2c-0.6,0.4-1.8,0.9-3.4,1.6c-1.7,0.7-3.6,1.5-6,2.5
+	c-2.4,1-5,2-7.8,3.1c-2.9,1.1-5.8,2.2-8.7,3.2c-2.9,1.1-5.7,2-8.2,2.8c-2.6,0.8-4.6,1.4-6.1,1.6c-3.8,0.8-5.8,1.6-5.9,2.4
+	c0,0.8,1.5,1.6,4.4,2.4c1.2,0.3,2.3,0.6,3.1,0.6c0.8,0.1,1.7,0.1,2.5,0c0.8-0.1,1.6-0.3,2.4-0.5c0.8-0.3,1.7-0.7,2.8-1.1
+	c1.6-0.8,3.9-1.7,6.9-2.8c2.9-1,6.6-2.4,11.2-4c0.9,2.7,1.4,6,1.4,9.8c0,3.8-0.4,8.1-1.4,13c-1.3-1.1-2.7-2.3-4.2-3.6
+	c-1.5-1.3-2.9-2.6-4.3-3.9c-1.6-1.5-3.2-2.5-4.7-3c-1.6-0.5-3.4-0.5-5.5,0c-3.3,0.9-5,1.9-4.9,3.1c0,1.2,1.3,1.8,3.8,1.9
+	c0.9,0.1,1.8,0.3,2.7,0.6c0.9,0.3,1.9,0.9,3.2,1.8c1.3,0.9,2.9,2.2,4.7,3.8c1.8,1.6,4.2,3.7,7,6.3c-1.2,2.9-2.6,5.6-4.1,8
+	c-1.5,2.5-3.4,5-5.5,7.3c-2.2,2.4-4.7,4.8-7.7,7.2c-3,2.5-6.6,5.1-10.8,7.8c-4.3,2.8-6.5,4.7-6.5,5.6C35,192.1,37,191.7,40.7,190.1z
+	 M250.5,81.8v165.3l-111.6-36.4L10.5,253.4V76.1l29.9-10V10.4l81.2,28.7L231.3,2.6v73.1L250.5,81.8z M124.2,50.6L22.3,84.6v152.2
+	l101.9-33.9V50.6L124.2,50.6z M219.4,71.9V19L138.1,46L219.4,71.9z M227,201.9L196.5,92L176,85.6l-30.9,90.8l18.9,5.9l5.8-18.7
+	l31.9,10l5.7,22.3L227,201.9z M174.8,147.7l22.2,6.9l-10.9-42.9L174.8,147.7z"/>
+</svg><a href="/en/2026/analysis-of-cloudflare-free-plan/"><span>English</span></a></li>
+                            </time>
+                        
+                    
+                
+            
+            
+        </div>
+    </footer>
+    
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="引言">引言</h2>
+<blockquote>
+<p>为了让个人开发者更好的<del>白嫖</del>使用Cloudflare Workers相关项目，先对其免费计划进行分析。</p></blockquote>
+<p><figure 
+	>
+	<a href="https://files.seeusercontent.com/2026/03/09/Pi2m/wechat_longscreenshot_2026-03-09.png" >
+		<img src="https://files.seeusercontent.com/2026/03/09/Pi2m/wechat_longscreenshot_2026-03-09.png"
+			
+			
+			
+			loading="lazy"
+			alt="Cloudflare Workers 计划">
+	</a>
+	
+	<figcaption>Cloudflare Workers 计划</figcaption>
+	
+</figure></p>
+<h2 id="分点介绍">分点介绍</h2>
+<h3 id="workers和pages">Workers和Pages</h3>
+<p><figure 
+	>
+	<a href="https://files.seeusercontent.com/2026/03/09/Hu4s/ScreenShot_2026-03-09_102726_918.png" >
+		<img src="https://files.seeusercontent.com/2026/03/09/Hu4s/ScreenShot_2026-03-09_102726_918.png"
+			
+			
+			
+			loading="lazy"
+			alt="请求次数在美国时间0点刷新">
+	</a>
+	
+	<figcaption>请求次数在美国时间0点刷新</figcaption>
+	
+</figure></p>
+<p>首先个人的小项目一般无需关注第一项，也就是我们只需要考虑请求次数即可。</p>
+<p>那么十万次请求是什么概念呢？一天24小时，平均每小时最多4166个请求，那么项目的平均QPS（每秒查询数）就要小于1.157。</p>
+<p>想象一下，如果你的个人项目，在24小时以内，每秒都至少有1.157个请求，那么这个项目所带来的商业价值将会支撑起你使用付费计划。</p>
+<p>毕竟一个个人小项目，每天能够有几千次请求就已经算是不小的成功了。</p>
+<h3 id="workers构建">Workers构建</h3>
+<p>这个没啥说的，个人部署项目是用不完的。</p>
+<h3 id="workers-日志">Workers 日志</h3>
+<p>同上，个人用不完。</p>
+<h3 id="耐用对象durable-objects">耐用对象（Durable Objects）</h3>
+<p><figure 
+	>
+	<a href="https://files.seeusercontent.com/2026/03/09/s8Ra/3929cb5.png" >
+		<img src="https://files.seeusercontent.com/2026/03/09/s8Ra/3929cb5.png"
+			
+			
+			
+			loading="lazy"
+			alt="Durable Objects">
+	</a>
+	
+	<figcaption>Durable Objects</figcaption>
+	
+</figure></p>
+<h4 id="免费计划核心限制">免费计划核心限制</h4>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>限制项</th>
+          <th>免费额度</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>请求数</td>
+          <td>100,000 次/天</td>
+          <td>包括 HTTP 请求、RPC 会话、WebSocket 消息等</td>
+      </tr>
+      <tr>
+          <td>持续时间</td>
+          <td>13,000 GB‑秒/天</td>
+          <td>内存（GB）× 运行时间（秒）的累计值</td>
+      </tr>
+      <tr>
+          <td>行读取</td>
+          <td>5,000,000 次/天</td>
+          <td>SQLite 数据库读取操作</td>
+      </tr>
+      <tr>
+          <td>行写入</td>
+          <td>100,000 次/天</td>
+          <td>SQLite 数据库写入操作</td>
+      </tr>
+      <tr>
+          <td>存储</td>
+          <td>5 GB</td>
+          <td>持久化存储空间</td>
+      </tr>
+  </tbody>
+</table></div>
+<h4 id="关键限制分析">关键限制分析</h4>
+<p><strong>1. 请求数是最主要的瓶颈</strong></p>
+<ul>
+<li>每天 100,000 次请求，平均每秒约 1.157 次请求（QPS）。</li>
+<li>如果应用存在访问高峰（如白天 8 小时集中 80% 流量），峰值 QPS 可能达到 <strong>5–10 倍</strong>的平均值，即约 6–12 QPS。</li>
+</ul>
+<p><strong>2. 持续时间限制通常不会先触及</strong>
+假设每个请求的 Durable Object 实例使用 <strong>128 MB（0.125 GB）内存</strong>，平均运行 <strong>100 毫秒（0.1 秒）</strong>，则每次请求消耗约 <strong>0.0125 GB‑秒</strong>。<br>
+100,000 次请求仅需 <strong>1,250 GB‑秒</strong>，远低于 13,000 GB‑秒的限额。</p>
+<p><strong>3. 数据库操作限制相对宽松</strong></p>
+<ul>
+<li>若每次请求平均触发 <strong>5 次读取</strong>，100,000 次请求对应 500,000 次读取，仅用掉读取限额的 10%。</li>
+<li>写入限额与请求数相同（100,000 次），若每次请求伴随一次写入，则写入限额与请求数同时耗尽。</li>
+</ul>
+<h4 id="用户承载量估算">用户承载量估算</h4>
+<p>承载用户数主要取决于 <strong>每个用户每天产生的请求数</strong>，下表列出几种典型场景：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>应用类型</th>
+          <th>每个用户每天请求数</th>
+          <th>可承载 DAU</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>轻量级 API/后台任务</td>
+          <td>1–2</td>
+          <td>50,000–100,000</td>
+          <td>如天气查询、定时推送等</td>
+      </tr>
+      <tr>
+          <td>中等交互 Web 应用</td>
+          <td>10–20</td>
+          <td>5,000–10,000</td>
+          <td>典型 SPA，每次操作产生 1–2 个 API 请求</td>
+      </tr>
+      <tr>
+          <td>重度交互 Web 应用</td>
+          <td>50–100</td>
+          <td>1,000–2,000</td>
+          <td>页面包含大量资源（图片、脚本）或频繁轮询</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><strong>并发用户数估算</strong>（以中等交互场景为例）</p>
+<ul>
+<li>假设每个用户每天发起 <strong>10 次请求</strong>，则每天可支持 <strong>10,000 个会话</strong>。</li>
+<li>平均会话时长 <strong>10 分钟（600 秒）</strong>，每天考察时间 24 小时（86,400 秒）。<br>
+平均并发用户数 ( C = \frac{10,000 \times 600}{86,400} \approx 69.4 ) 人。<br>
+峰值并发用户数 ( C&rsquo; \approx C + 3\sqrt{C} \approx 69.4 + 3 \times 8.3 \approx 94.3 ) 人。</li>
+</ul>
+<h4 id="注意事项">注意事项</h4>
+<ol>
+<li><strong>实际用户行为差异大</strong>：上述估算基于典型假设，若您的应用每个页面加载产生 50+ 请求（如富媒体站点），用户数会相应降低。</li>
+<li><strong>其他资源可能先耗尽</strong>：如果应用频繁进行数据库写入（如聊天记录），100,000 次写入可能先于请求数耗尽。</li>
+<li><strong>免费计划适合阶段</strong>：该额度非常适合<strong>个人项目、原型验证、小型工具或低频服务</strong>，能够支撑数千到数万 DAU 的稳定运行。</li>
+<li><strong>监控与优化</strong>：建议在 Cloudflare Dashboard 中监控各项用量，通过缓存、合并请求、减少不必要的数据库操作等方式优化资源使用。</li>
+</ol>
+<h4 id="总结">总结</h4>
+<p>Cloudflare Durable Objects 免费计划能为个人或小型项目提供相当可观的承载能力。在<strong>中等交互强度</strong>（每用户每天约 10 次请求）下，可支持约 <strong>5,000–10,000 日活用户</strong>，并发用户约 <strong>70–95 人</strong>。若您的应用更轻量，甚至可接近 10 万日活。建议根据实际应用类型参考上表进行估算，并在早期关注请求数的使用情况。</p>
+<h3 id="d1-数据库">D1 数据库</h3>
+<p><figure 
+	>
+	<a href="https://files.seeusercontent.com/2026/03/09/4gwT/D1.png" >
+		<img src="https://files.seeusercontent.com/2026/03/09/4gwT/D1.png"
+			
+			
+			
+			loading="lazy"
+			alt="D1">
+	</a>
+	
+	<figcaption>D1</figcaption>
+	
+</figure></p>
+<p>以作者实际使用了一年多的经验来看，在抛弃了传统的关系型数据库的<strong>联表查询</strong>后，并且没有太多的<strong>写入操作</strong>（例如：用户资料的更新、社区的用户评论等），那么在<strong>中等交互强度</strong>的应用中，可支持约<strong>五千–两万日活用户</strong>，并发用户约<strong>数百人</strong>。若您的应用更轻量（如工具类），甚至可接近十万日活。</p>
+<p>灵活利用<strong>KV、本地缓存</strong>是解决行读取的一个重要方式。</p>
+<h3 id="kv">KV</h3>
+<p>KV 适合做 <strong>配置中心 / 灰度发布 / 轻量缓存</strong></p>
+<p>KV每天最多 100,000 次读取操作，与Workers的每日请求数相同，所以不用担心会超出限制。</p>
+<h4 id="限制">限制</h4>
+<p>请不要将KV当做Redis类的缓存服务，其根本承担不起频繁的读写！尤其是写操作！！！</p>
+<h4 id="典型用途">典型用途</h4>
+<ul>
+<li>配置中心</li>
+<li>功能开关（Feature Flag）</li>
+<li>灰度 / A/B</li>
+<li>轻量缓存（确保非常轻量才行）</li>
+<li>白名单 / 黑名单</li>
+</ul>
+<h4 id="kv-与其他存储对比">KV 与其他存储对比</h4>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>存储</th>
+          <th>特点</th>
+          <th>适用</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>KV</td>
+          <td>快、简单</td>
+          <td>配置 / 灰度</td>
+      </tr>
+      <tr>
+          <td>D1</td>
+          <td>SQL</td>
+          <td>业务数据</td>
+      </tr>
+      <tr>
+          <td>Durable Object</td>
+          <td>强一致</td>
+          <td>计数 / 会话</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>如果你已经在用 Cloudflare Worker，<strong>KV 几乎是必用组件</strong>。</p>
+<h3 id="workers-ai">Workers AI</h3>
+<p>每天最多 10,000 个神经元（Neurons）。</p>
+<p>这个神经元呢，简单理解一下：</p>
+<p>神经元 = （输入tokens + 输出tokens）* 模型系数</p>
+<p>不同模型的系数不一样，我自己测试了<code>llama-3.1-8b-instruct</code>的模型，其输入、输出、消耗如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">消耗神经元：39.11，总tokens为324
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">输入：
+</span></span><span class="line"><span class="cl">短语“Hello, World”的起源是什么。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">输出：
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;response&#34;: &#34;\&#34;Hello, World\&#34; 是计算机编程中的一种传统的例子，用于测试一个程序是否正常工作。这个短语的起源可以追溯到1960年代初期的计算机科学。\n\n具体来说，\&#34;Hello, World\&#34; 的首次出现可以追溯到1964年，英国科学家彼得·安德森（Peter Anderson）在他的论文《操作系统的设计》中使用了这个短语作为一个例子。然而，这个短语并没有广泛流行。\n\n真正使\&#34;Hello, World\&#34;成为计算机编程的标志的是1968年，美国计算机科学家布莱恩·科潘（Brian Kernighan）和皮特·丹尼森（Pete Denning）在他们的论文《操作系统概论》中使用了这个短语。他们将其作为一个例子，展示如何使用汇编语言编写一个程序来输出\&#34;Hello, World\&#34;。\n\n从那时起,\&#34;Hello, World\&#34;就成为计算机编程中一个常见的例子，用于测试程序的基本功能，并且被广泛使用于各种编程语言中。&#34;,
+</span></span><span class="line"><span class="cl">  &#34;usage&#34;: {
+</span></span><span class="line"><span class="cl">    &#34;prompt_tokens&#34;: 74,
+</span></span><span class="line"><span class="cl">    &#34;completion_tokens&#34;: 250,
+</span></span><span class="line"><span class="cl">    &#34;total_tokens&#34;: 324,
+</span></span><span class="line"><span class="cl">    &#34;prompt_tokens_details&#34;: {
+</span></span><span class="line"><span class="cl">      &#34;cached_tokens&#34;: 0
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>详细的定价请参照<a class="link" href="https://developers.cloudflare.com/workers-ai/platform/pricing/"  target="_blank" rel="noopener"
+    >Workers AI 定价 | Cloudflare 官网</a></p>
+<p>使用超了并不会转为付费计划，而是提示错误。</p>
+<p><figure 
+	>
+	<a href="https://files.seeusercontent.com/2026/03/09/Uav2/workersai.png" >
+		<img src="https://files.seeusercontent.com/2026/03/09/Uav2/workersai.png"
+			
+			
+			
+			loading="lazy"
+			alt="超出用量报错">
+	</a>
+	
+	<figcaption>超出用量报错</figcaption>
+	
+</figure></p>
+<p>所以这个AI随便玩玩就可以了，别指望把这个部署到<a class="link" href="https://github.com/openclaw/openclaw"  target="_blank" rel="noopener"
+    >小龙虾🦞</a>上，那token费用可贵可贵了。</p>
+<h3 id="queues">Queues</h3>
+<p>消息队列，搞过<strong>微服务</strong>的应该都清楚用法了。</p>
+<p>免费计划：每日一万次操作（读/写/删除），消息最多保留24小时。</p>
+<h4 id="使用场景">使用场景</h4>
+<ol>
+<li>异步任务处理</li>
+</ol>
+<ul>
+<li>图片/视频处理（压缩、水印、格式转换）</li>
+<li>邮件发送、短信通知</li>
+<li>数据导出/报表生成</li>
+</ul>
+<ol start="2">
+<li>事件驱动架构</li>
+</ol>
+<ul>
+<li>用户注册后触发欢迎邮件、初始化数据</li>
+<li>内容发布后触发 SEO 优化、社交分享</li>
+</ul>
+<ol start="3">
+<li>工作流解耦</li>
+</ol>
+<ul>
+<li>将耗时操作从主请求中剥离，提升响应速度</li>
+<li>实现重试机制和死信队列（DLQ）</li>
+</ul>
+<h4 id="小技巧">小技巧</h4>
+<ol>
+<li>批量处理：Queues 支持批量消费，减少 API 调用次数</li>
+<li>并发控制：通过 Worker 的 queue处理器自动管理并发</li>
+<li>延迟消息：使用 delaySeconds参数实现定时任务</li>
+</ol>
+<h4 id="计算">计算</h4>
+<p><strong>实际容量换算</strong></p>
+<ul>
+<li>单条消息 ≤ 64KB：1 次操作</li>
+<li>典型任务流程（写入→读取→删除）：3 次操作</li>
+<li>每日可处理消息数：约 3,333 条完整流程消息（10,000 ÷ 3）</li>
+</ul>
+<p><strong>个人项目典型用量</strong></p>
+<ul>
+<li>用户注册邮件发送：假设每日 100 新用户 → 300 次操作</li>
+<li>图片处理任务：每日 1000 张图片 → 3,000 次操作</li>
+<li>数据同步任务：每小时 10 次同步 → 每日 720 次操作</li>
+<li>日志处理：每日 1,000 条日志 → 3,000 次操作</li>
+</ul>
+<p><strong>总计约 7,020 次操作</strong>，仍在免费额度内。</p>
+<h3 id="hyperdrive">Hyperdrive</h3>
+<p>这个我没有使用过，但据我了解，其主要作用就是<strong>让Workers项目使用已有的外部数据库</strong>。</p>
+<p>要知道，<strong>Workers项目是 Serverless 型项目</strong>，每次对外部数据库的请求都会创建链接，而我们正常项目启动后就会建立数据库连接池，应用内所有的请求都是共用这个池子里的链接。</p>
+<p>如果流量上来，数据库会直接挂掉的。</p>
+<p>并且Hyperdrive还会对访问这些数据库提供加速功能（全球范围）。</p>
+<p>不过每天十万次查询，感觉还是有点少的，不能当做主数据库使用。</p>
+<h3 id="vectorize">Vectorize</h3>
+<p>矢量数据库，主要就是<strong>语义搜索</strong>，使用场景有：文档搜索、文章推荐、内容去重和归类等。</p>
+<p><figure 
+	>
+	<a href="https://files.seeusercontent.com/2026/03/09/en9C/1c9d735.png" >
+		<img src="https://files.seeusercontent.com/2026/03/09/en9C/1c9d735.png"
+			
+			
+			
+			loading="lazy"
+			alt="Vectorize 使用场景">
+	</a>
+	
+	<figcaption>Vectorize 使用场景</figcaption>
+	
+</figure></p>
+<p>这个暂且不表，后续等我使用过一段时间后再讨论免费计划够不够用。</p>
+<h3 id="浏览器呈现">浏览器呈现</h3>
+<p>Browser Rendering 允许开发者在无服务器环境中通过API或Workers控制无头浏览器，实现网页渲染、截图、PDF生成和数据抓取等自动化操作。</p>
+<p>对于免费用户，每天只有十分钟的使用时间&hellip;emmm&hellip;聊胜于无吧&hellip;</p>
+<h2 id="总结-1">总结</h2>
+<p>总体来说，免费计划用于我们的小项目完全足够，当用户量大起来时，流量带给你的收益足以支撑起更换为付费计划。（除非你没有盈利目的。）</p>
+<p>Cloudflare就是个人开发者的赛博活佛！感谢Cloudflare看不上这三瓜俩枣😂</p>
+<h2 id="附录">附录</h2>
+<h3 id="参考">参考</h3>
+<ul>
+<li>
+<p><a class="link" href="https://tidbcloud.com/"  target="_blank" rel="noopener"
+    >TI DB | 免费云数据库</a></p>
+</li>
+<li>
+<p><a class="link" href="https://meathill.com/posts/cloudflare-worker/best-practice-for-nextjs-supabase-hyperdrive-on-cloudflare-worker"  target="_blank" rel="noopener"
+    >Next.js + Supabase + Cloudflare worker + Hyperdrive 最佳实践（2026终极版）</a></p>
+</li>
+<li>
+<p><a class="link" href="https://eastondev.com/blog/zh/posts/dev/20251201-vectorize-tutorial/"  target="_blank" rel="noopener"
+    >向量数据库太贵用不起？Vectorize免费版让你30分钟实现语义搜索</a></p>
+</li>
+<li>
+<p><a class="link" href="https://mabbs.github.io/2025/07/24/screenshot.html"  target="_blank" rel="noopener"
+    >使用Cloudflare制作自动更新的网站预览图</a></p>
+</li>
+<li>
+<p><a class="link" href="https://www.runnable.run/docs/devops/Cloudflare/cloudflare-browser-rendering/"  target="_blank" rel="noopener"
+    >Cloudflare Browser Rendering(浏览器呈现) 体验</a></p>
+</li>
+</ul>
+<h3 id="版权信息">版权信息</h3>
+<p>本文原载于 <a class="link" href="https://cai-hong-tu-blog.pages.dev/"  target="_blank" rel="noopener"
+    >彩虹兔の博客</a>，遵循 CC BY-NC-SA 4.0 协议，复制请保留原文出处。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/cloudflare/">Cloudflare</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+             2026年 03月 09日 18:59 CST
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title"></h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/2025/cwbtacwff1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【持续更新中...】【全流程】使用React的Taro和Cloudflare Workers免费创建部署微信小程序！</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    init({"comment":true,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://npm.elemecdn.com/@waline/emojis@1.2.0/qq","https://npm.elemecdn.com/@waline/emojis@1.2.0/tieba","https://npm.elemecdn.com/@waline/emojis@1.2.0/weibo","https://npm.elemecdn.com/@waline/emojis@1.2.0/bilibili","https://npm.elemecdn.com/@waline/emojis@1.2.0/alus"],"lang":"zh-CN","locale":{"admin":"屑博主","reaction0":"非常有用","reaction1":"有帮助","reaction2":"一般","reaction3":"无帮助","reaction4":"看不懂","reaction5":"有错误","reactionTitle":"这篇文章对你有帮助吗？","sofa":"还没有人评论哦！快来抢沙发吧~"},"pageview":true,"placeholder":"欢迎留下宝贵的评论！请留下正确的邮箱以便有回复时进行邮箱提醒，请勿发布任何与本文章无关的内容。","reaction":["https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_heart_eyes.png","https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_thumbsup.png","https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_zhoumei.png","https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_grievance.png","https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_dizzy_face.png","https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_slap.png"],"requiredMeta":["name"],"search":false,"serverURL":"https://waline.caihongtu.top","visitor":true});
+</script>
+
+    
+
+    
+        <div class="post-reward" data-html2canvas-ignore>
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+      <img class="image" src="https://s2.loli.net/2024/11/15/qfjwTJbRWVCNugE.jpg" alt="wechat">
+      <span>微信打赏</span>
+    </label>
+    
+    
+    <label class="qr-code-image" for="reward">
+      <img class="image" src="https://s2.loli.net/2024/11/15/iSJ3BIE4uXfsMRe.jpg" alt="alipay">
+      <span>支付宝打赏</span>
+    </label>
+    
+    
+    <label class="qr-code-image" for="reward">
+      <a href="https://paypal.me/wangruntong?country.x=C2&amp;locale.x=zh_XC" target="_blank"><span>Click this to PayPal</span></a>
+    </label>
+    
+  </div>
+</div>
+
+    
+    
+    <footer class="site-footer">
+  
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<script>
+(function(u, c) {
+  var d = document, t = 'script', o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  o.src = u;
+  if (c) { o.addEventListener('load', function(e) { c(e); }); }
+  s.parentNode.insertBefore(o, s);
+})('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function() {
+  pangu.spacingPage();
+});
+</script>
+
+    <section class="copyright">
+        &copy; 
+        
+            2024 - 
+        
+        2026 <a href="https://stack-theme-mod.vercel.app/">彩虹兔的博客</a>·<i class="fas fa-bell"></i> 网站已平稳运行<a id="days">0</a>天<a id="hours">0</a>小时<a id="minutes">0</a>分<a id="seconds">0</a>秒<br>
+      共书写了39.7k字·共 17篇文章·共 <span class="waline-pageview-count" data-path="/">0</span> 次浏览</br><span><p>
+    </section>
+    
+    <section class="powerby">
+         <br />
+        <br />
+         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">© Licensed Under CC BY-NC-SA 4.0</a>
+    </section>
+
+<script>
+  function updateTime() {
+    var s1 = '2024-11-13 14:12:42'; 
+    s1 = new Date(s1.replace(/-/g, "/")); 
+
+    var s2 = new Date(); 
+
+    
+    var timeDifference = s2.getTime() - s1.getTime();
+
+    
+    var number_of_days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    
+    document.getElementById('days').innerHTML = number_of_days;
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
+}
+
+
+setInterval(updateTime, 1000);
+
+
+
+
+
+
+
+</script>
+    
+<script type="module">
+  import { pageviewCount } from 'https://unpkg.com/@waline/client@v3/dist/pageview.js';
+
+  pageviewCount({
+    serverURL: "https:\/\/waline.caihongtu.top"
+  });
+</script>
+
+</footer>
+
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title"></h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#引言">引言</a></li>
+    <li><a href="#分点介绍">分点介绍</a>
+      <ol>
+        <li><a href="#workers和pages">Workers和Pages</a></li>
+        <li><a href="#workers构建">Workers构建</a></li>
+        <li><a href="#workers-日志">Workers 日志</a></li>
+        <li><a href="#耐用对象durable-objects">耐用对象（Durable Objects）</a>
+          <ol>
+            <li><a href="#免费计划核心限制">免费计划核心限制</a></li>
+            <li><a href="#关键限制分析">关键限制分析</a></li>
+            <li><a href="#用户承载量估算">用户承载量估算</a></li>
+            <li><a href="#注意事项">注意事项</a></li>
+            <li><a href="#总结">总结</a></li>
+          </ol>
+        </li>
+        <li><a href="#d1-数据库">D1 数据库</a></li>
+        <li><a href="#kv">KV</a>
+          <ol>
+            <li><a href="#限制">限制</a></li>
+            <li><a href="#典型用途">典型用途</a></li>
+            <li><a href="#kv-与其他存储对比">KV 与其他存储对比</a></li>
+          </ol>
+        </li>
+        <li><a href="#workers-ai">Workers AI</a></li>
+        <li><a href="#queues">Queues</a>
+          <ol>
+            <li><a href="#使用场景">使用场景</a></li>
+            <li><a href="#小技巧">小技巧</a></li>
+            <li><a href="#计算">计算</a></li>
+          </ol>
+        </li>
+        <li><a href="#hyperdrive">Hyperdrive</a></li>
+        <li><a href="#vectorize">Vectorize</a></li>
+        <li><a href="#浏览器呈现">浏览器呈现</a></li>
+      </ol>
+    </li>
+    <li><a href="#总结-1">总结</a></li>
+    <li><a href="#附录">附录</a>
+      <ol>
+        <li><a href="#参考">参考</a></li>
+        <li><a href="#版权信息">版权信息</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<script
+    src="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/js/nprogress.min.js"
+    integrity="sha384-bHDlAEUFxsRI7JfULv3DTpL2IXbbgn4JHQJibgo5iiXSK6Iu8muwqHANhun74Cqg"
+    crossorigin="anonymous"
+></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/css/nprogress.css"
+    integrity="sha384-KJyhr2syt5+4M9Pz5dipCvTrtvOmLk/olWVdfhAp858UCa64Ia5GFpTN7+G4BWpE"
+    crossorigin="anonymous"
+/>
+<script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "interactive") NProgress.inc(0.8);
+        if (document.readyState === "complete") NProgress.done();
+    });
+</script>
+
+
+
+        <button type="button" class="btn" onclick="smoothScrollTop()" id="goTopBtn" title="Go to top"></button>
+    </body>
+    <script>
+        
+        window.onscroll = function() {scrollTopButton()};
+
+        function scrollTopButton() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("goTopBtn").style.display = "block";
+        } else {
+            document.getElementById("goTopBtn").style.display = "none";
+        }
+        }
+
+        
+        function scrollTop() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+        }
+
+        
+        function smoothScrollTop(){
+            var timer  = null;
+            cancelAnimationFrame(timer);
+            timer = requestAnimationFrame(function fn(){
+                var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+                if(oTop > 0){
+                    document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+                    timer = requestAnimationFrame(fn);
+                }else{
+                    cancelAnimationFrame(timer);
+                }
+            });
+        }
+    </script>
+</html>
